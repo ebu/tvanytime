@@ -1,3 +1,6 @@
+This is the first time TV-Anytime will be maintained via github.
+The following guidelines will certainly evolve. Comments and suggestions are welcome.
+
 Contribution Guidelines
 
 Please ensure your pull request adheres to the following guidelines:
