@@ -20,3 +20,5 @@ https://tech.ebu.ch/tvanytime
 
 More information about the ETSI TS 102-822 series of TV-Anytime can be found on the ETSI 
 website /http://www.etsi.org) from where the documents can be downloaded.
+
+Before doing anything, please read the editing guidelines in CONTRIBUTING.md.
