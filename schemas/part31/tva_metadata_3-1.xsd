@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Updated 2015-04-28 -->
-<!-- Updated schema URNs to 2015 -->
-<!-- Extended tva:ExtendedRURIType to meet requirements of RBM01 -->
-<!-- Extended tva:RelatedMaterialType to meet requirements of RBM02 + RBM03 -->
-<!-- Extended tva:BaseMemberOfType to meet requirements of RBM05 + RBM06  -->
-<!-- Extended tva:TVAPersonNameType and TVAAgentType to meet requirements of RBM08 -->
-<schema targetNamespace="urn:tva:metadata:2015" xmlns:tva="urn:tva:metadata:2015"
+<!-- Updated 2017-06-08 -->
+<!-- Updated schema URNs to 2017 -->
+<!-- Added RightsInformationTable in ProgramDescription -->
+<!-- Extended OnDemandProgram in ProgramLocationTable of ProgramDescription -->
+<schema targetNamespace="urn:tva:metadata:2017" xmlns:tva="urn:tva:metadata:2017"
 	xmlns:mpeg7="urn:tva:mpeg7:2008" xmlns="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<annotation>
 		<documentation xml:lang="en">This schema consists of datatypes that are normatively defined
-			in ETSI TS 102 822-3-1 v1.10.1</documentation>
+			in ETSI TS 102 822-3-1 v1.11.0</documentation>
 	</annotation>
 	<annotation>
 		<documentation xml:lang="en"> Proposed change for this new version of the TVA specification </documentation>
