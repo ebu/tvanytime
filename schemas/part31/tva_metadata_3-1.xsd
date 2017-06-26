@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Updated 2015-04-28 -->
-<!-- Updated schema URNs to 2015 -->
-<!-- Extended tva:ExtendedRURIType to meet requirements of RBM01 -->
-<!-- Extended tva:RelatedMaterialType to meet requirements of RBM02 + RBM03 -->
-<!-- Extended tva:BaseMemberOfType to meet requirements of RBM05 + RBM06  -->
-<!-- Extended tva:TVAPersonNameType and TVAAgentType to meet requirements of RBM08 -->
-<schema targetNamespace="urn:tva:metadata:2015" xmlns:tva="urn:tva:metadata:2015"
+<!-- Updated 2017-06-08 -->
+<!-- Updated schema URNs to 2017 -->
+<!-- Added RightsInformationTable in ProgramDescription -->
+<!-- Extended OnDemandProgram in ProgramLocationTable of ProgramDescription -->
+<schema targetNamespace="urn:tva:metadata:2017" xmlns:tva="urn:tva:metadata:2017"
 	xmlns:mpeg7="urn:tva:mpeg7:2008" xmlns="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<annotation>
 		<documentation xml:lang="en">This schema consists of datatypes that are normatively defined
-			in ETSI TS 102 822-3-1 v1.10.1</documentation>
+			in ETSI TS 102 822-3-1 v1.11.0</documentation>
+	</annotation>
+	<annotation>
+		<documentation xml:lang="en"> Proposed change for this new version of the TVA specification </documentation>
+		<documentation xml:lang="en"> 1. Add a rightsInformationTable under ProgramDescription
+			indicating rights and restrictions incl. a list of usage restrictions and a list of
+			targeted or restricted devices. Background: this is done to avoid the implementation of
+			the too complex TVA RMPI. </documentation>
+		<documentation> 2. Add two attributes to a segmentInformation: isSkippable (can be skipped)
+			and isPrintable (information can be published e.g. in program guides) </documentation>
 	</annotation>
 	<import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
 	<import namespace="urn:tva:mpeg7:2008" schemaLocation="tva_mpeg7.xsd"/>
@@ -18,7 +25,8 @@
 		<documentation xml:lang="en">Section 6.3.3 BASIC TYPES</documentation>
 	</annotation>
 	<annotation>
-		<documentation xml:lang="en">Basic Types - these types are used in two or more sections of the schema</documentation>
+		<documentation xml:lang="en">Basic Types - these types are used in two or more sections of
+			the schema</documentation>
 	</annotation>
 	<complexType name="ExtendedURIType">
 		<simpleContent>
@@ -109,8 +117,10 @@
 							<sequence>
 								<element name="BirthDate" type="dateTime" minOccurs="0"/>
 								<element name="DeathDate" type="dateTime" minOccurs="0"/>
-								<element name="Nationality" type="mpeg7:countryCode" minOccurs="0" maxOccurs="unbounded"/>
-								<element name="Occupation" type="mpeg7:termReferenceType" minOccurs="0" maxOccurs="unbounded"/>
+								<element name="Nationality" type="mpeg7:countryCode" minOccurs="0"
+									maxOccurs="unbounded"/>
+								<element name="Occupation" type="mpeg7:termReferenceType"
+									minOccurs="0" maxOccurs="unbounded"/>
 							</sequence>
 						</complexType>
 					</element>
@@ -230,7 +240,8 @@
 				<complexType>
 					<simpleContent>
 						<extension base="anyURI">
-							<attribute name="referenceType" type="mpeg7:termReferenceType" use="required"/>
+							<attribute name="referenceType" type="mpeg7:termReferenceType"
+								use="required"/>
 						</extension>
 					</simpleContent>
 				</complexType>
@@ -598,7 +609,8 @@
 		<complexContent>
 			<extension base="tva:CRIDRefType">
 				<sequence>
-					<element name="TimeLimitation" type="tva:ValidPeriodType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="TimeLimitation" type="tva:ValidPeriodType" minOccurs="0"
+						maxOccurs="unbounded"/>
 				</sequence>
 				<attribute name="index" type="unsignedInt" use="optional"/>
 			</extension>
@@ -748,7 +760,8 @@
 		<sequence>
 			<element name="Program" type="tva:CRIDRefType"/>
 			<element name="ProgramURL" type="tva:ExtendedURIType" minOccurs="0"/>
-			<element name="AuxiliaryURL" type="tva:ExtendedURIType" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="AuxiliaryURL" type="tva:ExtendedURIType" minOccurs="0"
+				maxOccurs="unbounded"/>
 			<element name="InstanceMetadataId" type="tva:InstanceMetadataIdType" minOccurs="0"/>
 			<element name="InstanceDescription" type="tva:InstanceDescriptionType" minOccurs="0"/>
 		</sequence>
@@ -779,6 +792,8 @@
 					<element name="FirstShowing" type="tva:FlagType" minOccurs="0"/>
 					<element name="LastShowing" type="tva:FlagType" minOccurs="0"/>
 					<element name="Free" type="tva:FlagType" minOccurs="0"/>
+					<!-- NOT NEEDED -->
+					<!--element name="IsRecordable" type="tva:FlagType" minOccurs="0"/-->
 				</sequence>
 				<attribute name="metadataOriginIDRef" type="tva:TVAIDRefType" use="optional"/>
 				<attribute ref="xml:lang" use="optional"/>
@@ -813,8 +828,17 @@
 						maxOccurs="1"/>
 					<element name="ContentVersion" type="unsignedByte" minOccurs="0" maxOccurs="1"/>
 					<element name="ExpiryTime" type="dateTime" minOccurs="0" maxOccurs="1"/>
+					<element name="ExpiryTimeAfterFirsStart" type="duration" minOccurs="0" maxOccurs="1"/>
+					<element name="EmbargoTime" type="dateTime" minOccurs="0" maxOccurs="1"/>
 					<element name="EarlyPlayout" type="tva:FlagType" minOccurs="0" maxOccurs="1"/>
 					<element name="Free" type="tva:FlagType" minOccurs="0" maxOccurs="1"/>
+					<element name="MaxNumberOfDownloads" type="int" minOccurs="0"/>
+					<element name="ExpiryTimeAfterDownload" type="duration" minOccurs="0" maxOccurs="1"/>
+					<element name="ExpiryTimeAfterDownloadFirstStart" type="duration" minOccurs="0" maxOccurs="1"/>
+					<!-- NOT needed - see isSkippable in segment -->
+					<!-- timeshift is a functionality to watch content later -->
+					<!-- element name="TimeshiftNotPermitted" type="tva:FlagType" minOccurs="0" maxOccurs="1"/-->
+					<!-- element name="ConsumptionMode" type="tva:DeliveryModeType" minOccurs="0"/-->
 				</sequence>
 				<attributeGroup ref="tva:fragmentIdentification"/>
 				<attribute name="metadataOriginIDRef" type="tva:TVAIDRefType" use="optional"/>
@@ -859,8 +883,9 @@
 			<element name="CaptionLanguage" type="tva:CaptionLanguageType" minOccurs="0"
 				maxOccurs="unbounded"/>
 			<element name="SignLanguage" type="tva:SignLanguageType" minOccurs="0"
-			maxOccurs="unbounded"/>
-			<element name="ParentalGuidance" type="tva:TVAParentalGuidanceType" minOccurs="0" maxOccurs="unbounded"/>
+				maxOccurs="unbounded"/>
+			<element name="ParentalGuidance" type="tva:TVAParentalGuidanceType" minOccurs="0"
+				maxOccurs="unbounded"/>
 			<element name="AVAttributes" type="tva:AVAttributesType" minOccurs="0"/>
 			<element name="MemberOf" type="tva:BaseMemberOfType" minOccurs="0" maxOccurs="unbounded"/>
 			<element name="OtherIdentifier" type="mpeg7:UniqueIDType" minOccurs="0"
@@ -990,6 +1015,17 @@
 		<attributeGroup ref="tva:fragmentIdentification"/>
 		<attribute name="metadataOriginIDRef" type="tva:TVAIDRefType" use="optional"/>
 		<attribute ref="xml:lang" use="optional"/>
+		<attribute name="isSkippable" type="boolean">
+			<annotation>
+				<documentation> A flag to signal is the segment can be skipped. </documentation>
+			</annotation>
+		</attribute>
+		<attribute name="isPrintable" type="boolean">
+			<annotation>
+				<documentation> A flag to signal is the information about that segment can be
+					published / printed e.g. in program guides. </documentation>
+			</annotation>
+		</attribute>
 	</complexType>
 	<complexType name="GroupIntervalType">
 		<attribute name="ref" type="tva:TVAIDRefType" use="optional"/>
@@ -1118,14 +1154,243 @@
 		<attribute name="metadataOriginIDRef" type="tva:TVAIDRefType" use="optional"/>
 		<attribute ref="xml:lang" use="optional"/>
 	</complexType>
+	<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- NEW 2017 -->
+	<complexType name="RightsInformationTableType">
+		<sequence>
+			<element name="RightsStatement" type="tva:RightsStatementType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</sequence>
+		<attribute name="metadataOriginIDRef" type="tva:TVAIDRefType" use="optional"/>
+		<attribute ref="xml:lang" use="optional"/>
+	</complexType>
+	<complexType name="RightsStatementType">
+		<annotation>
+			<documentation> An expression of the applicable rights or restrictions. </documentation>
+		</annotation>
+		<sequence>
+			<element name="RightsExpression" type="mpeg7:TextualType" minOccurs="0"
+				maxOccurs="unbounded">
+				<annotation>
+					<documentation> An expression of rights fo a specified type. </documentation>
+				</annotation>
+			</element>
+			<element name="RightsLink" type="anyURI" minOccurs="0">
+				<annotation>
+					<documentation>A link to an online resource from where rights or restrictions
+						can be retrieved.</documentation>
+				</annotation>
+			</element>
+			<element name="RightsType" type="tva:ControlledTermType" minOccurs="0">
+				<annotation>
+					<documentation> To define the type of rights or restrictions detailed in the
+						RightsExpression </documentation>
+				</annotation>
+			</element>
+			<element name="TemporalScope" type="string" minOccurs="0">
+				<annotation>
+					<documentation>To define a period of time during which the rights and
+						restrictions apply.</documentation>
+				</annotation>
+			</element>
+			<element name="GeographicalScope" type="mpeg7:ControlledTermUseType" minOccurs="0"
+				maxOccurs="unbounded">
+				<annotation>
+					<documentation>List of countries in scope for the rights and
+						restrictions</documentation>
+				</annotation>
+			</element>
+			<element name="GeographicalExclusionScope" type="mpeg7:ControlledTermUseType"
+				minOccurs="0" maxOccurs="unbounded">
+				<annotation>
+					<documentation>List of countries out of scope for the rights and
+						restrictions</documentation>
+				</annotation>
+			</element>
+			<element name="UsageRestrictionFlag" type="boolean">
+				<annotation>
+					<documentation>
+						If true, a restriction applies either geographical or to a type of device or any other usage restriction descri be in the UsageRestriction element
+					</documentation>
+				</annotation>
+			</element>
+			<element name="UsageRestriction" type="tva:UsageRestrictionType" minOccurs="0"
+				maxOccurs="unbounded">
+				<annotation>
+					<documentation>An element to express simple usage restrictions</documentation>
+				</annotation>
+			</element>
+			<element name="RightsContact" type="tva:TVAAgentType">
+				<annotation>
+					<documentation> A point of contact for more information on the rights.
+					</documentation>
+				</annotation>
+			</element>
+			<element name="Device" type="tva:DeviceType" minOccurs="0" maxOccurs="unbounded">
+				<annotation>
+					<documentation> Target or restricted device(s) for program consumption.
+					</documentation>
+				</annotation>
+			</element>
+		</sequence>
+		<attribute name="programId" type="tva:CRIDType">
+			<annotation>
+				<documentation> A link to a program if the rights apply to the program independently
+					of its location </documentation>
+			</annotation>
+		</attribute>
+		<attribute name="segmentRefList" type="tva:TVAIDRefsType">
+			<annotation>
+				<documentation> A List of references to segments to which the rights and usage
+					restrictions apply. </documentation>
+			</annotation>
+		</attribute>
+		<attribute name="InstanceMetadataIdRef" type="tva:InstanceMetadataIdType">
+			<annotation>
+				<documentation>A link to a ScheduleEvent or BroadcastEvent or OnDemandPrograme
+					instance if the rights apply to that instance</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+
+
+	<complexType name="UsageRestrictionType">
+		<annotation>
+			<documentation>An element to define restrictions and associated status</documentation>
+		</annotation>
+		<sequence>
+			<element name="restrictionType" type="mpeg7:ControlledTermUseType">
+				<annotation>
+					<documentation>e.g. timeshift, simulcast, streaming, download...</documentation>
+				</annotation>
+			</element>
+			<element name="restrictionSubType" type="mpeg7:ControlledTermUseType">
+				<annotation>
+					<documentation>e.g. catch-up, start over, simulcast, streaming,
+						download...</documentation>
+				</annotation>
+			</element>
+			<element name="restrictionWindow">
+				<annotation>
+					<documentation>A period of time during which the restiction
+						applies</documentation>
+				</annotation>
+				<complexType>
+					<simpleContent>
+						<extension base="string">
+							<attribute name="unit" type="string"/>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+			<element name="actionRestriction">
+				<annotation>
+					<documentation>To define user actions to be authorised or
+						forbidden.</documentation>
+				</annotation>
+				<complexType>
+					<complexContent>
+						<extension base="mpeg7:ControlledTermUseType">
+							<attribute name="activationFlag" type="boolean"/>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+			<element name="restrictionStatus" type="boolean">
+				<annotation>
+					<documentation>True is "active", false otherwise.</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="DeviceType">
+		<annotation>
+			<documentation> Target or restricted device for program consumption. </documentation>
+		</annotation>
+		<sequence>
+			<element name="DeviceBrand" type="string" minOccurs="0">
+				<annotation>
+					<documentation> The device name. </documentation>
+				</annotation>
+			</element>
+			<element name="DeviceModel" type="string" minOccurs="0">
+				<annotation>
+					<documentation> The device name. </documentation>
+				</annotation>
+			</element>
+			<element name="DeviceType" type="mpeg7:ControlledTermUseType" minOccurs="0">
+				<annotation>
+					<documentation> The device type e.g. phone, mobile, tablet, connected TV
+					</documentation>
+				</annotation>
+			</element>
+			<element name="DeviceOS" minOccurs="0" maxOccurs="unbounded">
+				<annotation>
+					<documentation> The device OS e.g. IOS, Windows, Android... It is possible to
+						define more than one OS for one DeviceType </documentation>
+				</annotation>
+				<complexType>
+					<complexContent>
+						<extension base="mpeg7:ControlledTermUseType">
+							<attribute name="blocked" type="boolean">
+								<annotation>
+									<documentation> A flag to signal if access to content is blocked
+										for that OS. </documentation>
+								</annotation>
+							</attribute>
+						</extension>
+					</complexContent>
+				</complexType>
+			</element>
+			<element name="AccessStatus" minOccurs="0">
+				<complexType>
+					<attribute name="blocked" type="boolean">
+						<annotation>
+							<documentation> A flag to signal if the setting is allowed for the
+								associated program rights. </documentation>
+						</annotation>
+					</attribute>
+				</complexType>
+			</element>
+			<element name="AccessSetting" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="SettingDescription" type="string">
+							<annotation>
+								<documentation> A description of some supported settings for program
+									access across a variety of media and platforms. </documentation>
+							</annotation>
+						</element>
+					</sequence>
+					<attribute name="type" type="string">
+						<annotation>
+							<documentation> To define a set of permitted or disallowed settings,
+								e..g the resolution.</documentation>
+						</annotation>
+					</attribute>
+				</complexType>
+			</element>
+		</sequence>
+		<attribute name="deviceid" type="anyURI">
+			<annotation>
+				<documentation> An identifier for the device. </documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+
+
+	<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 	<complexType name="TVAPersonNameType">
 		<complexContent>
 			<extension base="mpeg7:PersonNameType">
 				<sequence>
 					<element name="OtherIdentifier" type="mpeg7:UniqueIDType" minOccurs="0"
-					maxOccurs="unbounded"/>
-					<element name="RelatedMaterial" type="tva:RelatedMaterialType" minOccurs="0" maxOccurs="unbounded"/>
-					<element name="AdditionalInformation" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded"/>
+						maxOccurs="unbounded"/>
+					<element name="RelatedMaterial" type="tva:RelatedMaterialType" minOccurs="0"
+						maxOccurs="unbounded"/>
+					<element name="AdditionalInformation" type="mpeg7:TextualType" minOccurs="0"
+						maxOccurs="unbounded"/>
 				</sequence>
 				<attribute name="nameType" use="optional">
 					<simpleType>
@@ -1144,7 +1409,7 @@
 			<extension base="tva:TVAPersonNameType">
 				<attribute name="personNameId" type="tva:TVAIDType" use="required"/>
 				<attributeGroup ref="tva:fragmentIdentification"/>
-				<attribute name="metadataOriginIDRef" type="tva:TVAIDRefType" use="optional"/>               
+				<attribute name="metadataOriginIDRef" type="tva:TVAIDRefType" use="optional"/>
 			</extension>
 		</complexContent>
 	</complexType>
@@ -1383,6 +1648,8 @@
 			<element name="SegmentInformationTable" type="tva:SegmentInformationTableType"
 				minOccurs="0"/>
 			<element name="PurchaseInformationTable" type="tva:PurchaseInformationTableType"
+				minOccurs="0"/>
+			<element name="RightsInformationTable" type="tva:RightsInformationTableType"
 				minOccurs="0"/>
 		</sequence>
 	</complexType>
