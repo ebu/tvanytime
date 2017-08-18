@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Correction of the definition of term 1.4.2 UHD/8K -->
+<ClassificationScheme uri="urn:tva:metadata:cs:PictureFormatCS:2015">
+	<!-- #####################################################################                          -->
+	<!-- PICTURE FORMAT	                                                                            -->
+	<!-- Definition: This dimension is used to classify programmes according to their picture format.   -->
+	<!-- NOTE: These classifications are on a higher level than the more detailed technical             -->
+	<!-- specifications that should be signalled in e.g. a binary way (i.e. within DVB SI descriptors). -->
+	<!-- #####################################################################                          -->
+	<Term termID="1">
+		<Name xml:lang="en">2D Video</Name>
+		<Definition xml:lang="en">Classic two-dimensional (2D) video material.</Definition>
+		<Term termID="1.1">
+			<Name xml:lang="en">SD</Name>
+			<Definition xml:lang="en">Standard definition</Definition>
+		</Term>
+		<Term termID="1.2">
+			<Name xml:lang="en">HD</Name>
+			<Definition xml:lang="en">High definition</Definition>
+		</Term>
+		<Term termID="1.3">
+			<Name xml:lang="en">Up-sampled from SD</Name>
+			<Definition xml:lang="en">Video up-sampled from standard definition source material.</Definition>
+		</Term>
+		<Term termID="1.4">
+			<Name xml:lang="en">UHD</Name>
+			<Definition xml:lang="en">Ultra-high definition</Definition>
+		
+			<Term termID="1.4.1">
+				<Name xml:lang="en">4K</Name>
+				<Definition xml:lang="en">4K UHDTV, also referred to as 2160p (with a resolution of 3840 pixels wide by 2160 pixels tall).</Definition>
+			</Term>
+			<Term termID="1.4.2">
+				<Name xml:lang="en">8K</Name>
+				<Definition xml:lang="en">8K UHDTV, also referred to as 4320p (with a resolution of 7680 pixels wide by 4320 pixels tall).</Definition>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">Plano-Stereoscopic Video</Name>
+		<Definition xml:lang="en">Three-dimensional (3D), plano-stereoscopic video material.</Definition>
+		<Term termID="2.1">
+			<Name xml:lang="en">Frame-Compatible 3D</Name>
+			<Definition xml:lang="en">3D video material, encoded in a frame-compatible way by splitting up frame contents into 2 areas, one for each eye.</Definition>
+			<Term termID="2.1.1">
+				<Name xml:lang="en">Side-by-Side 3D Format</Name>
+				<Definition xml:lang="en">3D video material, encoded in a way that each component plane of the decoded frames contains a side-by-side packing arrangement of corresponding planes of two constituent frames.</Definition>
+			</Term>
+			<Term termID="2.1.2">
+				<Name xml:lang="en">Top-and-Bottom 3D Format</Name>
+				<Definition xml:lang="en">3D video material, encoded in a way that each component plane of the decoded frames contains a top-bottom packing arrangement of corresponding planes of two constituent frames.</Definition>
+			</Term>
+			<Term termID="2.1.3">
+				<Name xml:lang="en">Checkerboard-based 3D Format</Name>
+				<Definition xml:lang="en">3D video material, encoded in a way that each component plane of the decoded frames contains a "checkerboard" based interleaving of corresponding planes of two constituent frames.</Definition>
+			</Term>
+			<Term termID="2.1.4">
+				<Name xml:lang="en">Column-based interleaving 3D Format</Name>
+				<Definition xml:lang="en">3D video material, encoded in a way that each component plane of the decoded frames contains a column based interleaving of corresponding planes of two constituent frames.</Definition>
+			</Term>
+			<Term termID="2.1.5">
+				<Name xml:lang="en">Row-based interleaving 3D Format</Name>
+				<Definition xml:lang="en">3D video material, encoded in a way that each component plane of the decoded frames contains a row based interleaving of corresponding planes of two constituent frames.</Definition>
+			</Term>
+			<Term termID="2.1.6">
+				<Name xml:lang="en">Temporal interleaving 3D Format</Name>
+				<Definition xml:lang="en">3D video material, encoded in a way that the component planes of the decoded frames in output order form a temporal interleaving of alternating first and second constituent frames.</Definition>
+			</Term>
+		</Term>
+		<Term termID="2.2">
+			<Name xml:lang="en">Service-Compatible 3D</Name>
+			<Definition xml:lang="en">3D video material, encoded in a service-compatible way, thereby offering the possibility to devices to extract 2D images from the 3D content.</Definition>
+			<Term termID="2.2.1">
+				<Name xml:lang="en">MVC Stereo profile</Name>
+				<Definition xml:lang="en">3D video material, encoded in a MVC stereo profile - compliant way (i.e. BlueRay).</Definition>
+			</Term>
+			<Term termID="2.2.2">
+				<Name xml:lang="en">Frame-Packing 3D Format</Name>
+				<Definition xml:lang="en">3D video material, encoded in a way wherein a single frame consists of two sub-frames meant for each eye, combined into a single frame using either the Top-and-Bottom 3D or Side-by-Side 3D formats without any halving of the vertical or horizontal resolution of individual sub-frames in each format respectively.</Definition>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">Multiview Autoscopic Video</Name>
+		<Definition xml:lang="en">Multi-dimensional video material, encoded in a multiscopic way, consisting of e.g. an array of feeds produced by several cameras (e.g. 5)</Definition>
+		<Term termID="3.1">
+			<Name xml:lang="en">Downwards-compatible multiscopic Video</Name>
+			<Definition xml:lang="en">Multi-dimensional video material, encoded in a way that it is downwards compatible to stereoscopic devices.</Definition>
+		</Term>
+		<Term termID="3.2">
+			<Name xml:lang="en">Non-downwards-compatible multiscopic 3D</Name>
+			<Definition xml:lang="en">Multi-dimensional video material, encoded in a way that it is not compatible to stereoscopic devices, therefore requiring support for more than stereoscopic rendering.</Definition>
+		</Term>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">Holographic Video</Name>
+		<Definition xml:lang="en">Multi-dimensional holographic video material.</Definition>
+		<Term termID="4.1">
+			<Name xml:lang="en">Holographic 3D</Name>
+			<Definition xml:lang="en">3D video material, created and encoded especially for holographic 3D rendering devices.</Definition>
+		</Term>
+	</Term>
+</ClassificationScheme>
