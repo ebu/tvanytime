@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:tva:ResolvingAuthority:2008" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:rar="urn:tva:ResolvingAuthority:2008" elementFormDefault="qualified"  attributeFormDefault="unqualified">
+    <element name="ResolvingAuthorityRecordTable" type="rar:ResolvingAuthorityRecordTableType">
+        <annotation>
+            <documentation>A document conforming to the TV Anytime content referencing specification</documentation>
+        </annotation>
+    </element>
+    <complexType name="ResolvingAuthorityRecordTableType">
+        <sequence>
+            <element name="ResolvingAuthorityRecord" type="rar:ResolvingAuthorityRecordType" minOccurs="1" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <simpleType name="ProviderClassType">
+        <restriction base="string">
+            <enumeration value="primary"/>
+            <enumeration value="secondary"/>
+        </restriction>
+    </simpleType>
+    <complexType name="ResolvingAuthorityRecordType">
+        <sequence>
+            <element name="ResolutionProvider" type="string"/>
+            <element name="AuthorityName" type="string"/>
+            <element name="Class" type="rar:ProviderClassType"/>
+            <element name="VersionNumber" type="unsignedLong"/>
+            <element name="URL" type="anyURI"/>
+            <element name="FirstValidDate" type="dateTime"/>
+            <element name="LastValidDate" type="dateTime"/>
+            <element name="Weighting" type="integer"/>
+        </sequence>
+    </complexType>
+</schema>

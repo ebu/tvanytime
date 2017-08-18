@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:p3p='http://www.w3.org/2002/01/P3Pv1'
+  targetNamespace='http://www.w3.org/2002/01/P3Pv1'
+  elementFormDefault='qualified'>
+
+<!-- enabling xml:lang attribute -->
+ <import namespace='http://www.w3.org/XML/1998/namespace' 
+    schemaLocation='http://www.w3.org/2001/xml.xsd' />
+
+<!-- Basic P3P Data Type -->
+ <simpleType name='yes_no'>
+  <restriction base='string'>
+   <enumeration value='yes'/>
+   <enumeration value='no'/>
+  </restriction>
+ </simpleType>
+
+
+<!-- *********** Policy Reference *********** -->
+<!-- ************** META ************** -->
+ <element name='META'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+    <element ref='p3p:POLICY-REFERENCES'/>
+    <element ref='p3p:POLICIES' minOccurs='0'/>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+   <attribute ref='xml:lang' use='optional'/>
+  </complexType>
+ </element>
+
+<!-- ******* POLICY-REFERENCES ******** -->
+ <element name='POLICY-REFERENCES'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXPIRY' minOccurs='0'/>
+    <element ref='p3p:POLICY-REF' minOccurs='0' maxOccurs='unbounded'/>
+    <element ref='p3p:HINT' minOccurs='0' maxOccurs='unbounded'/>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+  </sequence>
+  </complexType>
+ </element>
+
+ <element name='POLICY-REF'>
+  <complexType>
+   <sequence>
+    <element name='INCLUDE' 
+             minOccurs='0' maxOccurs='unbounded' type='anyURI'/>
+    <element name='EXCLUDE' 
+             minOccurs='0' maxOccurs='unbounded' type='anyURI'/>
+    <element name='COOKIE-INCLUDE' 
+             minOccurs='0' maxOccurs='unbounded' type='p3p:cookie-element'/>
+    <element name='COOKIE-EXCLUDE'
+             minOccurs='0' maxOccurs='unbounded' type='p3p:cookie-element'/>
+    <element name='METHOD' 
+             minOccurs='0' maxOccurs='unbounded' type='anyURI'/>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+   <attribute name='about' type='anyURI' use='required'/>
+  </complexType>
+ </element>
+
+ <complexType name='cookie-element'>
+  <attribute name='name' type='string' use='optional'/>
+  <attribute name='value' type='string' use='optional'/>
+  <attribute name='domain' type='string' use='optional'/>
+  <attribute name='path' type='string' use='optional'/>
+ </complexType>
+
+<!-- ************* HINT ************* -->
+ <element name='HINT'>
+  <complexType>
+   <attribute name='scope' type='string' use='required'/>
+   <attribute name='path' type='string' use='required'/>
+  </complexType>
+ </element>
+
+<!-- ************ POLICIES ************ -->
+ <element name='POLICIES'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXPIRY' minOccurs='0'/>
+    <element ref='p3p:DATASCHEMA' minOccurs='0'/>
+    <element ref='p3p:POLICY' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+   <attribute ref='xml:lang' use='optional'/>
+  </complexType>
+ </element>
+
+
+<!-- ************* EXPIRY ************* -->
+ <element name='EXPIRY'>
+  <complexType>
+   <attribute name='max-age' type='nonNegativeInteger' use='optional'/>
+   <attribute name='date' type='string' use='optional'/>
+  </complexType>
+ </element>
+
+<!-- **************** Policy **************** -->
+<!-- ************* POLICY ************* -->
+ <element name='POLICY'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+    <element ref='p3p:TEST' minOccurs='0'/>
+    <element ref='p3p:ENTITY'/>
+    <element ref='p3p:ACCESS'/>
+    <element ref='p3p:DISPUTES-GROUP' minOccurs='0'/>
+    <element ref='p3p:STATEMENT' maxOccurs='unbounded'/>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+   <attribute name='discuri' type='anyURI' use='required'/>
+   <attribute name='opturi' type='anyURI' use='optional'/>
+   <attribute name='name' type='ID' use='required'/>
+   <attribute ref='xml:lang' use='optional'/>
+  </complexType>
+ </element>
+
+<!-- ************* TEST ************* -->
+ <element name='TEST'>
+  <complexType/>
+ </element>
+
+<!-- ************* ENTITY ************* -->
+ <element name='ENTITY'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+    <element name='DATA-GROUP'>
+     <complexType>
+      <sequence>
+       <element name='DATA' type='p3p:data-in-entity' maxOccurs='unbounded'/>
+      </sequence>
+     </complexType>
+    </element>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+  </complexType>
+ </element>
+
+ <complexType name='data-in-entity' mixed='true'>
+  <attribute name='ref' type='anyURI' use='required'/>
+ </complexType>
+
+<!-- ************* ACCESS ************* -->
+ <element name='ACCESS'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+    <choice>
+     <element name='nonident' type='p3p:access-value'/>
+     <element name='ident-contact' type='p3p:access-value'/>
+     <element name='other-ident' type='p3p:access-value'/>
+     <element name='contact-and-other' type='p3p:access-value'/>
+     <element name='all' type='p3p:access-value'/>
+     <element name='none' type='p3p:access-value'/>
+    </choice>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+  </complexType>
+ </element>
+
+ <complexType name='access-value'/>
+
+<!-- ************ DISPUTES ************ -->
+ <element name='DISPUTES-GROUP'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+    <element ref='p3p:DISPUTES' maxOccurs='unbounded'/>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+  </complexType>
+ </element>
+
+ <element name='DISPUTES'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+    <choice minOccurs='0'>
+     <sequence>
+      <element ref='p3p:LONG-DESCRIPTION'/>
+      <element ref='p3p:IMG' minOccurs='0'/>
+      <element ref='p3p:REMEDIES' minOccurs='0'/>
+      <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+     </sequence>
+     <sequence>
+      <element ref='p3p:IMG'/>
+      <element ref='p3p:REMEDIES' minOccurs='0'/>
+      <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+     </sequence>
+     <sequence>
+      <element ref='p3p:REMEDIES'/>
+      <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+     </sequence>
+    </choice>
+   </sequence>
+   <attribute name='resolution-type' use='required'>
+    <simpleType>
+     <restriction base='string'>
+      <enumeration value='service'/>
+      <enumeration value='independent'/>
+      <enumeration value='court'/>
+      <enumeration value='law'/>
+     </restriction>
+    </simpleType>
+   </attribute>
+   <attribute name='service' type='anyURI' use='required'/>
+   <attribute name='verification' type='string' use='optional'/>
+   <attribute name='short-description' type='string' use='optional'/>
+  </complexType>
+ </element>
+
+<!-- ******** LONG-DESCRIPTION ******** -->
+ <element name='LONG-DESCRIPTION'>
+  <simpleType>
+   <restriction base='string'/>
+  </simpleType>
+ </element>
+
+<!-- ************** IMG *************** -->
+ <element name='IMG'>
+  <complexType>
+   <attribute name='src' type='anyURI' use='required'/>
+   <attribute name='width' type='nonNegativeInteger' use='optional'/>
+   <attribute name='height' type='nonNegativeInteger' use='optional'/>
+   <attribute name='alt' type='string' use='required'/>
+  </complexType>
+ </element>
+
+<!-- ************ REMEDIES ************ -->
+ <element name='REMEDIES'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+    <choice maxOccurs='unbounded'>
+     <element name='correct' type='p3p:remedies-value'/>
+     <element name='money' type='p3p:remedies-value'/>
+     <element name='law' type='p3p:remedies-value'/>
+    </choice>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+  </complexType>
+ </element>
+
+ <complexType name='remedies-value'/>
+
+<!-- *********** STATEMENT ************ -->
+ <element name='STATEMENT'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+    <element name='CONSEQUENCE' minOccurs='0' type='string'/>
+    <choice>
+     <sequence>
+      <element ref='p3p:PURPOSE'/>
+      <element ref='p3p:RECIPIENT'/>
+      <element ref='p3p:RETENTION'/>
+      <element name='DATA-GROUP' type='p3p:data-group-type' maxOccurs='unbounded'/>
+     </sequence>
+     <sequence>
+      <element name='NON-IDENTIFIABLE'/>
+      <element ref='p3p:PURPOSE' minOccurs='0'/>
+      <element ref='p3p:RECIPIENT' minOccurs='0'/>
+      <element ref='p3p:RETENTION' minOccurs='0'/>
+      <element name='DATA-GROUP' type='p3p:data-group-type' minOccurs='0' maxOccurs='unbounded'/>
+     </sequence>
+    </choice>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+  </complexType>
+ </element>
+
+<!-- ************ PURPOSE ************* -->
+ <element name='PURPOSE'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+    <choice maxOccurs='unbounded'>
+     <element name='current' type='p3p:purpose-value'/>
+     <element name='admin' type='p3p:purpose-value'/>
+     <element name='develop' type='p3p:purpose-value'/>
+     <element name='tailoring' type='p3p:purpose-value'/>
+     <element name='pseudo-analysis' type='p3p:purpose-value'/>
+     <element name='pseudo-decision' type='p3p:purpose-value'/>
+     <element name='individual-analysis' type='p3p:purpose-value'/>
+     <element name='individual-decision' type='p3p:purpose-value'/>
+     <element name='contact' type='p3p:purpose-value'/>
+     <element name='historical' type='p3p:purpose-value'/>
+     <element name='telemarketing' type='p3p:purpose-value'/>
+     <element name='other-purpose'>
+      <complexType mixed='true'>
+       <attribute name='required' use='optional' type='p3p:required-value'/>
+      </complexType>
+     </element>
+    </choice>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+  </complexType>
+ </element>
+
+ <simpleType name='required-value'>
+  <restriction base='string'>
+   <enumeration value='always'/>
+   <enumeration value='opt-in'/>
+   <enumeration value='opt-out'/>
+  </restriction>
+ </simpleType>
+
+ <complexType name='purpose-value'>
+  <attribute name='required' use='optional' type='p3p:required-value' default='always' />
+ </complexType>
+
+<!-- *********** RECIPIENT ************ -->
+ <element name='RECIPIENT'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+    <choice maxOccurs='unbounded'>
+     <element name='ours'>
+      <complexType>
+       <sequence>
+        <element ref='p3p:recipient-description' minOccurs='0' maxOccurs='unbounded'/>
+       </sequence>
+      </complexType>
+     </element>
+     <element name='same' type='p3p:recipient-value'/>
+     <element name='other-recipient' type='p3p:recipient-value'/>
+     <element name='delivery' type='p3p:recipient-value'/>
+     <element name='public' type='p3p:recipient-value'/>
+     <element name='unrelated' type='p3p:recipient-value'/>
+    </choice>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+  </complexType>
+ </element>
+
+ <complexType name='recipient-value'>
+  <sequence>
+   <element ref='p3p:recipient-description' minOccurs='0' maxOccurs='unbounded'/>
+  </sequence>
+  <attribute name='required' use='optional' type='p3p:required-value'/>
+ </complexType>
+
+ <element name='recipient-description'>
+  <complexType mixed='true'/>
+ </element>
+
+<!-- *********** RETENTION ************ -->
+ <element name='RETENTION'>
+  <complexType>
+   <sequence>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+    <choice>
+     <element name='no-retention' type='p3p:retention-value'/>
+     <element name='stated-purpose' type='p3p:retention-value'/>
+     <element name='legal-requirement' type='p3p:retention-value'/>
+     <element name='indefinitely' type='p3p:retention-value'/>
+     <element name='business-practices' type='p3p:retention-value'/>
+    </choice>
+    <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   </sequence>
+  </complexType>
+ </element>
+
+ <complexType name='retention-value'/>
+
+<!-- ************** DATA ************** -->
+ <complexType name='data-group-type'>
+  <sequence>
+   <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+   <element name='DATA' type='p3p:data-in-statement' maxOccurs='unbounded'/>
+   <element ref='p3p:EXTENSION' minOccurs='0' maxOccurs='unbounded'/>
+  </sequence>
+  <attribute name='base' type='anyURI' 
+             use='optional' default='http://www.w3.org/TR/P3P/base'/>
+ </complexType>
+
+ <complexType name='data-in-statement' mixed='true'>
+  <sequence minOccurs='0' maxOccurs='unbounded'>
+   <element ref='p3p:CATEGORIES'/>
+  </sequence>
+  <attribute name='ref' type='anyURI' use='required'/>
+  <attribute name='optional' use='optional' default='no' type='p3p:yes_no'/>
+ </complexType>
+
+<!-- ************** Data Schema ************* -->
+<!-- *********** DATASCHEMA *********** -->
+ <element name='DATASCHEMA'>
+  <complexType>
+   <choice minOccurs='0' maxOccurs='unbounded'>
+    <element ref='p3p:DATA-DEF'/>
+    <element ref='p3p:DATA-STRUCT'/>
+    <element ref='p3p:EXTENSION'/>
+   </choice>
+   <attribute ref='xml:lang' use='optional'/>
+  </complexType>
+ </element>
+
+ <element name='DATA-DEF' type='p3p:data-def'/>
+ <element name='DATA-STRUCT' type='p3p:data-def'/>
+
+ <complexType name='data-def'>
+  <sequence>
+   <element ref='p3p:CATEGORIES' minOccurs='0'/>
+   <element ref='p3p:LONG-DESCRIPTION' minOccurs='0'/>
+  </sequence>
+  <attribute name='name' type='ID' use='required'/>
+  <attribute name='structref' type='anyURI' use='optional'/>
+  <attribute name='short-description' type='string' use='optional'/>
+ </complexType>
+
+<!-- *********** CATEGORIES *********** -->
+ <element name='CATEGORIES'>
+  <complexType>
+   <choice maxOccurs='unbounded'>
+    <element name='physical' type='p3p:categories-value'/>
+    <element name='online' type='p3p:categories-value'/>
+    <element name='uniqueid' type='p3p:categories-value'/>
+    <element name='purchase' type='p3p:categories-value'/>
+    <element name='financial' type='p3p:categories-value'/>
+    <element name='computer' type='p3p:categories-value'/>
+    <element name='navigation' type='p3p:categories-value'/>
+    <element name='interactive' type='p3p:categories-value'/>
+    <element name='demographic' type='p3p:categories-value'/>
+    <element name='content' type='p3p:categories-value'/>
+    <element name='state' type='p3p:categories-value'/>
+    <element name='political' type='p3p:categories-value'/>
+    <element name='health' type='p3p:categories-value'/>
+    <element name='preference' type='p3p:categories-value'/>
+    <element name='location' type='p3p:categories-value'/>
+    <element name='government' type='p3p:categories-value'/>
+    <element name='other-category' type='string'/>
+   </choice>
+  </complexType>
+ </element>
+
+ <complexType name='categories-value'/>
+
+<!-- *********** EXTENSION ************ -->
+ <element name='EXTENSION'>
+  <complexType mixed='true'>
+   <choice minOccurs='0' maxOccurs='unbounded'>
+    <any minOccurs='0' maxOccurs='unbounded' processContents='skip'/>
+   </choice>
+   <attribute name='optional' use='optional' default='yes' type='p3p:yes_no'/>
+  </complexType>
+ </element>
+
+</schema>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:tva:CoreData:2017" xmlns:cd="urn:tva:CoreData:2017"
+    xmlns:cr="urn:tva:ContentReferencing:2017" xmlns:tva="urn:tva:metadata:2017"
+    xmlns:mpeg7="urn:tva:mpeg7:2008" xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <annotation>
+        <documentation xml:lang="en">This schema consists of datatypes that are normatively defined
+            in ETSI TS 102 822-8</documentation>
+    </annotation>
+    <import namespace="urn:tva:metadata:2017" schemaLocation="tva_metadata_3-1.xsd"/>
+    <import namespace="urn:tva:ContentReferencing:2017"
+        schemaLocation="tva_content_referencing_4.xsd"/>
+    <import namespace="urn:tva:mpeg7:2008" schemaLocation="tva_mpeg7.xsd"/>
+    <element name="CoreData" type="cd:CoreDataType"/>
+    <complexType name="CoreDataActionType">
+        <sequence>
+            <element name="Type" type="tva:ControlledTermType"/>
+        </sequence>
+        <attribute name="instruction" use="optional" default="create">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="create"/>
+                    <enumeration value="cancel"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+    <complexType name="SelectedContentType">
+        <sequence>
+            <element ref="tva:TVAMain" minOccurs="0"/>
+            <element ref="cr:ContentReferencingTable" minOccurs="0"/>
+            <element name="WSIFServerAddress" type="anyURI" minOccurs="0"/>
+            <element name="Action" type="cd:CoreDataActionType" minOccurs="0"/>
+        </sequence>
+        <attribute name="id" type="tva:CRIDType" use="required"/>
+        <attribute name="instanceMetadataId" type="tva:InstanceMetadataIdType"/>
+    </complexType>
+    <complexType name="CoreDataType">
+        <sequence>
+            <element name="SelectedContent" type="cd:SelectedContentType" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+</schema>

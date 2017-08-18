@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:tva:ndr:2017" xmlns:ndr="urn:tva:ndr:2017"
+    xmlns:mpeg7="urn:tva:mpeg7:2008" xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:tva="urn:tva:metadata:2017" xmlns:cr="urn:tva:ContentReferencing:2017"
+    elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <import namespace="urn:tva:metadata:2017" schemaLocation="tva_metadata_3-1.xsd"/>
+    <import namespace="urn:tva:mpeg7:2008" schemaLocation="tva_mpeg7.xsd"/>
+    <import namespace="urn:tva:ContentReferencing:2017"
+        schemaLocation="tva_content_referencing_4.xsd"/>
+    <annotation>
+        <documentation xml:lang="en">NDR schema</documentation>
+    </annotation>
+    <!-- ###########
+        Description of the requests from client to NDR and responses from NDR to client
+        ########### -->
+    <!-- ########### Description of the record request ########### -->
+    <complexType name="ContentIdType">
+        <sequence>
+            <element name="InstanceMetadataId" type="tva:InstanceMetadataIdType" minOccurs="0"
+                maxOccurs="unbounded"/>
+        </sequence>
+        <attribute name="CRID" type="tva:CRIDType" use="required"/>
+    </complexType>
+    <complexType name="DeliveryProtocolType">
+        <complexContent>
+            <extension base="tva:ControlledTermType">
+                <attribute name="version" type="float" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="ControlProtocolType">
+        <complexContent>
+            <extension base="tva:ControlledTermType">
+                <attribute name="version" type="float" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="ProtocolSetType">
+        <sequence>
+            <element name="DeliveryProtocol" type="ndr:DeliveryProtocolType" minOccurs="0"/>
+            <element name="ControlProtocol" type="ndr:ControlProtocolType" minOccurs="0"/>
+        </sequence>
+    </complexType>
+    <complexType name="RecordRequestType">
+        <sequence>
+            <element name="SubscriptionId" type="string"/>
+            <element name="ContentId" type="ndr:ContentIdType" minOccurs="0"/>
+            <element name="Locator" type="cr:LocatorType" minOccurs="0" maxOccurs="unbounded"/>
+            <element name="DeliveryMediaFormat" type="tva:AVAttributesType" minOccurs="0"/>
+            <element name="ProtocolSet" type="ndr:ProtocolSetType" minOccurs="0"/>
+            <element name="StartTime" type="dateTime" minOccurs="0"/>
+            <element name="EndTime" type="dateTime" minOccurs="0"/>
+            <element name="FilteringAndSearchPreferences"
+                type="mpeg7:FilteringAndSearchPreferencesType" minOccurs="0"/>
+        </sequence>
+    </complexType>
+    <!-- ########### Description of the status request for a previously accepted record request ########### -->
+    <complexType name="RecordStatusType">
+        <attribute name="requestId" type="string" use="required"/>
+    </complexType>
+    <!-- ########### Description of the cancel request for a previously accepted record request  ########### -->
+    <complexType name="RecordCancelType">
+        <attribute name="requestId" type="string" use="required"/>
+    </complexType>
+    <element name="Control_NDR_Result" type="ndr:ControlNDRResultType"/>
+    <complexType name="ControlNDRResultType">
+        <choice>
+            <element name="RecordRequestResult" type="ndr:RecordRequestResultType"/>
+            <element name="RecordStatusResult" type="ndr:RecordStatusResultType"/>
+            <element name="RecordCancelResult" type="ndr:RecordCancelResultType"/>
+            <element name="RecordListRequestResult" type="ndr:RecordListRequestResultType "/>
+        </choice>
+    </complexType>
+    <complexType name="Control_NDRType">
+        <choice>
+            <element name="RecordRequest" type="ndr:RecordRequestType"/>
+            <element name="RecordStatus" type="ndr:RecordStatusType"/>
+            <element name="RecordCancel" type="ndr:RecordCancelType"/>
+            <element name="RecordListRequest" type="ndr:RecordListRequestType"/>
+        </choice>
+    </complexType>
+    <element name="Control_NDR" type="ndr:Control_NDRType"/>
+
+    <complexType name="describe_control_NDRType"/>
+    <element name="describe_control_NDR" type="ndr:describe_control_NDRType"/>
+    <annotation>
+        <documentation xml:lang="en"> Control_NDR_Result schema </documentation>
+    </annotation>
+    <!-- ######## Description of the list of previously accepted record requests ######## -->
+    <complexType name="RecordListRequestType">
+        <sequence>
+            <element name="SubscriptionId" type="string"/>
+        </sequence>
+    </complexType>
+    <complexType name="RecordListRequestResultType">
+        <sequence>
+            <element name="RecordRequestStatus" type="ndr:RecordStatusResultType" minOccurs="0"
+                maxOccurs="unbounded"/>
+        </sequence>
+        <attribute name="serviceVersion" type="unsignedInt" use="required"/>
+    </complexType>
+    <!-- ########### Description of the response to a record request ########### -->
+    <complexType name="RecordRequestOKType">
+        <sequence>
+            <element name="RequestId" type="string"/>
+            <element name="Time2Call" type="dateTime"/>
+            <element name="RecordingCharge" type="tva:PriceType" minOccurs="0"/>
+            <element name="ConservationDelay" type="duration" minOccurs="0"/>
+        </sequence>
+    </complexType>
+    <simpleType name="RecordRequestErrorType">
+        <restriction base="string">
+            <enumeration value="unknownSubscriptionId"/>
+            <enumeration value="unknownCRID"/>
+            <enumeration value="unavailableServiceURL"/>
+            <enumeration value="unavailableNDRService"/>
+            <enumeration value="unknownDeliveryProtocol"/>
+            <enumeration value="unknownControlProtocol"/>
+            <enumeration value="unsupportedDeliveryProtocol"/>
+            <enumeration value="unsupportedControlProtocol"/>
+            <enumeration value="unknownOriginalMediaFormat"/>
+            <enumeration value="unsupportedOriginalMediaFormat"/>
+            <enumeration value="unknownDeliveryMediaFormat"/>
+            <enumeration value="unsupportedDeliveryMediaFormat"/>
+        </restriction>
+    </simpleType>
+    <complexType name="RecordRequestResultType">
+        <sequence>
+            <choice>
+                <element name="RecordRequestOK" type="ndr:RecordRequestOKType"/>
+                <element name="RecordRequestError" type="ndr:RecordRequestErrorType"/>
+            </choice>
+        </sequence>
+        <attribute name="serviceVersion" type="unsignedInt" use="required"/>
+    </complexType>
+    <!-- ########### Description of the response to a record status request  ########### -->
+    <simpleType name="FailureType">
+        <restriction base="string">
+            <enumeration value="unknownRequest"/>
+            <enumeration value="cancelledBroadcast"/>
+            <enumeration value="cancelledByNDR"/>
+        </restriction>
+    </simpleType>
+    <complexType name="RecordStatusResultType">
+        <choice>
+            <element name="Running">
+                <complexType>
+                    <sequence>
+                        <element name="Time2Call" type="dateTime"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="ContentAvailable">
+                <complexType>
+                    <sequence>
+                        <element name="ContentURL" type="anyURI"/>
+                        <element name="ConservationDeadline" type="dateTime" minOccurs="0"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="Failure" type="ndr:FailureType"/>
+        </choice>
+        <attribute name="requestId" type="string" use="required"/>
+    </complexType>
+    <!-- ########### Description of the response to a cancel request  ########### -->
+    <simpleType name="RecordCancelResultType">
+        <restriction base="string">
+            <enumeration value="unknownRequest"/>
+            <enumeration value="OK"/>
+            <enumeration value="removedAfterRecording"/>
+        </restriction>
+    </simpleType>
+
+    <!-- ########### Description of the general error reports  ########### -->
+    <simpleType name="errorCodeType">
+        <restriction base="string">
+            <enumeration value="FatalError"/>
+            <enumeration value="InvalidRequest"/>
+            <enumeration value="Unsupported"/>
+            <enumeration value="UnrecognizedVersion"/>
+            <enumeration value="UnspecifiedError"/>
+        </restriction>
+    </simpleType>
+    <complexType name="ErrorType">
+        <sequence>
+            <element name="Reason" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute name="errorCode" type="ndr:errorCodeType" use="required"/>
+    </complexType>
+    <element name="ErrorReport" type="ndr:ErrorReportType"/>
+    <complexType name="ErrorReportType">
+        <sequence>
+            <element name="Error" type="ndr:ErrorType" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <!-- ###########
+        Description of the network digital recorder capabilities
+        ########### -->
+    <complexType name="ServiceURLListType">
+        <sequence>
+            <element name="ServiceURL" type="anyURI" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConversionListType">
+        <sequence>
+            <element name="ConversionOffer" type="ndr:ConversionOfferType" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConversionOfferType">
+        <sequence>
+            <element name="OriginalMediaFormat" type="tva:AVAttributesType" minOccurs="0"/>
+            <element name="DeliveryMediaFormat" type="tva:AVAttributesType" minOccurs="0"/>
+        </sequence>
+    </complexType>
+    <complexType name="ProtocolSetListType">
+        <sequence>
+            <element name="ProtocolSet" type="ndr:ProtocolSetType" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <complexType name="describe_control_NDR_ResultType">
+        <sequence>
+            <element name="Name" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded"/>
+            <element name="Description" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded"/>
+            <element name="SubscriptionURL" type="anyURI" minOccurs="0"/>
+            <element name="ServiceURLList" type="ndr:ServiceURLListType"/>
+            <element name="ConversionList" type="ndr:ConversionListType" minOccurs="0"/>
+            <element name="ProtocolSetList" type="ndr:ProtocolSetListType" minOccurs="0"/>
+            <element name="PlayWhileRecording" type="boolean" default="false" minOccurs="0"/>
+            <element name="SupportForFilteringAndSearchPreferences" type="boolean" default="false"
+                minOccurs="0"/>
+        </sequence>
+        <attribute name="serviceVersion" type="unsignedInt" use="required"/>
+    </complexType>
+    <element name="describe_control_NDR_Result" type="ndr:describe_control_NDR_ResultType"/>
+    <!-- ###########
+        Description of the subscription structure returned from the NDR Web site after subscription to an NDR Service
+        ########### -->
+    <complexType name="NDR_Subscription_dataType">
+        <sequence>
+            <choice>
+                <element name="Name" type="mpeg7:TextualType" maxOccurs="unbounded"/>
+                <element name="SubscriptionURL" type="anyURI"/>
+            </choice>
+            <element name="SubscriptionId" type="string"/>
+        </sequence>
+    </complexType>
+    <element name="NDR_Subscription_data" type="ndr:NDR_Subscription_dataType"/>
+</schema>

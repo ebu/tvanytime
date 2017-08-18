@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:tva:profile:2017" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tva="urn:tva:metadata:2017" xmlns:tvap="urn:tva:profile:2017"
+	xmlns:mpeg7="urn:tva:mpeg7:2008" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<annotation>
+		<documentation xml:lang="en">This schema consists of datatypes that are normatively defined in ETSI TS 102 822-6-3 v1.2.1</documentation>
+	</annotation>
+	<import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+	<import namespace="urn:tva:mpeg7:2008" schemaLocation="tva_mpeg7.xsd"/>
+	<import namespace="urn:tva:metadata:2017" schemaLocation="tva_metadata_3-1.xsd"/>
+	<import namespace="http://www.w3.org/2001/04/xmlenc#" schemaLocation="xenc-schema.xsd"/>
+	<annotation>
+		<documentation xml:lang="en">Base Types</documentation>
+	</annotation>
+	<complexType name="ResourceIDType">
+		<simpleContent>
+			<extension base="anyURI">
+				<attribute name="id" type="tva:TVAIDType"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="EncryptedResourceIDType">
+		<sequence>
+			<element ref="xenc:EncryptedData"/>
+			<element ref="xenc:EncryptedKey"/>
+		</sequence>
+	</complexType>
+	<group name="ResourceIDGroup">
+		<choice>
+			<element name="ResourceID" type="tvap:ResourceIDType"/>
+			<element name="EncryptedResourceID" type="tvap:EncryptedResourceIDType"/>
+		</choice>
+	</group>
+	<simpleType name="SelectTypeType">
+		<restriction base="string">
+			<enumeration value="xpath"/>
+			<enumeration value="abbreviated"/>
+		</restriction>
+	</simpleType>
+	<complexType name="SelectType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="type" type="tvap:SelectTypeType" use="optional"
+					default="abbreviated"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="StatusDescriptionType">
+		<complexContent>
+			<extension base="mpeg7:TextualType">
+				<attribute name="href" type="mpeg7:termReferenceType" use="optional"/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="StatusType">
+		<sequence>
+			<element name="StatusDescription" type="tvap:StatusDescriptionType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</sequence>
+		<attribute name="code" use="required">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="OK"/>
+					<enumeration value="Failed"/>
+				</restriction>
+			</simpleType>
+		</attribute>
+		<attribute name="requestIDRef" type="tva:TVAIDRefType" use="optional"/>
+	</complexType>
+	<annotation>
+		<documentation xml:lang="en">Section 5.2.1 Query</documentation>
+	</annotation>
+	<complexType name="QueryType">
+		<sequence>
+			<group ref="tvap:ResourceIDGroup"/>
+			<element name="QueryItem" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="Select" type="tvap:SelectType" minOccurs="0"/>
+					</sequence>
+					<attribute name="itemID" type="tva:TVAIDType"/>
+					<attribute name="changedSince" type="dateTime"/>
+				</complexType>
+			</element>
+		</sequence>
+		<attribute name="queryID" type="tva:TVAIDType"/>
+	</complexType>
+	<element name="Query" type="tvap:QueryType"/>
+	<annotation>
+		<documentation xml:lang="en">Section 5.2.2 Query Response</documentation>
+	</annotation>
+	<complexType name="QueryResponseType">
+		<sequence>
+			<element name="Status" type="tvap:StatusType" maxOccurs="unbounded"/>
+			<element name="Data" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="TVAMain" type="tva:TVAMainType" minOccurs="0"/>
+					</sequence>
+					<attribute name="itemIDRef" type="tva:TVAIDRefType"/>
+				</complexType>
+			</element>
+		</sequence>
+		<attribute name="queryIDRef" type="tva:TVAIDRefType"/>
+		<attribute name="timeStamp" type="dateTime"/>
+	</complexType>
+	<element name="QueryResponse" type="tvap:QueryResponseType"/>
+	<annotation>
+		<documentation xml:lang="en">Section 5.3.1 Modify</documentation>
+	</annotation>
+	<complexType name="ModifyType">
+		<sequence>
+			<group ref="tvap:ResourceIDGroup"/>
+			<element name="Modification" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="Select" type="tvap:SelectType" minOccurs="0"/>
+						<element name="NewData" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="TVAMain" type="tva:TVAMainType" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+					<attribute name="itemID" type="tva:TVAIDType"/>
+					<attribute name="notChangedSince" type="dateTime"/>
+					<attribute name="overrideAllowed" type="boolean" default="0"/>
+				</complexType>
+			</element>
+		</sequence>
+		<attribute name="modifyID" type="tva:TVAIDType"/>
+	</complexType>
+	<element name="Modify" type="tvap:ModifyType"/>
+	<annotation>
+		<documentation xml:lang="en">Section 5.3.2 Modify Response</documentation>
+	</annotation>
+	<complexType name="ModifyResponseType">
+		<sequence>
+			<element name="Status" type="tvap:StatusType" maxOccurs="unbounded"/>
+		</sequence>
+		<attribute name="modifyIDRef" type="tva:TVAIDRefType"/>
+		<attribute name="timeStamp" type="dateTime"/>
+	</complexType>
+	<element name="ModifyResponse" type="tvap:ModifyResponseType"/>
+</schema>

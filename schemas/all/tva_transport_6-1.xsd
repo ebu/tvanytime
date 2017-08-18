@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:tva:transport:2017" xmlns:tns="urn:tva:transport:2017"
+	xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tva="urn:tva:metadata:2017"
+	xmlns:tva2="urn:tva:metadata:extended:2017" xmlns:p3p="http://www.w3.org/2002/01/P3Pv1"
+	xmlns:cr="urn:tva:ContentReferencing:2017" xmlns:rar="urn:tva:ResolvingAuthority:2008"
+	xmlns:mpeg7="urn:tva:mpeg7:2008" elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+	<import namespace="urn:tva:metadata:2017" schemaLocation="tva_metadata_3-1.xsd"/>
+	<import namespace="urn:tva:metadata:extended:2017" schemaLocation="tva2_metadata_3-3.xsd"/>
+	<import namespace="urn:tva:ContentReferencing:2017"
+		schemaLocation="tva_content_referencing_4.xsd"/>
+	<import namespace="urn:tva:ResolvingAuthority:2008"
+		schemaLocation="tva_resolving_authority_4.xsd"/>
+	<import namespace="urn:tva:mpeg7:2008" schemaLocation="tva_mpeg7.xsd"/>
+	<import namespace="http://www.w3.org/2002/01/P3Pv1" schemaLocation="p3pv1.xsd"/>
+	<!-- ##################################################### -->
+	<!-- Section 5.1: get_Data Metadata Retrieval Service      -->
+	<!-- ##################################################### -->
+	<!-- ########### Section 5.1.1: get_Data input ########### -->
+
+	<complexType name="ResourceIDType">
+		<simpleContent>
+			<extension base="anyURI">
+				<attribute name="id" type="ID"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="get_DataType">
+		<sequence>
+			<element name="ResourceID" type="tns:ResourceIDType" minOccurs="0"/>
+			<element name="QueryConstraints">
+				<complexType>
+					<choice>
+						<element name="PredicateBag" type="tns:PredicateBagType"/>
+						<element name="BinaryPredicate" type="tns:BinaryPredicateType"/>
+						<element name="UnaryPredicate" type="tns:UnaryPredicateType"/>
+					</choice>
+				</complexType>
+			</element>
+			<element name="PersonalInformation" type="tva2:ExtendedUserDescriptionType"
+				minOccurs="0"/>
+			<element name="RequestedTables" type="tns:RequestedTablesType"/>
+		</sequence>
+		<attribute name="maxPrograms" type="unsignedInt"/>
+		<attribute name="personalInfoUse" type="boolean" default="true"/>
+	</complexType>
+	<element name="get_Data" type="tns:get_DataType"/>
+	<!-- ####### Section 5.1.1.1: Query Constraints parameter ######## -->
+	<complexType name="PredicateBagType">
+		<sequence maxOccurs="unbounded">
+			<choice>
+				<element name="PredicateBag" type="tns:PredicateBagType"/>
+				<element name="BinaryPredicate" type="tns:BinaryPredicateType"/>
+				<element name="UnaryPredicate" type="tns:UnaryPredicateType"/>
+			</choice>
+		</sequence>
+		<attribute name="contextNode" type="tns:contextNodeIDType"/>
+		<attribute name="negate" type="boolean" default="false"/>
+		<attribute name="type" type="tns:PredicateBagTypeType"/>
+	</complexType>
+	<simpleType name="PredicateBagTypeType">
+		<restriction base="string">
+			<enumeration value="AND"/>
+			<enumeration value="OR"/>
+		</restriction>
+	</simpleType>
+	<complexType name="BinaryPredicateType">
+		<attribute name="fieldID" type="tns:fieldIDType" use="required"/>
+		<attribute name="fieldValue" type="string" use="required"/>
+		<attribute name="test" type="tns:BinaryPredicateTestType" default="equals"/>
+	</complexType>
+	<complexType name="UnaryPredicateType">
+		<attribute name="fieldID" type="tns:fieldIDType" use="required"/>
+		<attribute name="test" type="tns:UnaryPredicateTestType" default="exists"/>
+	</complexType>
+	<simpleType name="BinaryPredicateTestType">
+		<restriction base="string">
+			<enumeration value="equals"/>
+			<enumeration value="not_equals"/>
+			<enumeration value="contains"/>
+			<enumeration value="greater_than"/>
+			<enumeration value="greater_than_or_equals"/>
+			<enumeration value="less_than"/>
+			<enumeration value="less_than_or_equals"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="UnaryPredicateTestType">
+		<restriction base="string">
+			<enumeration value="exists"/>
+		</restriction>
+	</simpleType>
+	<!-- ######## Section 5.1.1.1.1 contextNodeID definition list ######### -->
+	<element name="ContextNodeIDDefinitionList" type="tns:ContextNodeIDDefinitionListType">
+		<key name="UniqueContextNode">
+			<selector xpath="tns:ContextNodeIDDefinition"/>
+			<field xpath="@contextNodeID"/>
+		</key>
+	</element>
+	<complexType name="ContextNodeIDDefinitionListType">
+		<sequence>
+			<element name="ContextNodeIDDefinition" maxOccurs="unbounded">
+				<complexType>
+					<attribute name="contextNodeID" type="NCName"/>
+					<attribute name="contextNodeDefinition" type="tns:contextNodeDefinitionListType"
+					/>
+				</complexType>
+			</element>
+		</sequence>
+		<attribute name="targetNamespace" type="anyURI" use="required"/>
+	</complexType>
+	<simpleType name="contextNodeDefinitionType">
+		<restriction base="token">
+			<pattern value="(/((\i\c*:)?(\i\c*)))*((/text\(\))|(/@((\i\c*:)?(\i\c*))))?"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="contextNodeDefinitionListType">
+		<list itemType="tns:contextNodeDefinitionType"/>
+	</simpleType>
+	<simpleType name="contextNodeIDType">
+		<restriction base="QName"/>
+	</simpleType>
+	<!-- ######## Section 4.1.1.1.2 fieldID definition list ######### -->
+	<element name="FieldIDDefinitionList" type="tns:FieldIDDefinitionListType">
+		<key name="UniqueField">
+			<selector xpath="tns:FieldIDDefinition"/>
+			<field xpath="@fieldID"/>
+		</key>
+	</element>
+	<complexType name="FieldIDDefinitionListType">
+		<sequence>
+			<element name="FieldIDDefinition" maxOccurs="unbounded">
+				<complexType>
+					<attribute name="fieldID" type="NCName"/>
+					<attribute name="fieldDefinition" type="tns:fieldDefinitionListType"/>
+				</complexType>
+			</element>
+		</sequence>
+		<attribute name="targetNamespace" type="anyURI" use="required"/>
+	</complexType>
+	<simpleType name="fieldDefinitionType">
+		<restriction base="token">
+			<pattern value="(/((\i\c*:)?(\i\c*)))*((/text\(\))|(/@((\i\c*:)?(\i\c*))))?"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="fieldDefinitionListType">
+		<list itemType="tns:fieldDefinitionType"/>
+	</simpleType>
+	<simpleType name="fieldIDType">
+		<restriction base="QName"/>
+	</simpleType>
+	<simpleType name="fieldIDListType">
+		<list itemType="tns:fieldIDType"/>
+	</simpleType>
+	<!-- ########### Section 5.1.1.2: View on returned data ########### -->
+	<complexType name="RequestedTablesType">
+		<sequence>
+			<element name="Table" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="RequestedFields" type="tns:FieldListType" minOccurs="0"/>
+						<element name="SortCriteria" type="tns:SortCriteriaType" minOccurs="0"
+							maxOccurs="unbounded"/>
+					</sequence>
+					<attribute name="type" use="required">
+						<simpleType>
+							<restriction base="string">
+								<enumeration value="ContentReferencingTable"/>
+								<enumeration value="ClassificationSchemeTable"/>
+								<enumeration value="ProgramInformationTable"/>
+								<enumeration value="GroupInformationTable"/>
+								<enumeration value="CreditsInformationTable"/>
+								<enumeration value="ProgramLocationTable"/>
+								<enumeration value="ServiceInformationTable"/>
+								<enumeration value="ProgramReviewTable"/>
+								<enumeration value="SegmentInformationTable"/>
+								<enumeration value="PackageTable"/>
+								<enumeration value="InterstitialCampaignTable"/>
+								<enumeration value="RMPITable"/>
+								<enumeration value="CouponTable"/>
+								<enumeration value="TargetingInformationTable"/>
+								<enumeration value="InterstitialTargetingTable"/>
+							</restriction>
+						</simpleType>
+					</attribute>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<!-- ###### Section 5.1.1.2: field list  for requested and available fields ##### -->
+	<complexType name="FieldListType">
+		<sequence>
+			<element name="IdentificationByFieldId" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<attribute name="fieldID" type="tns:fieldIDType" use="required"/>
+				</complexType>
+			</element>
+			<element name="IdentificationByXPath" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<attribute name="XPath" type="string" use="required"/>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<!-- ########### Section 5.1.1.2.1: sort criteria ########### -->
+	<complexType name="SortCriteriaType">
+		<attribute name="fieldID" type="tns:fieldIDType" use="required"/>
+		<attribute name="order" type="tns:SortingOrderType" default="ascending"/>
+	</complexType>
+	<simpleType name="SortingOrderType">
+		<restriction base="string">
+			<enumeration value="ascending"/>
+			<enumeration value="descending"/>
+		</restriction>
+	</simpleType>
+	<!-- ######## Section 5.1.2: get_Data output ######### -->
+	<element name="get_Data_Result" type="tns:get_Data_ResultType"/>
+	<complexType name="get_Data_ResultType">
+		<sequence>
+			<element name="TableSortingInformation" type="tns:RequestedTablesType" minOccurs="0"/>
+			<element ref="tva:TVAMain" minOccurs="0"/>
+			<element ref="cr:ContentReferencingTable" minOccurs="0"/>
+			<element name="InvalidFragments" type="tns:InvalidFragmentsType" minOccurs="0"/>
+		</sequence>
+		<attribute name="serviceVersion" type="unsignedInt" use="required"/>
+		<attribute name="truncated" type="boolean"/>
+	</complexType>
+	<!-- ######## Section 5.1.2.4: Indicating invalid fragments ######### -->
+	<complexType name="InvalidFragmentsType">
+		<sequence>
+			<element name="Fragment" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<attributeGroup ref="tva:fragmentIdentification"/>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<!-- ########################################################### -->
+	<!-- Section 5.2 submit_Data User Description Submission Service -->
+	<!-- ########################################################### -->
+	<!-- ########### Section 5.2.1 submit_Data input ############### -->
+	<element name="submit_Data" type="tns:submit_DataType"/>
+	<complexType name="submit_DataType">
+		<sequence>
+			<element name="UsageHistory" type="mpeg7:UsageHistoryType"/>
+		</sequence>
+	</complexType>
+	<!-- ############# Section 5.2.2 submit_Data result ############ -->
+	<element name="submit_Data_Result" type="tns:submit_Data_ResultType"/>
+	<complexType name="submit_Data_ResultType">
+		<attribute name="serviceVersion" type="unsignedInt" use="required"/>
+	</complexType>
+	<!-- ########################################################### -->
+	<!-- Section 5.3 upload_Personal_Data User Description Submission Service -->
+	<!-- ########################################################### -->
+	<!-- ########### Section 5.3.1 upload_Personal_Data input ############### -->
+	<element name="upload_Personal_Data" type="tns:upload_Personal_DataType"/>
+	<complexType name="upload_Personal_DataType">
+		<sequence>
+			<element name="UserInformation" type="tva2:ExtendedUserDescriptionType"
+				maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<!-- ############# Section 5.3.2 upload_Personal_Data result ############ -->
+	<element name="upload_Personal_Data_Result" type="tns:upload_Personal_Data_ResultType"/>
+	<complexType name="upload_Personal_Data_ResultType">
+		<attribute name="serviceVersion" type="unsignedInt" use="required"/>
+		<attribute name="status" use="required">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="success"/>
+					<enumeration value="failed"/>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	<!-- ########################################################### -->
+	<!-- Section 5.4 clear_Personal_Data User Description Submission Service -->
+	<!-- ########################################################### -->
+	<!-- ########### Section 5.4.1 clear_Personal_Data input ############### -->
+	<element name="clear_Personal_Data" type="tns:clear_Personal_DataType"/>
+	<complexType name="clear_Personal_DataType">
+		<sequence>
+			<element name="TimeFrom" type="tva:TVATimeType" minOccurs="0"/>
+			<element name="TimeTo" type="tva:TVATimeType" minOccurs="0"/>
+			<element name="TargetTable" type="tns:PersonalInformationTableType"
+				maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<simpleType name="PersonalInformationTableType">
+		<restriction base="string">
+			<enumeration value="All"/>
+			<enumeration value="UserInformationTable"/>
+			<enumeration value="UsageEnvironment"/>
+			<enumeration value="UsageHistory"/>
+			<enumeration value="UserPreference"/>
+			<enumeration value="BioGraphicInformation"/>
+			<enumeration value="AccessibilityInformation"/>
+			<enumeration value="TerminalInformationTable"/>
+			<enumeration value="NetworkInformationTable"/>
+			<enumeration value="NaturalEnvironmentInformationTable"/>
+		</restriction>
+	</simpleType>
+	<!-- ############# Section 5.4.2 clear_Personal_Data result ############ -->
+	<element name="clear_Personal_Data_Result" type="tns:clear_Personal_Data_ResultType"/>
+	<complexType name="clear_Personal_Data_ResultType">
+		<attribute name="serviceVersion" type="unsignedInt" use="required"/>
+		<attribute name="status" use="required">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="success"/>
+					<enumeration value="failed"/>
+					<enumeration value="no data"/>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	<!-- ########################################################### -->
+	<!-- ############ Section 6.2 Error code reporting ############# -->
+	<!-- ########################################################### -->
+	<element name="ErrorReport" type="tns:ErrorReportType"/>
+	<complexType name="ErrorReportType">
+		<sequence>
+			<element name="Error" type="tns:ErrorType" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="ErrorType">
+		<sequence>
+			<element name="Reason" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+		<attribute name="errorCode" type="tns:errorCodeType" use="required"/>
+		<attribute name="fields" type="tns:fieldIDListType"/>
+	</complexType>
+	<simpleType name="errorCodeType">
+		<restriction base="string">
+			<enumeration value="FatalError"/>
+			<enumeration value="InvalidRequest"/>
+			<enumeration value="Unsupported"/>
+			<enumeration value="UnrecognizedVersion"/>
+			<enumeration value="UnspecifiedError"/>
+			<enumeration value="UnsupportedQueryField"/>
+			<enumeration value="UnsupportedSortField"/>
+			<enumeration value="InvalidFieldID"/>
+			<enumeration value="InvalidFieldValue"/>
+		</restriction>
+	</simpleType>
+	<!-- ############################################################ -->
+	<!-- Section 7.1 describe_get_Data Capability Description Service -->
+	<!-- ############################################################ -->
+	<!-- ######### describe_get_Data input (no parameters) ########## -->
+	<element name="describe_get_Data" type="tns:describe_get_DataType"/>
+	<complexType name="describe_get_DataType"/>
+	<!-- ########### Section 7.1 describe_get_Data output ########### -->
+	<element name="describe_get_Data_Result" type="tns:describe_get_Data_ResultType"/>
+	<complexType name="describe_get_Data_ResultType">
+		<sequence>
+			<element name="Name" type="string" minOccurs="0"/>
+			<element name="Description" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="CollationURI" type="anyURI" minOccurs="0"/>
+			<element name="ExtendedFieldList" type="tns:FieldIDDefinitionListType" minOccurs="0">
+				<key name="UniqueExtendedFields">
+					<selector xpath="tns:FieldIDDefinition"/>
+					<field xpath="@fieldID"/>
+				</key>
+			</element>
+			<element name="AuthorityList" type="tns:AuthorityListType" minOccurs="0"/>
+			<element name="AvailableTables" type="tns:AvailableTableListType"/>
+			<element name="RequestedFieldsCapability" type="boolean" minOccurs="0"/>
+			<element name="PersonalInformationHandling" type="tns:PersonalInformationHandlingType"
+				minOccurs="0"/>
+			<element name="UpdateCapability" type="tns:updateCapabilityType" minOccurs="0"/>
+		</sequence>
+		<attribute name="serviceVersion" type="unsignedInt" use="required"/>
+	</complexType>
+	<complexType name="PersonalInformationHandlingType">
+		<sequence>
+			<element name="PersonalInformationSource" type="tns:PersonalInformationSourceType"
+				maxOccurs="unbounded"/>
+			<element name="PersonalInformationTable" type="tns:PersonalInformationTableType"/>
+		</sequence>
+	</complexType>
+	<simpleType name="PersonalInformationSourceType">
+		<restriction base="string">
+			<enumeration value="embedded"/>
+			<enumeration value="byUpload"/>
+			<enumeration value="byResource"/>
+		</restriction>
+	</simpleType>
+	<!-- ########### Section 7.1.1: The Authority List ########### -->
+	<complexType name="AuthorityListType">
+		<sequence>
+			<element name="Authority" type="string" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<!-- ########### Section 7.1.2 Available tables information ########### -->
+	<complexType name="AvailableTableListType">
+		<sequence>
+			<element name="Table" type="tns:AvailableTableBase" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="AvailableTableBase" abstract="true">
+		<sequence>
+			<element name="AuthorityList" type="tns:AuthorityListType" minOccurs="0"/>
+			<element name="AvailableFields" type="tns:FieldListType" minOccurs="0"/>
+		</sequence>
+		<attribute name="canSort" type="tns:fieldIDListType"/>
+		<attribute name="canQuery" type="tns:fieldIDListType"/>
+	</complexType>
+	<complexType name="ContentReferencingTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase">
+				<sequence>
+					<element ref="rar:ResolvingAuthorityRecordTable"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ClassificationSchemeTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="ProgramInformationTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="GroupInformationTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="ProgramLocationTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase">
+				<sequence>
+					<element name="AvailableLocations">
+						<complexType>
+							<sequence>
+								<element name="Availability" type="duration" minOccurs="0"/>
+								<element name="ServiceURL" type="anyURI" maxOccurs="unbounded"/>
+							</sequence>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ProgramReviewTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="SegmentInformationTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="ServiceInformationTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="CreditInformationTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="PackageTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="InterstitialCampaignTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="RMPITable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="CouponTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="TargetingInformationTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+	<complexType name="InterstitialTargetingTable">
+		<complexContent>
+			<extension base="tns:AvailableTableBase"/>
+		</complexContent>
+	</complexType>
+
+	<!-- ########## Section 7.1.4 Description of update capabilities ########## -->
+	<complexType name="updateCapabilityType">
+		<attribute name="versionRequest" type="boolean" default="true"/>
+		<attribute name="invalidResponse" type="boolean" default="true"/>
+	</complexType>
+	<!-- ############################################################### -->
+	<!-- Section 7.2 describe_submit_Data Capability Description Service -->
+	<!-- ############################################################### -->
+	<!-- ######### describe_submit_Data input (no parameters) ########## -->
+	<element name="describe_submit_Data" type="tns:describe_submit_DataType"/>
+	<complexType name="describe_submit_DataType"/>
+	<!-- ########### Section 7.2 describe_submit_Data output ########### -->
+	<element name="describe_submit_Data_Result" type="tns:describe_submit_Data_ResultType"/>
+	<complexType name="describe_submit_Data_ResultType">
+		<sequence>
+			<element name="Name" type="string" minOccurs="0"/>
+			<element name="Description" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="RequestedTables" type="tns:RequestedSubmitTablesType"/>
+			<element ref="p3p:POLICY" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="RequestedSubmitTablesType">
+		<sequence>
+			<element name="Table" maxOccurs="unbounded">
+				<complexType>
+					<attribute name="type" use="required">
+						<simpleType>
+							<restriction base="string">
+								<enumeration value="UserPreferences"/>
+								<enumeration value="UsageHistory"/>
+							</restriction>
+						</simpleType>
+					</attribute>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<!-- ############################################################### -->
+	<!-- Section 7.3 describe_upload_Personal_Data Capability Description Service -->
+	<!-- ############################################################### -->
+	<!-- ######### describe_upload_Personal_Data input ########## -->
+	<element name="describe_upload_Personal_Data" type="tns:describe_upload_Personal_DataType"/>
+	<complexType name="describe_upload_Personal_DataType"/>
+	<!-- ########### Section 7.3 describe_upload_Personal_Data output ########### -->
+	<element name="describe_upload_Personal_Data_Result"
+		type="tns:describe_upload_Personal_Data_ResultType"/>
+	<complexType name="describe_upload_Personal_Data_ResultType">
+		<sequence>
+			<element name="Name" type="string" minOccurs="0"/>
+			<element name="Description" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="UploadableTable" type="tns:PersonalInformationTableType"
+				maxOccurs="unbounded"/>
+			<element ref="p3p:POLICY" minOccurs="0"/>
+		</sequence>
+	</complexType>
+</schema>

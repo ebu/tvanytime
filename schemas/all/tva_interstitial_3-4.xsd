@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:tva:metadata:interstitial:2017"
+	xmlns="http://www.w3.org/2001/XMLSchema" xmlns:mpeg7="urn:tva:mpeg7:2008"
+	xmlns:tva="urn:tva:metadata:2017" xmlns:int="urn:tva:metadata:interstitial:2017"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<annotation>
+		<documentation xml:lang="en">This schema consists of datatypes that are normatively defined in ETSI TS 102 822-3-4</documentation>
+	</annotation>
+	<import namespace="urn:tva:metadata:2017" schemaLocation="tva_metadata_3-1.xsd"/>
+	<import namespace="urn:tva:mpeg7:2008" schemaLocation="tva_mpeg7.xsd"/>
+	<annotation>
+		<documentation>7.3 Targeting Controlled Terms</documentation>
+	</annotation>
+	<complexType name="TermConstraintsType">
+		<attribute name="simpleType" type="string" use="required"/>
+		<attribute name="namespace" type="anyURI" use="optional"/>
+	</complexType>
+	<complexType name="TargetingControlledTermsType">
+		<complexContent>
+			<extension base="tva:TVATermDefinitionType">
+				<sequence>
+					<element name="InputParameterType" type="int:TermConstraintsType" minOccurs="0"/>
+					<element name="ReturnType" type="int:TermConstraintsType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<annotation>
+		<documentation>7.4 Expressing Rules</documentation>
+	</annotation>
+	<annotation>
+		<documentation>7.4.1 Predicate Types</documentation>
+	</annotation>
+	<complexType name="RuleMethodType">
+		<sequence>
+			<choice>
+				<element name="MethodParameter" type="anySimpleType" minOccurs="0"/>
+				<element name="RuleMethod" type="int:RuleMethodType" minOccurs="0"/>
+			</choice>
+		</sequence>
+		<attribute name="methodName" type="mpeg7:termReferenceType" use="required"/>
+	</complexType>
+	<complexType name="ConstantValueType">
+		<attribute name="value" type="anySimpleType" use="required"/>
+	</complexType>
+	<complexType name="PredicateType">
+		<sequence>
+			<choice maxOccurs="2">
+				<element name="ConstantValue" type="int:ConstantValueType"/>
+				<element name="RuleMethod" type="int:RuleMethodType"/>
+			</choice>
+		</sequence>
+		<attribute name="negate" type="boolean" default="false"/>
+		<attribute name="test" type="int:PredicateTestType" default="equals"/>
+	</complexType>
+	<simpleType name="PredicateTestType">
+		<restriction base="string">
+			<enumeration value="equals"/>
+			<enumeration value="not_equals"/>
+			<enumeration value="contains"/>
+			<enumeration value="greater_than"/>
+			<enumeration value="greater_than_or_equals"/>
+			<enumeration value="less_than"/>
+			<enumeration value="less_than_or_equals"/>
+			<enumeration value="exists"/>
+		</restriction>
+	</simpleType>
+	<annotation>
+		<documentation>7.4.2 Predicate Bag Type</documentation>
+	</annotation>
+	<complexType name="RuleRefType">
+		<attribute name="ref" type="tva:TVAIDRefType" use="required"/>
+	</complexType>
+	<simpleType name="PredicateBagTypeType">
+		<restriction base="string">
+			<enumeration value="AND"/>
+			<enumeration value="OR"/>
+		</restriction>
+	</simpleType>
+	<complexType name="PredicateBagType">
+		<sequence maxOccurs="unbounded">
+			<choice>
+				<element name="PredicateBag" type="int:PredicateBagType"/>
+				<element name="Predicate" type="int:PredicateType"/>
+				<element name="RuleRef" type="int:RuleRefType"/>
+			</choice>
+		</sequence>
+		<attribute name="negate" type="boolean" default="false"/>
+		<attribute name="type" type="int:PredicateBagTypeType"/>
+	</complexType>
+	<annotation>
+		<documentation>7.4.3 Rule Type</documentation>
+	</annotation>
+	<complexType name="OtherRuleLanguageType">
+		<attribute name="ruleLanguage" type="mpeg7:termReferenceType" use="required"/>
+		<attribute name="href" type="anyURI" use="required"/>
+	</complexType>
+	<complexType name="RuleType">
+		<sequence>
+			<choice minOccurs="0" maxOccurs="unbounded">
+				<element name="PredicateBag" type="int:PredicateBagType"/>
+				<element name="Predicate" type="int:PredicateType"/>
+				<element name="RuleRef" type="int:RuleRefType"/>
+			</choice>
+			<element name="OtherRuleLanguage" type="int:OtherRuleLanguageType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</sequence>
+		<attribute name="rule_id" type="tva:TVAIDType" use="optional"/>
+		<attributeGroup ref="tva:fragmentIdentification"/>
+	</complexType>
+	<complexType name="RulesType">
+		<sequence>
+			<element name="rule" type="int:RuleType" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="RulesTableType">
+		<sequence>
+			<element name="Rule" type="int:RuleType" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<annotation>
+		<documentation>7.5 Interstitial Framework</documentation>
+	</annotation>
+	<annotation>
+		<documentation>7.5.1 Core Schema Types</documentation>
+	</annotation>
+	<complexType name="ConditionType">
+		<attribute name="require" type="tva:TVAIDRefsType"/>
+		<attribute name="except" type="tva:TVAIDRefsType"/>
+	</complexType>
+	<complexType name="ContentRefType">
+		<sequence>
+			<element name="Condition" type="int:ConditionType" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="ContentRef" type="tva:CRIDRefType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<annotation>
+		<documentation>7.6 Interstitial Break and Cascading</documentation>
+	</annotation>
+	<complexType name="InterstitialBreakType">
+		<sequence>
+			<element name="InterstitialBreakSelectionRule" type="int:RuleType" minOccurs="0"/>
+			<element name="PodSubstitution" type="int:PodSubstitutionType" minOccurs="0"
+				maxOccurs="unbounded"/>
+			<element name="SpotSubstitution" type="int:SpotSubstitutionType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</sequence>
+		<attributeGroup ref="tva:fragmentIdentification"/>
+	</complexType>
+	<complexType name="ReplacementPodType">
+		<sequence>
+			<element name="Condition" type="int:ConditionType" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="Spot" type="tva:CRIDRefType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+		<attribute name="podId" type="tva:TVAIDType"/>
+	</complexType>
+	<annotation>
+		<documentation>7.7 Pod Substitution Type</documentation>
+	</annotation>
+	<complexType name="PodSubstitutionType">
+		<sequence>
+			<element name="ReplacementPod" type="int:ReplacementPodType" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<annotation>
+		<documentation>7.8 Spot Substitution Type</documentation>
+	</annotation>
+	<complexType name="SpotSubstitutionType">
+		<sequence>
+			<element name="SpotSelectionRule" type="int:RuleType"/>
+			<element name="ReplacementSpot" type="int:ContentRefType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<annotation>
+		<documentation>8. Recording Cache</documentation>
+	</annotation>
+	<complexType name="ContentListType">
+		<sequence>
+			<element name="Item" type="int:ContentRefType" maxOccurs="unbounded"/>
+		</sequence>
+		<attributeGroup ref="tva:fragmentIdentification"/>
+	</complexType>
+	<complexType name="RecordingCacheType">
+		<sequence>
+			<element name="Request" type="int:ContentListType" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="Replace" type="int:ContentListType" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="Expire" type="int:ContentListType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<annotation>
+		<documentation>9. Root Types</documentation>
+	</annotation>
+	<complexType name="InterstitialTableType">
+		<sequence>
+			<element name="InterstitialBreak" type="int:InterstitialBreakType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="TargetingTableType">
+		<sequence>
+			<element name="RulesTable" type="int:RulesType" minOccurs="0"/>
+			<element name="RecordingCache" type="int:RecordingCacheType" minOccurs="0"/>
+			<element name="InterstitialTable" type="int:InterstitialTableType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+</schema>

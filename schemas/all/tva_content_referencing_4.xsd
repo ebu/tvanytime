@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:tva:ContentReferencing:2017" xmlns:tva="urn:tva:metadata:2017"
+    xmlns="http://www.w3.org/2001/XMLSchema" xmlns:cr="urn:tva:ContentReferencing:2017"
+    elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <import namespace="urn:tva:metadata:2017" schemaLocation="tva_metadata_3-1.xsd"/>
+    <element name="ContentReferencingTable" type="cr:ContentReferencingTableType">
+        <annotation>
+            <documentation>A document conforming to the TV Anytime content referencing
+            specification</documentation>
+        </annotation>
+    </element>
+    <complexType name="ContentReferencingTableType">
+        <sequence>
+            <element name="Result" type="cr:ResultType" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute name="version" type="float" use="required"/>
+    </complexType>
+    <simpleType name="AcquisitionDirectiveType">
+        <restriction base="string">
+            <enumeration value="all"/>
+            <enumeration value="any"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="ResolutionStatusType">
+        <restriction base="string">
+            <enumeration value="resolved"/>
+            <enumeration value="discard CRID"/>
+            <enumeration value="cannot yet resolve"/>
+            <enumeration value="unable to resolve"/>
+        </restriction>
+    </simpleType>
+    <complexType name="ResultType">
+        <choice>
+            <sequence>
+                <element name="CRIDResult" type="cr:CRIDResultType" minOccurs="0"
+                    maxOccurs="unbounded"/>
+            </sequence>
+            <sequence>
+                <element name="LocationsResult" type="cr:LocationsResultType" minOccurs="0"
+                    maxOccurs="unbounded"/>
+            </sequence>
+        </choice>
+        <attribute name="CRID" type="tva:CRIDType" use="required"/>
+        <attribute name="complete" type="boolean" use="required"/>
+        <attribute name="acquire" type="cr:AcquisitionDirectiveType" use="required"/>
+        <attribute name="status" type="cr:ResolutionStatusType" use="required"/>
+        <attribute name="reresolveDate" type="dateTime" use="optional"/>
+    </complexType>
+    <complexType name="CRIDResultType">
+        <sequence>
+            <element name="Crid" type="tva:CRIDType" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <complexType name="LocatorType">
+        <simpleContent>
+            <extension base="anyURI">
+                <attribute name="instanceMetadataId" type="tva:InstanceMetadataIdType"
+                    use="optional"/>
+                <attribute name="weight" type="positiveInteger" use="optional" default="1"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="StructuredLocatorType" abstract="true">
+        <attribute name="instanceMetadataId" type="tva:InstanceMetadataIdType" use="optional"/>
+        <attribute name="weight" type="positiveInteger" use="optional" default="1"/>
+    </complexType>
+    <simpleType name="DeliveryModeType">
+        <restriction base="string">
+            <enumeration value="scheduled"/>
+            <enumeration value="ondemand"/>
+        </restriction>
+    </simpleType>
+    <complexType name="TimeAndURLType">
+        <simpleContent>
+            <extension base="anyURI">
+                <attribute name="mode" type="cr:DeliveryModeType" use="optional" default="scheduled"/>
+                <attribute name="start" type="dateTime" use="required"/>
+                <attribute name="duration" type="duration" use="optional"/>
+                <attribute name="end" type="dateTime" use="optional"/>
+                <attribute name="instanceMetadataId" type="tva:InstanceMetadataIdType"
+                    use="optional"/>
+                <attribute name="weight" type="positiveInteger" use="optional" default="1"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="LocationsResultType">
+        <sequence maxOccurs="unbounded">
+            <choice>
+                <element name="Locator" type="cr:LocatorType"/>
+                <element name="DecomposedLocator" type="cr:TimeAndURLType"/>
+                <element name="StructuredLocator" type="cr:StructuredLocatorType"/>
+            </choice>
+        </sequence>
+    </complexType>
+</schema>

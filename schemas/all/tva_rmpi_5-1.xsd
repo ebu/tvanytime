@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:tva:rmpi:2017" xmlns:rmpi="urn:tva:rmpi:2017"
+	xmlns:tva="urn:tva:metadata:2017" xmlns:mpeg7="urn:tva:mpeg7:2008"
+	xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+	attributeFormDefault="unqualified" xmlns:ns1="urn:tva:metadata:2017">
+
+	<import namespace="urn:tva:metadata:2017" schemaLocation="tva_metadata_3-1.xsd"/>
+	<import namespace="urn:tva:mpeg7:2008" schemaLocation="tva_mpeg7.xsd"/>
+
+	<annotation>
+		<documentation>TV-Anytime Forum (TVAF) Rights Management and Protection Information (RMPI)</documentation>
+	</annotation>
+	<annotation>
+		<documentation xml:lang="en">This schema consists of datatypes that are normatively defined in ETSI TS 102 822-5-1 v1.2.1 (2005-06)</documentation>
+	</annotation>
+	<complexType name="RMPI-MBAndMType">
+		<sequence>
+			<element name="AncillaryRMPI" type="rmpi:AncillaryRMPIType"/>
+			<element name="ExtendRights" type="rmpi:ExtendRightsType"/>
+			<element name="ReceivingDomainRights" type="rmpi:ReceivingDomainRightsType"/>
+			<element name="AnyDomainRights" type="rmpi:AnyDomainRightsType"/>
+		</sequence>
+	</complexType>
+	<complexType name="ExtendRightsType">
+		<sequence>
+			<choice>
+				<sequence>
+					<element name="ExtendRightsFlagGranted" type="rmpi:GrantedType"/>
+					<element name="SecurityLevel" type="rmpi:SecurityLevelType"/>
+					<element name="SourceOfAdditionalRights" type="string"/>
+				</sequence>
+				<element name="ExtendRightsFlagNotGranted" type="rmpi:NotGrantedType"/>
+			</choice>
+		</sequence>
+	</complexType>
+	<simpleType name="SecurityLevelType">
+		<restriction base="string">
+			<enumeration value="level 0"/>
+			<enumeration value="level 1"/>
+			<enumeration value="level 2"/>
+			<enumeration value="level 3"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="GrantedNotGrantedType">
+		<restriction base="string">
+			<enumeration value="granted"/>
+			<enumeration value="not granted"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="GrantedType">
+		<restriction base="string">
+			<enumeration value="granted"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="NotGrantedType">
+		<restriction base="string">
+			<enumeration value="not granted"/>
+		</restriction>
+	</simpleType>
+	<complexType name="BasicSetOfRightsType" abstract="true">
+		<sequence>
+			<element name="PlayRightFlag" type="rmpi:GrantedNotGrantedType"/>
+			<element name="AnalogueExportRight" type="rmpi:AnalogueExportRightType"/>
+			<element name="DigitalExportSDRight" type="rmpi:DigitalExportRightType"/>
+			<element name="DigitalExportHDRight" type="rmpi:DigitalExportRightType"/>
+			<element name="SecurityLevel" type="rmpi:SecurityLevelType"/>
+			<choice minOccurs="0">
+				<element name="BufferDuration" type="rmpi:BufferDurationType"/>
+				<element name="TimeWindow" type="rmpi:TimeWindowType"/>
+			</choice>
+			<element name="GeographicalControl" type="string"/>
+		</sequence>
+	</complexType>
+	<complexType name="AnalogueExportRightType">
+		<sequence>
+			<choice>
+				<element name="AnalogueExportRightFlagNotGranted" type="rmpi:NotGrantedType"/>
+				<sequence>
+					<element name="AnalogueExportRightFlagGranted" type="rmpi:GrantedType"/>
+					<element name="AnalogueExportSignalling"
+						type="rmpi:AnalogueExportSignallingType" minOccurs="0"/>
+					<element name="AnalogueExportSDControl" type="rmpi:ControlType" minOccurs="0"/>
+				</sequence>
+			</choice>
+		</sequence>
+	</complexType>
+	<simpleType name="ControlType">
+		<restriction base="string">
+			<enumeration value="controlled"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="AnalogueExportSignallingType">
+		<restriction base="string">
+			<enumeration value="immediate viewing"/>
+			<enumeration value="storage bound"/>
+		</restriction>
+	</simpleType>
+	<complexType name="DigitalExportRightType">
+		<sequence>
+			<choice>
+				<element name="DigitalExportRightFlagNotGranted" type="rmpi:NotGrantedType"/>
+				<sequence>
+					<element name="DigitalExportRightFlagGranted" type="rmpi:GrantedType"/>
+					<element name="DigitalExportControl" type="rmpi:DigitalExportControlType"
+						minOccurs="0"/>
+				</sequence>
+			</choice>
+		</sequence>
+	</complexType>
+	<simpleType name="DigitalExportControlType">
+		<restriction base="string">
+			<enumeration value="immediate viewing"/>
+			<enumeration value="storage bound"/>
+			<enumeration value="RMP trusted"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="BufferDurationType">
+		<restriction base="string">
+			<enumeration value="immediate viewing"/>
+			<enumeration value="buffered viewing"/>
+		</restriction>
+	</simpleType>
+	<complexType name="TimeWindowType">
+		<sequence>
+			<element name="StartDate" type="rmpi:TVATimeType" minOccurs="0"/>
+			<element name="EndDate" type="rmpi:TVATimeType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="TVATimeType">
+		<sequence>
+			<element name="TimePoint" type="mpeg7:timePointType"/>
+			<element name="Duration" type="mpeg7:durationType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="ReceivingDomainRightsType">
+		<complexContent>
+			<extension base="rmpi:BasicSetOfRightsType">
+				<sequence>
+					<element name="SinglePointOfControl" type="rmpi:SinglePointOfControlType"
+						minOccurs="0"/>
+					<element name="PhysicalProximityFlag" type="rmpi:ControlType" minOccurs="0"/>
+					<element name="SimultaneousRendering" type="rmpi:SimultaneousRenderingType"
+						minOccurs="0"/>
+					<element name="DomainId" type="string" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AnyDomainRightsType">
+		<complexContent>
+			<extension base="rmpi:BasicSetOfRightsType"/>
+		</complexContent>
+	</complexType>
+	<complexType name="SinglePointOfControlType">
+		<sequence>
+			<element name="SinglePointOfControlFlag" type="rmpi:ControlType"/>
+			<element name="SinglePointOfControlId" type="string" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="SimultaneousRenderingType">
+		<sequence>
+			<element name="SimultaneousRenderingFlag" type="rmpi:ControlType"/>
+			<element name="SimultaneousRenderingCount" type="rmpi:SimultaneousRenderingCountType"/>
+		</sequence>
+	</complexType>
+	<simpleType name="SimultaneousRenderingCountType">
+		<restriction base="integer">
+			<minInclusive value="1"/>
+			<maxInclusive value="15"/>
+		</restriction>
+	</simpleType>
+	<complexType name="AncillaryRMPIType">
+		<sequence>
+			<element name="RMPITypeFlag" type="rmpi:RMITypeFlagType"/>
+			<element name="VersionOfRMPI" type="string"/>
+			<element name="OriginOfRMPI" type="string"/>
+			<element name="Cipher" type="tva:ControlledTermType"/>
+			<choice>
+				<element name="MBScramblingControl" type="rmpi:MBScramblingControlType"/>
+				<element name="MScramblingControl" type="rmpi:MScramblingControlType"/>
+			</choice>
+		</sequence>
+	</complexType>
+	<simpleType name="RMITypeFlagType">
+		<restriction base="string">
+			<enumeration value="RMPI-MB"/>
+			<enumeration value="RMPI-M"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="MBScramblingControlType">
+		<restriction base="string">
+			<enumeration value="maintain"/>
+			<enumeration value="change"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="MScramblingControlType">
+		<restriction base="string">
+			<enumeration value="maintained"/>
+			<enumeration value="changed"/>
+		</restriction>
+	</simpleType>
+
+</schema>
