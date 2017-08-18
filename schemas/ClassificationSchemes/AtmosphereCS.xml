@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:AtmosphereCS:2005">
+	<!-- ##################################################################### -->
+	<!--Atmosphere                                                                                     -->
+	<!-- ##################################################################### -->
+	<Term termID="8.0">
+		<Name xml:lang="en">Proprietary</Name>
+	</Term>
+	<Term termID="8.1">
+		<Name xml:lang="en">Alternative</Name>
+		<Definition xml:lang="en">Unconventional, not mainstream</Definition>
+	</Term>
+	<Term termID="8.2">
+		<Name xml:lang="en">Analytical</Name>
+		<Definition xml:lang="en">Factual, in-depth, investigative, probing</Definition>
+	</Term>
+	<Term termID="8.3">
+		<Name xml:lang="en">Astonishing</Name>
+		<Definition xml:lang="en">Amazing, surprising, breathtaking</Definition>
+	</Term>
+	<Term termID="8.4">
+		<Name xml:lang="en">Ambitious</Name>
+		<Definition xml:lang="en">Far reaching, high-aims, strongly determined</Definition>
+	</Term>
+	<Term termID="8.5">
+		<Name xml:lang="en">Black</Name>
+		<Definition xml:lang="en">Bleak, sinister, dark</Definition>
+	</Term>
+	<Term termID="8.6">
+		<Name xml:lang="en">Breathtaking</Name>
+	</Term>
+	<Term termID="8.7">
+		<Name xml:lang="en">Chilling</Name>
+		<Definition xml:lang="en">Hair-raising, spine-tingling</Definition>
+	</Term>
+	<Term termID="8.8">
+		<Name xml:lang="en">Coarse</Name>
+		<Definition xml:lang="en">Crude, lacking refinement, rough, lewd</Definition>
+	</Term>
+	<Term termID="8.9">
+		<Name xml:lang="en">Compelling</Name>
+		<Definition xml:lang="en">Gripping, rousing strong interest, conviction or admiration</Definition>
+	</Term>
+	<Term termID="8.10">
+		<Name xml:lang="en">Confrontational</Name>
+	</Term>
+	<Term termID="8.11">
+		<Name xml:lang="en">Contemporary</Name>
+		<Definition xml:lang="en">Modern in style or design, up-to-date</Definition>
+	</Term>
+	<Term termID="8.12">
+		<Name xml:lang="en">Crazy</Name>
+		<Definition xml:lang="en">Insane, mad, foolish</Definition>
+	</Term>
+	<Term termID="8.13">
+		<Name xml:lang="en">Cutting edge</Name>
+		<Definition xml:lang="en">Leading the way, in the vanguard</Definition>
+	</Term>
+	<Term termID="8.14">
+		<Name xml:lang="en">Eclectic</Name>
+		<Definition xml:lang="en">Mixed, collection, selecting ideas and styles from various sources</Definition>
+	</Term>
+	<Term termID="8.15">
+		<Name xml:lang="en">Edifying</Name>
+		<Definition xml:lang="en">Morally or intellectually improving</Definition>
+	</Term>
+	<Term termID="8.16">
+		<Name xml:lang="en">Exciting</Name>
+		<Definition xml:lang="en">Arousing great interest or enthusiasm, thrilling</Definition>
+	</Term>
+	<Term termID="8.17">
+		<Name xml:lang="en">Fast-moving</Name>
+		<Definition xml:lang="en">Rapid action, adrenaline-charged, dynamic, energetic</Definition>
+	</Term>
+	<Term termID="8.18">
+		<Name xml:lang="en">Frantic</Name>
+		<Definition xml:lang="en">Frenzied, hurried</Definition>
+	</Term>
+	<Term termID="8.19">
+		<Name xml:lang="en">Fun</Name>
+		<Definition xml:lang="en">Lively or playful amusement, enjoyable, not for a serious purpose</Definition>
+	</Term>
+	<Term termID="8.20">
+		<Name xml:lang="en">Gripping</Name>
+	</Term>
+	<Term termID="8.21">
+		<Name xml:lang="en">Gritty</Name>
+		<Definition xml:lang="en">Basic, no frills</Definition>
+	</Term>
+	<Term termID="8.22">
+		<Name xml:lang="en">Gutsy</Name>
+		<Definition xml:lang="en">Full-on, no holds barred, courageous</Definition>
+	</Term>
+	<Term termID="8.23">
+		<Name xml:lang="en">Happy</Name>
+		<Definition xml:lang="en">Feeling or showing pleasure or contentment, upbeat, uplifting</Definition>
+	</Term>
+	<Term termID="8.24">
+		<Name xml:lang="en">Heart-rending</Name>
+		<Definition xml:lang="en">Emotionally-charged, distressing, painful, tear-jerker</Definition>
+	</Term>
+	<Term termID="8.25">
+		<Name xml:lang="en">Heart-warming</Name>
+		<Definition xml:lang="en">Emotionally rewarding or uplifting, charming, delightful, enchanting</Definition>
+	</Term>
+	<Term termID="8.26">
+		<Name xml:lang="en">Hot</Name>
+		<Definition xml:lang="en">Fresh, recent, of the moment</Definition>
+	</Term>
+	<Term termID="8.27">
+		<Name xml:lang="en">Humorous</Name>
+		<Definition xml:lang="en">Amusing, hilarious, lighthearted, witty</Definition>
+	</Term>
+	<Term termID="8.28">
+		<Name xml:lang="en">Innovative</Name>
+		<Definition xml:lang="en">Ground-breaking, landmark, new ideas and methods</Definition>
+	</Term>
+	<Term termID="8.29">
+		<Name xml:lang="en">Insightful</Name>
+	</Term>
+	<Term termID="8.30">
+		<Name xml:lang="en">Inspirational</Name>
+		<Definition xml:lang="en">Uplifting, stimulating creative activity</Definition>
+	</Term>
+	<Term termID="8.31">
+		<Name xml:lang="en">Intriguing</Name>
+		<Definition xml:lang="en">Arousing/inspiring curiosity</Definition>
+	</Term>
+	<Term termID="8.32">
+		<Name xml:lang="en">Irreverent</Name>
+		<Definition xml:lang="en">Anti-establishment, lacking reverence for established principles and ways of behaving</Definition>
+	</Term>
+	<Term termID="8.33">
+		<Name xml:lang="en">Laid back</Name>
+		<Definition xml:lang="en">Calm, relaxed, easy-going</Definition>
+	</Term>
+	<Term termID="8.34">
+		<Name xml:lang="en">Outrageous</Name>
+		<Definition xml:lang="en">Shocking, in-your-face</Definition>
+	</Term>
+	<Term termID="8.35">
+		<Name xml:lang="en">Peaceful</Name>
+	</Term>
+	<Term termID="8.36">
+		<Name xml:lang="en">Powerful</Name>
+		<Definition xml:lang="en">Influential, emotionally-charged, strong</Definition>
+	</Term>
+	<Term termID="8.37">
+		<Name xml:lang="en">Practical</Name>
+	</Term>
+	<Term termID="8.38">
+		<Name xml:lang="en">Rollercoaster</Name>
+		<Definition xml:lang="en">Emotional up and downs, unpredictable, uncontrollable</Definition>
+	</Term>
+	<Term termID="8.39">
+		<Name xml:lang="en">Romantic</Name>
+		<Definition xml:lang="en">About love, being in love</Definition>
+	</Term>
+	<Term termID="8.40">
+		<Name xml:lang="en">Rousing</Name>
+		<Definition xml:lang="en">Stirring, energizing, exciting</Definition>
+	</Term>
+	<Term termID="8.41">
+		<Name xml:lang="en">Sad</Name>
+		<Definition xml:lang="en">Unhappy, causing sorrow, tragic, pitiful</Definition>
+	</Term>
+	<Term termID="8.42">
+		<Name xml:lang="en">Satirical</Name>
+		<Definition xml:lang="en">Irony, used to expose folly or vice, ridicule</Definition>
+	</Term>
+	<Term termID="8.43">
+		<Name xml:lang="en">Serious</Name>
+		<Definition xml:lang="en">Earnest, important, demanding consideration, not frivolous</Definition>
+	</Term>
+	<Term termID="8.44">
+		<Name xml:lang="en">Sexy</Name>
+		<Definition xml:lang="en">Racy, raunchy, steamy, sexually arousing, stimulating</Definition>
+	</Term>
+	<Term termID="8.45">
+		<Name xml:lang="en">Shocking</Name>
+		<Definition xml:lang="en">Causing shock or scandal</Definition>
+	</Term>
+	<Term termID="8.46">
+		<Name xml:lang="en">Silly</Name>
+		<Definition xml:lang="en">Foolish, imprudent, weak-minded</Definition>
+	</Term>
+	<Term termID="8.47">
+		<Name xml:lang="en">Spooky</Name>
+		<Definition xml:lang="en">Creepy, eerie, ghoulish</Definition>
+	</Term>
+	<Term termID="8.48">
+		<Name xml:lang="en">Stunning</Name>
+		<Definition xml:lang="en">Striking, visually impressive or attractive</Definition>
+	</Term>
+	<Term termID="8.49">
+		<Name xml:lang="en">Stylish</Name>
+		<Definition xml:lang="en">Fashionable, elegant</Definition>
+	</Term>
+	<Term termID="8.50">
+		<Name xml:lang="en">Terrifying</Name>
+		<Definition xml:lang="en">Scary, causing extreme fear</Definition>
+	</Term>
+	<Term termID="8.51">
+		<Name xml:lang="en">Thriller</Name>
+		<Definition xml:lang="en">Exciting or sensational story</Definition>
+	</Term>
+	<Term termID="8.52">
+		<Name xml:lang="en">Violent</Name>
+		<Definition xml:lang="en">Involving great physical force, violence</Definition>
+	</Term>
+	<Term termID="8.53">
+		<Name xml:lang="en">Wacky</Name>
+		<Definition xml:lang="en">Crazy, kooky, ridiculous, zany</Definition>
+	</Term>
+</ClassificationScheme>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:TVARoleCS:2011">
+	<!-- ##################################################################### -->
+	<!-- TVAROLE                                                                                  -->
+	<!-- Definition: Key cast roles-->
+	<!-- ##################################################################### -->
+	<mpeg7:Import href="urn:mpeg:mpeg7:cs:RoleCS:2001"/>
+	<Term termID="V708">
+		<Name xml:lang="en">Dubber</Name>
+	</Term>
+	<Term termID="V709">
+		<Name xml:lang="en">Key character</Name>
+	</Term>
+	<Term termID="V106">
+		<Name xml:lang="en">Key talent</Name>
+	</Term>
+	<Term termID="V43">
+		<Name xml:lang="en">Participant</Name>
+	</Term>
+	<Term termID="V813">
+		<Name xml:lang="en">Puppeteer</Name>
+	</Term>
+	<Term termID="V710">
+		<Name xml:lang="en">Stunts</Name>
+	</Term>
+	<Term termID="V80">
+		<Name xml:lang="en">Choreographer</Name>
+	</Term>
+	<Term termID="V484">
+		<Name xml:lang="en">Costume designer</Name>
+	</Term>
+	<Term termID="V83">
+		<Name xml:lang="en">Director of photography</Name>
+	</Term>
+	<Term termID="V714">
+		<Name xml:lang="en">Fight Director</Name>
+	</Term>
+	<Term termID="V487">
+		<Name xml:lang="en">Floor Manager</Name>
+	</Term>
+	<Term termID="V490">
+		<Name xml:lang="en">Post-Production editor</Name>
+	</Term>
+	<Term termID="V715">
+		<Name xml:lang="en">Script Supervisor</Name>
+	</Term>
+	<Term termID="V716">
+		<Name xml:lang="en">Second Assistant Director</Name>
+	</Term>
+	<Term termID="V717">
+		<Name xml:lang="en">Second Unit Director</Name>
+	</Term>
+	<Term termID="V718">
+		<Name xml:lang="en">Sound Designer</Name>
+	</Term>
+	<Term termID="V76">
+		<Name xml:lang="en">Adaptor</Name>
+	</Term>
+	<Term termID="V2">
+		<Name xml:lang="en">Scenario</Name>
+	</Term>
+	<Term termID="V94">
+		<Name xml:lang="en">Treatment/Programme Proposal</Name>
+	</Term>
+	<Term termID="V807">
+		<Name xml:lang="en">Choir</Name>
+	</Term>
+	<Term termID="V42">
+		<Name xml:lang="en">Conductor</Name>
+	</Term>
+	<Term termID="V808">
+		<Name xml:lang="en">Ensemble</Name>
+	</Term>
+	<Term termID="V810">
+		<Name xml:lang="en">Librettist</Name>
+	</Term>
+	<Term termID="V811">
+		<Name xml:lang="en">Lyricist</Name>
+	</Term>
+	<Term termID="V719">
+		<Name xml:lang="en">Music Arranger</Name>
+	</Term>
+	<Term termID="V809">
+		<Name xml:lang="en">Music Group</Name>
+	</Term>
+	<Term termID="V88">
+		<Name xml:lang="en">Orchestra</Name>
+	</Term>
+	<Term termID="V103">
+		<Name xml:lang="en">Announcer</Name>
+	</Term>
+	<Term termID="V720">
+		<Name xml:lang="en">Causeur</Name>
+	</Term>
+	<Term termID="V32">
+		<Name xml:lang="en">Commentary or Commentator</Name>
+	</Term>
+	<Term termID="V483">
+		<Name xml:lang="en">Correspondent</Name>
+	</Term>
+	<Term termID="V486">
+		<Name xml:lang="en">Editor/Producer (News)</Name>
+	</Term>
+	<Term termID="V30">
+		<Name xml:lang="en">Editor-in-chief</Name>
+	</Term>
+	<Term termID="V31">
+		<Name xml:lang="en">Editor-of-the-Day</Name>
+	</Term>
+	<Term termID="V96">
+		<Name xml:lang="en">Expert</Name>
+	</Term>
+	<Term termID="V97">
+		<Name xml:lang="en">Interviewed Guest</Name>
+	</Term>
+	<Term termID="V721">
+		<Name xml:lang="en">News Reader</Name>
+	</Term>
+	<Term termID="V117">
+		<Name xml:lang="en">Witness</Name>
+	</Term>
+	<Term termID="V19">
+		<Name xml:lang="en">Commissioning Broadcaster</Name>
+	</Term>
+	<Term termID="V55">
+		<Name xml:lang="en">Manufacturer</Name>
+	</Term>
+	<Term termID="V20">
+		<Name xml:lang="en">Production Company</Name>
+	</Term>
+	<Term termID="V22">
+		<Name xml:lang="en">Production Department</Name>
+	</Term>
+	<Term termID="V724">
+		<Name xml:lang="en">Assistant Chief Lighting Technician</Name>
+	</Term>
+	<Term termID="V498">
+		<Name xml:lang="en">Broadcast Assistant</Name>
+	</Term>
+	<Term termID="V725">
+		<Name xml:lang="en">Carpenter</Name>
+	</Term>
+	<Term termID="V727">
+		<Name xml:lang="en">Dialogue Coach</Name>
+	</Term>
+	<Term termID="V728">
+		<Name xml:lang="en">Draughtsman</Name>
+	</Term>
+	<Term termID="V485">
+		<Name xml:lang="en">Dresser</Name>
+	</Term>
+	<Term termID="V489">
+		<Name xml:lang="en">Graphic Designer</Name>
+	</Term>
+	<Term termID="V729">
+		<Name xml:lang="en">Hairdresser</Name>
+	</Term>
+	<Term termID="V44">
+		<Name xml:lang="en">Illustrator</Name>
+	</Term>
+	<Term termID="V730">
+		<Name xml:lang="en">Leadman</Name>
+	</Term>
+	<Term termID="V496">
+		<Name xml:lang="en">Scenic Operative</Name>
+	</Term>
+	<Term termID="V77">
+		<Name xml:lang="en">Set Dresser</Name>
+	</Term>
+	<Term termID="V82">
+		<Name xml:lang="en">Visual Editor</Name>
+	</Term>
+	<Term termID="V734">
+		<Name xml:lang="en">Assistant Visual Editor</Name>
+	</Term>
+	<Term termID="V735">
+		<Name xml:lang="en">Clapper Loader</Name>
+	</Term>
+	<Term termID="V736">
+		<Name xml:lang="en">Focus Puller</Name>
+	</Term>
+	<Term termID="V737">
+		<Name xml:lang="en">Foley Artist</Name>
+	</Term>
+	<Term termID="V738">
+		<Name xml:lang="en">Foley Editor</Name>
+	</Term>
+	<Term termID="V739">
+		<Name xml:lang="en">Foley Mixer</Name>
+	</Term>
+	<Term termID="V488">
+		<Name xml:lang="en">Graphic Assistant</Name>
+	</Term>
+	<Term termID="V740">
+		<Name xml:lang="en">Grip</Name>
+	</Term>
+	<Term termID="V741">
+		<Name xml:lang="en">Key Grip</Name>
+	</Term>
+	<Term termID="V742">
+		<Name xml:lang="en">Matte Artist</Name>
+	</Term>
+	<Term termID="V45">
+		<Name xml:lang="en">Photographer</Name>
+	</Term>
+	<Term termID="V743">
+		<Name xml:lang="en">Pyrotechnician</Name>
+	</Term>
+	<Term termID="V494">
+		<Name xml:lang="en">Rigger</Name>
+	</Term>
+	<Term termID="V744">
+		<Name xml:lang="en">Second Assistant Camera</Name>
+	</Term>
+	<Term termID="V745">
+		<Name xml:lang="en">Sound Mixer</Name>
+	</Term>
+	<Term termID="V49">
+		<Name xml:lang="en">Sound Recordist</Name>
+	</Term>
+	<Term termID="V105">
+		<Name xml:lang="en">Special Effects</Name>
+	</Term>
+	<Term termID="V746">
+		<Name xml:lang="en">Vision mixer</Name>
+	</Term>
+	<Term termID="V748">
+		<Name xml:lang="en">Animal Trainer</Name>
+	</Term>
+	<Term termID="V749">
+		<Name xml:lang="en">Armourer</Name>
+	</Term>
+	<Term termID="V812">
+		<Name xml:lang="en">Computer programmer</Name>
+	</Term>
+	<Term termID="V79">
+		<Name xml:lang="en">Consultant</Name>
+	</Term>
+	<Term termID="V750">
+		<Name xml:lang="en">Greensman</Name>
+	</Term>
+	<Term termID="V751">
+		<Name xml:lang="en">Location Manager</Name>
+	</Term>
+	<Term termID="V493">
+		<Name xml:lang="en">Programme Production Researcher</Name>
+	</Term>
+	<Term termID="V495">
+		<Name xml:lang="en">Runner</Name>
+	</Term>
+	<Term termID="V753">
+		<Name xml:lang="en">Sign Language</Name>
+	</Term>
+	<Term termID="V754">
+		<Name xml:lang="en">Subtitles</Name>
+	</Term>
+	<Term termID="V95">
+		<Name xml:lang="en">Translation</Name>
+	</Term>
+	<Term termID="V755">
+		<Name xml:lang="en">Transportation Manager</Name>
+	</Term>
+	<Term termID="V497">
+		<Name xml:lang="en">Assistant Producer</Name>
+	</Term>
+	<Term termID="V110">
+		<Name xml:lang="en">Casting</Name>
+	</Term>
+	<Term termID="V491">
+		<Name xml:lang="en">Production Manager</Name>
+	</Term>
+	<Term termID="V492">
+		<Name xml:lang="en">Production Secretary</Name>
+	</Term>
+	<!--Term termID="V493">
+		DEPRECATED UNDER THIS TERMID ALREADY ATTRIBUTED TO ANOTHER TERM
+		<Name xml:lang="en">Caption Author</Name>
+	</Term-->
+	<Term termID="AD1">
+		<Name xml:lang="en">Advertising Agency</Name>
+	</Term>
+	<Term termID="AD2">
+		<Name xml:lang="en">Advertising Production Company</Name>
+	</Term>
+	<Term termID="AD3">
+		<Name xml:lang="en">Advertiser</Name>
+	</Term>
+	<Term termID="AD4">
+		<Name xml:lang="en">Commissioning Channel</Name>
+	</Term>
+	<Term termID="AD5">
+		<Name xml:lang="en">Commissioning Brand</Name>
+	</Term>
+	<Term termID="AD6">
+		<Name xml:lang="en">Presenter</Name>
+		<Definition xml:lang="en">A person who introduces or hosts a programme.</Definition>
+	</Term>
+	<Term termID="AD7">
+		<Name xml:lang="en">Studio Manager</Name>
+	</Term>
+	<Term termID="AD8">
+		<Name xml:lang="en">Assistant Studio Manager</Name>
+	</Term>
+	<Term termID="AD9">
+		<Name xml:lang="en">Caption Author</Name>
+	</Term>
+	<Term termID="AD10">
+		<Name xml:lang="en">Electrician</Name>
+	</Term>
+	<Term termID="AD11">
+		<Name xml:lang="en">Judge</Name>
+		<Definition xml:lang="en">A person appointed to decide the winners of a contest or competition.</Definition>
+	</Term>
+	<Term termID="AD12">
+		<Name xml:lang="en">Series Editor</Name>
+		<Definition xml:lang="en">Person responsible for the editorial content and themes of a series run of a show and the individual programmes within that series run. Usually a role associated with factual and news programmes.</Definition>
+	</Term>
+	<Term termID="AD13">
+		<Name xml:lang="en">Series Producer</Name>
+		<Definition xml:lang="en">The manager of an entire series run of a programme, usually the individual in charge of finance, personnel, and other non-artistic aspects in the development of the particular series.</Definition>
+	</Term>
+		<Term termID="AD14">
+		<Name xml:lang="en">Aerial Photographer</Name>
+		<Definition xml:lang="en">Person or organisation responsible for filming from the air, usually in a plane or helicopter.</Definition>
+	</Term>
+	<Term termID="AD15">
+		<Name xml:lang="en">Archive Source</Name>
+		<Definition xml:lang="en">The source of archive content or information.</Definition>
+	</Term>
+	<Term termID="AD16">
+		<Name xml:lang="en">Third Assistant Director</Name>
+		<Definition xml:lang="en">Person that works on set with the 1st and sometimes 2nd Assistant Director. For major productions only.</Definition>
+	</Term>
+	<Term termID="AD17">
+		<Name xml:lang="en">Idea Originator</Name>
+		<Definition xml:lang="en">Person whose idea the proposition is based on.</Definition>
+	</Term>
+	<Term termID="AD18">
+		<Name xml:lang="en">Camera Supervisor</Name>
+		<Definition xml:lang="en">Person responsible for overseeing the work of the other Camera Operators and any Camera Assistants working on the studio floor or OB location.</Definition>
+	</Term>
+	<Term termID="AD19">
+		<Name xml:lang="en">Deputy Editor</Name>
+		<Definition xml:lang="en">Person that performs a deputy editor role on news or current affairs style programmes.</Definition>
+	</Term>
+	<Term termID="AD20">
+		<Name xml:lang="en">Format Deviser</Name>
+		<Definition xml:lang="en">Person who devises the format of a programme, including development of the main elements of the programme, such as concept, characters, sometimes which actors, performers or crew should be involved.</Definition>
+	</Term>
+	<Term termID="AD21">
+		<Name xml:lang="en">Dubbing Editor</Name>
+		<Definition xml:lang="en">Person who selects and edits the dialogue, music and sound effects in post-production to create an initial version of the complete soundtrack.</Definition>
+	</Term>
+	<Term termID="AD22">
+		<Name xml:lang="en">Make-up Designer</Name>
+		<Definition xml:lang="en">Designs the look of on-screen performers, using makeup, prosthetics, etc.</Definition>
+	</Term>
+	<Term termID="AD23">
+		<Name xml:lang="en">Music Adviser</Name>
+		<Definition xml:lang="en">Person who provides advice on the music used in a programme.</Definition>
+	</Term>
+	<Term termID="AD24">
+		<Name xml:lang="en">Outside Broadcast Engineering Manager</Name>
+		<Definition xml:lang="en">Person responsible for the set-up and maintenance of outside broadcast equipment.</Definition>
+	</Term>
+	<Term termID="AD25">
+		<Name xml:lang="en">Outside Broadcast Camera Operator</Name>
+		<Definition xml:lang="en">Operator of cameras for an outside broadcast.</Definition>
+	</Term>
+	<Term termID="AD26">
+		<Name xml:lang="en">Outside Broadcast Director</Name>
+		<Definition xml:lang="en">Person who co-ordinates the actions of the staff during outside broadcast to deliver production vision.</Definition>
+	</Term>
+	<Term termID="AD27">
+		<Name xml:lang="en">Outside Broadcast Lighting Technician</Name>
+		<Definition xml:lang="en">Person who is responsible for lighting on an outside broadcast.</Definition>
+	</Term>
+	<Term termID="AD28">
+		<Name xml:lang="en">Outside Broadcast Sound Engineer</Name>
+		<Definition xml:lang="en">Person who is responsible for the sound on an outside broadcast.</Definition>
+	</Term>
+	<Term termID="AD29">
+		<Name xml:lang="en">Question Setter</Name>
+		<Definition xml:lang="en">Person who provides the questions for (e.g.) a panel show or quiz.</Definition>
+	</Term>
+	<Term termID="AD30">
+		<Name xml:lang="en">Rostrum Camera Operator</Name>
+		<Definition xml:lang="en">Operator of specialist camera used to film still object(s) or picture(s).</Definition>
+	</Term>
+	<Term termID="AD31">
+		<Name xml:lang="en">Stage Designer</Name>
+		<Definition xml:lang="en">Person responsible for look of a production (e.g. set, props, costumes). Theatrical productions only.</Definition>
+	</Term>
+	<Term termID="AD32">
+		<Name xml:lang="en">Stage Director</Name>
+		<Definition xml:lang="en">Person responsible for supervising all audience-visible components of show. Theatrical productions only.</Definition>
+	</Term>
+	<Term termID="AD33">
+		<Name xml:lang="en">Stage Lighting Director</Name>
+		<Definition xml:lang="en">Person who is responsible for lighting the set. Theatrical productions only.</Definition>
+	</Term>
+	<Term termID="AD34">
+		<Name xml:lang="en">Stage Manager</Name>
+		<Definition xml:lang="en">Person responsible for co-ordinating the detail of a theatrical production. Helps to deliver director's artistic choices.</Definition>
+	</Term>
+	<Term termID="AD35">
+		<Name xml:lang="en">Stage Production Manager</Name>
+		<Definition xml:lang="en">Person responsible overall for stage management. Theatrical productions only.</Definition>
+	</Term>
+	<Term termID="AD36">
+		<Name xml:lang="en">Studio Camera Operator</Name>
+		<Definition xml:lang="en">Camera operator or supervisor in a studio environment, where there is a need to distinguish between that and other locations.</Definition>
+	</Term>
+	<Term termID="AD37">
+		<Name xml:lang="en">Studio Director</Name>
+		<Definition xml:lang="en">Director in a studio environment, where there is a need to distinguish between that and other locations.</Definition>
+	</Term>
+	<Term termID="AD38">
+		<Name xml:lang="en">Studio Sound Engineer</Name>
+		<Definition xml:lang="en">Person responsible for the sound in a studio environment, where there is a need to distinguish between that and other locations.</Definition>
+	</Term>
+	<Term termID="AD39">
+		<Name xml:lang="en">Outside Broadcast Vision Engineer</Name>
+		<Definition xml:lang="en">Person who is responsible for monitoring and adjusting the output of the cameras on an outside broadcast, either as a vision engineer or supervisor.</Definition>
+	</Term>
+</ClassificationScheme>

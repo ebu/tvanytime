@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:IntendedAudienceCS:2011">
+	<!-- ##################################################################### -->
+	<!--INTENDED AUDIENCE / TARGET GROUP -->
+	<!-- Definition: Programme intended for special audiences defined by age, cultural/ethnic background, profession etc.  -->
+	<!-- ##################################################################### -->
+	<Term termID="4.0">
+		<Name xml:lang="en">Proprietary</Name>
+		<Definition xml:lang="en">For use where proprietary extensions are required, or the use of keywords that do not fit in any classification below</Definition>
+	</Term>
+	<Term termID="4.1">
+		<Name xml:lang="en">GENERAL AUDIENCE</Name>
+		<Definition xml:lang="en">Programmes not intended for a specific target group.</Definition>
+	</Term>
+	<Term termID="4.2">
+		<Name xml:lang="en">AGE GROUPS</Name>
+		<Definition xml:lang="en">The age group levels for which the programme is primarily intended..</Definition>
+		<Term termID="4.2.1">
+			<Name xml:lang="en">Children</Name>
+			<Term termID="4.2.1.0">
+				<Name xml:lang="en">specific single age</Name>
+				<Definition xml:lang="en">This section to be used where a programme targets one specific age</Definition>
+			</Term>
+			<Term termID="4.2.1.1">
+				<Name xml:lang="en">age 4-7</Name>
+				<Definition xml:lang="en">Age ranges are indicative and may vary slightly in each country</Definition>
+			</Term>
+			<Term termID="4.2.1.2">
+				<Name xml:lang="en">age 8-13</Name>
+				<Definition xml:lang="en">Age ranges are indicative and may vary slightly in each country</Definition>
+			</Term>
+			<Term termID="4.2.1.3">
+				<Name xml:lang="en">age 14-15</Name>
+				<Definition xml:lang="en">Age ranges are indicative and may vary slightly in each country</Definition>
+			</Term>
+			<Term termID="4.2.1.4">
+				<Name xml:lang="en">age 0-3</Name>
+				<Definition xml:lang="en">Age ranges are indicative and may vary slightly in each country</Definition>
+			</Term>
+		</Term>
+		<Term termID="4.2.2">
+			<Name xml:lang="en">Adults</Name>
+			<Term termID="4.2.2.1">
+				<Name xml:lang="en">age 16-17</Name>
+				<Definition xml:lang="en">Age ranges are indicative and may vary slightly in each country</Definition>
+			</Term>
+			<Term termID="4.2.2.2">
+				<Name xml:lang="en">age 18-24</Name>
+				<Definition xml:lang="en">Age ranges are indicative and may vary slightly in each country</Definition>
+			</Term>
+			<Term termID="4.2.2.3">
+				<Name xml:lang="en">age 25-34</Name>
+				<Definition xml:lang="en">Age ranges are indicative and may vary slightly in each country</Definition>
+			</Term>
+			<Term termID="4.2.2.4">
+				<Name xml:lang="en">age 35-44</Name>
+				<Definition xml:lang="en">Age ranges are indicative and may vary slightly in each country</Definition>
+			</Term>
+			<Term termID="4.2.2.5">
+				<Name xml:lang="en">age 45-54</Name>
+				<Definition xml:lang="en">Age ranges are indicative and may vary slightly in each country</Definition>
+			</Term>
+			<Term termID="4.2.2.6">
+				<Name xml:lang="en">age 55-64</Name>
+				<Definition xml:lang="en">Age ranges are indicative and may vary slightly in each country</Definition>
+			</Term>
+			<Term termID="4.2.2.7">
+				<Name xml:lang="en">age 65+</Name>
+				<Definition xml:lang="en">Age ranges are indicative and may vary slightly in each country</Definition>
+			</Term>
+			<Term termID="4.2.2.8">
+				<Name xml:lang="en">specific single age</Name>
+				<Definition xml:lang="en">This section to be used where a programme targets one specific age</Definition>
+			</Term>
+		</Term>
+		<Term termID="4.2.3">
+			<Name xml:lang="en">Teenagers</Name>
+			<Definition xml:lang="en">Content aimed at audience members aged 13-19 inclusive.</Definition>
+		</Term>
+		<Term termID="4.2.4">
+			<Name xml:lang="en">Pre-teens</Name>
+			<Definition xml:lang="en">Content aimed at audience members aged 12 or below.</Definition>
+		</Term>
+	</Term>
+	<Term termID="4.3">
+		<Name xml:lang="en">SOCIAL/REGIONAL/MINORITY GROUPS</Name>
+		<Term termID="4.3.1">
+			<Name xml:lang="en">Ethnic</Name>
+			<Definition xml:lang="en">Programme for people differing in language and/or culture E.g. .Local key words to apply (ie Asian, )</Definition>
+			<Term termID="4.3.1.1">
+				<Name xml:lang="en">Immigrant groups</Name>
+				<Definition xml:lang="en">Programme for non-native born people and their immediate descendants, differing in language and/or culture.</Definition>
+			</Term>
+			<Term termID="4.3.1.2">
+				<Name xml:lang="en">Indigenous</Name>
+				<Definition xml:lang="en">Programme for native born people and their immediate descendants, differing in language and/or culture.</Definition>
+			</Term>
+		</Term>
+		<Term termID="4.3.2">
+			<Name xml:lang="en">Religious</Name>
+			<Definition xml:lang="en">Local key words to apply (ie Shinto, Christian, Hindu etc)</Definition>
+		</Term>
+		<Term termID="4.3.3">
+			<Name xml:lang="en">Disabled</Name>
+			<Definition xml:lang="en">Programme for people with one or more disabilities</Definition>
+		</Term>
+	</Term>
+	<Term termID="4.4">
+		<Name xml:lang="en">OCCUPATIONAL GROUPS</Name>
+		<Definition xml:lang="en">The occupation of the consumer for whitch the programme is primarely intended</Definition>
+		<Term termID="4.4.1">
+			<Name xml:lang="en">AB</Name>
+			<Definition xml:lang="en"/>
+			<Term termID="4.4.1.1">
+				<Name xml:lang="en">A</Name>
+				<Definition xml:lang="en">Opinion former, Judge, Member of the govt etc</Definition>
+			</Term>
+			<Term termID="4.4.1.2">
+				<Name xml:lang="en">B</Name>
+				<Definition xml:lang="en">Industry leader, Senior Govt figure, Professionals (Doctors, Lawyers etc) etc</Definition>
+			</Term>
+		</Term>
+		<Term termID="4.4.2">
+			<Name xml:lang="en">C1C2</Name>
+			<Term termID="4.4.2.1">
+				<Name xml:lang="en">C1</Name>
+				<Definition xml:lang="en">"White Collar worker"</Definition>
+			</Term>
+			<Term termID="4.4.2.2">
+				<Name xml:lang="en">C2</Name>
+				<Definition xml:lang="en">Skilled manual labourer</Definition>
+			</Term>
+		</Term>
+		<Term termID="4.4.3">
+			<Name xml:lang="en">DE</Name>
+			<Term termID="4.4.3.1">
+				<Name xml:lang="en">D</Name>
+				<Definition xml:lang="en">General manual labourer</Definition>
+			</Term>
+			<Term termID="4.4.3.2">
+				<Name xml:lang="en">E</Name>
+				<Definition xml:lang="en">Unemployed (+ students!)</Definition>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="4.5">
+		<Name xml:lang="en">OTHER SPECIAL INTEREST/OCCUPATIONAL GROUPS</Name>
+		<Definition xml:lang="en">Local Keywords to apply. (ie Farmer, Student, DIY, Angler, Gay and lesbian,Retired, main shoppers,tourists etc</Definition>
+	</Term>
+	<Term termID="4.6">
+		<Name xml:lang="en">GENDER</Name>
+		<Term termID="4.6.1">
+			<Name xml:lang="en">Primarily for males</Name>
+		</Term>
+		<Term termID="4.6.2">
+			<Name xml:lang="en">Primarily for females</Name>
+		</Term>
+	</Term>
+	<Term termID="4.7">
+		<Name xml:lang="en">GEOGRAPHICAL</Name>
+		<Definition xml:lang="en">The territory for which the programme is primarily intended..</Definition>
+		<Term termID="4.7.1">
+			<Name xml:lang="en">Universal</Name>
+			<Definition xml:lang="en">Intended for all audiences regardless of territory</Definition>
+		</Term>
+		<Term termID="4.7.2">
+			<Name xml:lang="en">Continental</Name>
+			<Definition xml:lang="en">Asia, European</Definition>
+		</Term>
+		<Term termID="4.7.3">
+			<Name xml:lang="en">National</Name>
+			<Definition xml:lang="en">France, S Africa</Definition>
+		</Term>
+		<Term termID="4.7.4">
+			<Name xml:lang="en">Regional</Name>
+			<Definition xml:lang="en">Mid West, Pacific Rim</Definition>
+		</Term>
+		<Term termID="4.7.5">
+			<Name xml:lang="en">Local</Name>
+			<Definition xml:lang="en">Zip Codes, Postcodes, Towns, specific local group</Definition>
+		</Term>
+		<Term termID="4.7.6">
+			<Name xml:lang="en">Multinational</Name>
+			<Definition xml:lang="en">more than one country but not continental</Definition>
+		</Term>
+	</Term>
+	<Term termID="4.8">
+		<Name xml:lang="en">EDUCATION STANDARD</Name>
+		<Term termID="4.8.1">
+			<Name xml:lang="en">Primary</Name>
+		</Term>
+		<Term termID="4.8.2">
+			<Name xml:lang="en">Secondary</Name>
+		</Term>
+		<Term termID="4.8.3">
+			<Name xml:lang="en">Tertiary</Name>
+		</Term>
+		<Term termID="4.8.4">
+			<Name xml:lang="en">Post Graduate/Life Long Learning</Name>
+		</Term>
+	</Term>
+	<Term termID="4.9">
+		<Name xml:lang="en">LIFESTYLE STAGES</Name>
+		<Term termID="4.9.1">
+			<Name xml:lang="en">Single</Name>
+			<Definition xml:lang="en">Single person with no dependants</Definition>
+		</Term>
+		<Term termID="4.9.2">
+			<Name xml:lang="en">Couple</Name>
+			<Definition xml:lang="en">cohabiting adult with no dependants</Definition>
+		</Term>
+		<Term termID="4.9.3">
+			<Name xml:lang="en">Family with Children 0-3</Name>
+			<Definition xml:lang="en">adult with pre school children</Definition>
+		</Term>
+		<Term termID="4.9.4">
+			<Name xml:lang="en">Family with Children 4-7</Name>
+			<Definition xml:lang="en">adult with young children</Definition>
+		</Term>
+		<Term termID="4.9.5">
+			<Name xml:lang="en">Family with Children 8-15</Name>
+			<Definition xml:lang="en">adult with older children</Definition>
+		</Term>
+		<Term termID="4.9.6">
+			<Name xml:lang="en">Family with Children 16+</Name>
+			<Definition xml:lang="en">adult with young dependant adults</Definition>
+		</Term>
+		<Term termID="4.9.7">
+			<Name xml:lang="en">Empty Nester</Name>
+			<Definition xml:lang="en">adult whose dependants have left home</Definition>
+		</Term>
+		<Term termID="4.9.8">
+			<Name xml:lang="en">Retired</Name>
+			<Definition xml:lang="en">single or widowed adult whose dependants have left home</Definition>
+		</Term>
+		<Term termID="4.9.9">
+			<Name xml:lang="en">Family (mixed ages)</Name>
+			<Definition xml:lang="en">adult with dependent children of various ages</Definition>
+		</Term>
+	</Term>
+	<Term termID="4.11">
+		<Name xml:lang="en">LANGUAGE OF TARGET AUDIENCE</Name>
+		<Definition xml:lang="en">As used and maintained by ISO 639-1</Definition>
+	</Term>
+</ClassificationScheme>

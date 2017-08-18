@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:OriginationCS:2011">
+	<!-- ##################################################################### -->
+	<!--ORIGINATION                                                                                     -->
+	<!-- Definition: The original distribution method or platform for the content  -->
+	<!-- ##################################################################### -->
+	<Term termID="5.7">
+		<Name xml:lang="en">Cinema</Name>
+		<Definition xml:lang="en">Made originally for viewing in the cinema</Definition>
+		<Term termID="5.7.1">
+			<Name xml:lang="en">Made on location</Name>
+			<Definition xml:lang="en">.</Definition>
+		</Term>
+		<Term termID="5.7.2">
+			<Name xml:lang="en">Made in studio</Name>
+		</Term>
+		<Term termID="5.7.3">
+			<Name xml:lang="en">Made by the consumer</Name>
+		</Term>
+		<Term termID="5.7.4">
+			<Name xml:lang="en">Produced by major studio</Name>
+		</Term>
+		<Term termID="5.7.5">
+			<Name xml:lang="en">Produced by independent studio</Name>
+		</Term>		
+	</Term>
+	<Term termID="5.8">
+		<Name xml:lang="en">TV</Name>
+		<Definition xml:lang="en">Made originally for viewing on TV screens</Definition>
+		<Term termID="5.8.1">
+			<Name xml:lang="en">Made on location</Name>
+			<Definition xml:lang="en">made at an event in an unstructured environment - where the action is based</Definition>
+			<Term termID="5.8.1.1">
+				<Name xml:lang="en">Live</Name>
+				<Definition xml:lang="en">eg live sporting coverage, Live concerts, Operas etc from theatres</Definition>
+			</Term>
+			<Term termID="5.8.1.2">
+				<Name xml:lang="en">As Live</Name>
+				<Definition xml:lang="en">delayed relay of events - eg olympics frrom different time zone</Definition>
+			</Term>
+			<Term termID="5.8.1.3">
+				<Name xml:lang="en">Edited</Name>
+				<Definition xml:lang="en">edited highlights from event such as Match of the Day, NFL highlights</Definition>
+			</Term>
+		</Term>
+		<Term termID="5.8.2">
+			<Name xml:lang="en">Made in studio</Name>
+			<Definition xml:lang="en">made in a puropse built studio or controlled environment such as quiz show from village hall where the action comes to the equipment required to make the programme</Definition>
+			<Term termID="5.8.2.1">
+				<Name xml:lang="en">Live</Name>
+				<Definition xml:lang="en">News, Weather. Lottery etc</Definition>
+			</Term>
+			<Term termID="5.8.2.2">
+				<Name xml:lang="en">As Live</Name>
+				<Definition xml:lang="en">CNN rebroadcasts, Question Time,</Definition>
+			</Term>
+			<Term termID="5.8.2.3">
+				<Name xml:lang="en">Edited</Name>
+				<Definition xml:lang="en">Sitcoms, most entertainment shows, Dramas etc</Definition>
+			</Term>
+		</Term>
+		<Term termID="5.8.3">
+			<Name xml:lang="en">Made by the consumer</Name>
+			<Definition xml:lang="en">e.g. home video shared between consumer</Definition>
+		</Term>
+	</Term>
+	<Term termID="5.9">
+		<Name xml:lang="en">Radio</Name>
+		<Definition xml:lang="en">Made originally for listening on Radio</Definition>
+		<Term termID="5.9.1">
+			<Name xml:lang="en">Made on location</Name>
+			<Definition xml:lang="en">made at an event in an unstructured environment - where the action is based</Definition>
+			<Term termID="5.9.1.1">
+				<Name xml:lang="en">Live</Name>
+				<Definition xml:lang="en">eg live sporting coverage, Live concerts, Operas etc from theatres</Definition>
+			</Term>
+			<Term termID="5.9.1.2">
+				<Name xml:lang="en">As Live</Name>
+				<Definition xml:lang="en">delayed relay of events - eg olympics frrom different time zone</Definition>
+			</Term>
+			<Term termID="5.9.1.3">
+				<Name xml:lang="en">Edited</Name>
+				<Definition xml:lang="en">edited highlights from events such as Down Your Way,</Definition>
+			</Term>
+		</Term>
+		<Term termID="5.9.2">
+			<Name xml:lang="en">Made in studio</Name>
+			<Definition xml:lang="en">made in a puropse built studio or controlled environment such as quiz show from village hall where the action comes to the equipment required to make the programme</Definition>
+			<Term termID="5.9.2.1">
+				<Name xml:lang="en">Live</Name>
+				<Definition xml:lang="en">DJ hosted programme, live chat show</Definition>
+			</Term>
+			<Term termID="5.9.2.2">
+				<Name xml:lang="en">As Live</Name>
+				<Definition xml:lang="en">repeats of whole previous programmes, deferred relays for rights</Definition>
+			</Term>
+			<Term termID="5.9.2.3">
+				<Name xml:lang="en">Edited</Name>
+				<Definition xml:lang="en">radio drama, documentary etc</Definition>
+			</Term>
+		</Term>
+		<Term termID="5.9.3">
+			<Name xml:lang="en">Made on consumer equipment (home audio)</Name>
+			<Term termID="5.9.3.1">
+				<Name xml:lang="en">Live</Name>
+				<Definition xml:lang="en">live streaming etc</Definition>
+			</Term>
+			<Term termID="5.9.3.2">
+				<Name xml:lang="en">As Live</Name>
+				<Definition xml:lang="en">deferred live stream</Definition>
+			</Term>
+			<Term termID="5.9.3.3">
+				<Name xml:lang="en">Edited</Name>
+				<Definition xml:lang="en">home audio content</Definition>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="5.10">
+		<Name xml:lang="en">Online Distribution</Name>
+		<Definition xml:lang="en">Made originally for distribution over non broadcast networks (streaming or download)</Definition>
+		<Term termID="5.10.1">
+			<Name xml:lang="en">Made on location</Name>
+			<Definition xml:lang="en">made at an event in an unstructured environment - where the action is based</Definition>
+			<Term termID="5.10.1.1">
+				<Name xml:lang="en">Live</Name>
+				<Definition xml:lang="en">eg live sporting coverage, Live concerts, Operas etc from theatres</Definition>
+			</Term>
+			<Term termID="5.10.1.2">
+				<Name xml:lang="en">As Live</Name>
+				<Definition xml:lang="en">delayed relay of events - eg olympics frrom different time zone</Definition>
+			</Term>
+			<Term termID="5.10.1.3">
+				<Name xml:lang="en">Edited</Name>
+				<Definition xml:lang="en">edited highlights from event.</Definition>
+			</Term>
+		</Term>
+		<Term termID="5.10.2">
+			<Name xml:lang="en">Made in studio</Name>
+			<Definition xml:lang="en">made in a puropse built studio or controlled environment</Definition>
+			<Term termID="5.10.2.1">
+				<Name xml:lang="en">Live</Name>
+				<Definition xml:lang="en">News, Weather. Lottery etc</Definition>
+			</Term>
+			<Term termID="5.10.2.2">
+				<Name xml:lang="en">As Live</Name>
+				<Definition xml:lang="en">,</Definition>
+			</Term>
+			<Term termID="5.10.2.3">
+				<Name xml:lang="en">Edited</Name>
+			</Term>
+		</Term>
+		<Term termID="5.10.3">
+			<Name xml:lang="en">Made on consumer equipment</Name>
+			<Definition xml:lang="en">eg home video shared between consumer</Definition>
+			<Term termID="5.10.3.1">
+				<Name xml:lang="en">Live</Name>
+			</Term>
+			<Term termID="5.10.3.2">
+				<Name xml:lang="en">As Live</Name>
+			</Term>
+			<Term termID="5.10.3.3">
+				<Name xml:lang="en">Edited</Name>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="5.11">
+		<Name xml:lang="en">Offline Distribution</Name>
+		<Definition xml:lang="en">CDs DVDs Other removable media</Definition>
+	</Term>
+</ClassificationScheme>

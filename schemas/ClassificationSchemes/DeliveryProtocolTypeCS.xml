@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:ndr:cs:DeliveryProtocolTypeCS:2005">
+    <annotation>Terms for recorded content delivery protocol</annotation>
+    <Term termID="rtp">
+        <Name xml:lang="en">rtp</Name>
+        <Definition>Real-Time Transport Protocol</Definition>
+    </Term>
+    <Term termID="udp">
+        <Name xml:lang="en">udp</Name>
+        <Definition>User Datagram Protocol</Definition>
+    </Term>
+    <Term termID="http">
+        <Name xml:lang="en">http</Name>
+        <Definition>Hypertext Transfer Protocol</Definition>
+    </Term>
+    <Term termID="ftp">
+        <Name xml:lang="en">ftp</Name>
+        <Definition>File Transfer Protocol</Definition>
+    </Term>
+</ClassificationScheme>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:extended:cs:GamePerspectivesCS:2011">
+	<!-- ########################################################################-->
+	<!--Perspectives for Game			                                                             		-->
+	<!--Definition: This is a set of terms used within Content Packaging to indicate     -->
+	<!-- the kinds of perspectives which define the role or point of view that the player has on the game	             -->
+	<!-- ########################################################################-->
+	<Term termID="1">
+		<Name xml:lang="en">First-Person</Name>
+		<Definition xml:lang="en">
+			Displayed from a 1st-person perspective or view; ie. from the viewer's own eyes.
+		</Definition>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">Third-Person</Name>
+		<Definition xml:lang="en">
+			Displayed from a 3rd-person perspective or view; ie. player is able to see him/herself. 
+		</Definition>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">Top-Down</Name>
+		<Definition xml:lang="en">
+			Used to describe any game where the main setting of gameplay is represented by a "top-down" view of the playfield; used in describing both shooters and adventure games.
+		</Definition>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">Isometric</Name>
+		<Definition xml:lang="en">
+			Playfield is technically two-dimensional, but drawn in an isometric view so that the game looks three-dimensional.
+		</Definition>
+	</Term>
+	<Term termID="5">
+		<Name xml:lang="en">Flat, Side-View</Name>
+		<Definition xml:lang="en">
+			The flat, side-view is the traditional two-dimensional "side view" of the action.
+		</Definition>
+		<Term termID="5.1">
+			<Name xml:lang="en">Side-scroller</Name>
+			<Definition xml:lang="en">
+				Used to describe any game where the main setting of gameplay involves the player moving from one side of the playfield to the other horizontally for a length of time.			
+			</Definition>
+		</Term>
+		<Term termID="5.2">
+			<Name xml:lang="en">platform</Name>
+			<Definition xml:lang="en">
+				Describes any action game where the playfield is set up as a series of floors, levels, or platforms for the player to navigate.			
+			</Definition>
+		</Term>
+	</Term>
+	<Term termID="6">
+		<Name xml:lang="en">Text-Based Game</Name>
+		<Definition xml:lang="en">
+			Describes text-based games that don't use graphics at all, or use them very sparingly. 
+		</Definition>
+	</Term>
+</ClassificationScheme>

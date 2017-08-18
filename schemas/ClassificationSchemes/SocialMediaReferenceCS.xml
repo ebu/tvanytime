@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:SocialMediaReferenceCS:2015">
+	<!-- #####################################################################                          -->
+	<!-- SOCIAL MEDIA REFERENCE                                                                            -->
+	<!-- Definition: This dimension is used to classify related material references according to  -->
+	<!-- social media and identifiers used by those media   -->
+	<!-- #####################################################################                          -->
+	<Term termID="1">
+		<Name xml:lang="en">Twitter</Name>
+		<Definition xml:lang="en">A reference to a twitter resource identifier</Definition>
+		<Term termID="1.1">
+			<Name xml:lang="en">Twitter hashtag</Name>
+			<Definition xml:lang="en">A reference to a twitter hashtag</Definition>
+		</Term>
+		<Term termID="1.2">
+			<Name xml:lang="en">Twitter handle</Name>
+			<Definition xml:lang="en">A reference to a twitter handle</Definition>
+		</Term>
+		<Term termID="1.3">
+			<Name xml:lang="en">Twitter page</Name>
+			<Definition xml:lang="en">A reference to to the URL of the page of a Twitter user</Definition>
+		</Term>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">Facebook</Name>
+		<Definition xml:lang="en">A reference to a Facebook resource identifier</Definition>
+		<Term termID="2.1">
+			<Name xml:lang="en">Facebook hashtag</Name>
+			<Definition xml:lang="en">A reference to a Facebook hashtag</Definition>
+		</Term>
+		<Term termID="2.2">
+			<Name xml:lang="en">Facebook page name</Name>
+			<Definition xml:lang="en">A reference to the name of the page of a Facebook user</Definition>
+		</Term>
+		<Term termID="2.3">
+			<Name xml:lang="en">Facebook page URL</Name>
+			<Definition xml:lang="en">A reference to to the URL of the page of a Facebook user</Definition>
+		</Term>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">Vine</Name>
+		<Definition xml:lang="en">A reference to a Vine resource identifier</Definition>
+		<Term termID="3.1">
+			<Name xml:lang="en">Vine hashtag</Name>
+			<Definition xml:lang="en">A reference to a Vine hashtag</Definition>
+		</Term>
+		<Term termID="3.2">
+			<Name xml:lang="en">Vine handle</Name>
+			<Definition xml:lang="en">A reference to a Vine handle</Definition>
+		</Term>
+		<Term termID="3.3">
+			<Name xml:lang="en">Vine page</Name>
+			<Definition xml:lang="en">A reference to to the URL of the page of a Vine user</Definition>
+		</Term>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">Instagram</Name>
+		<Definition xml:lang="en">A reference to an Instagram resource identifier</Definition>
+		<Term termID="4.1">
+			<Name xml:lang="en">Instagram hashtag</Name>
+			<Definition xml:lang="en">A reference to an Instagram hashtag</Definition>
+		</Term>
+		<Term termID="4.2">
+			<Name xml:lang="en">Instagram handle</Name>
+			<Definition xml:lang="en">A reference to an Instagram handle</Definition>
+		</Term>
+		<Term termID="4.3">
+			<Name xml:lang="en">Instagram page</Name>
+			<Definition xml:lang="en">A reference to to the URL of the page of an Instagram user</Definition>
+		</Term>
+	</Term>
+	<Term termID="5">
+		<Name xml:lang="en">Tumblr</Name>
+		<Definition xml:lang="en">A reference to a Tumblr resource identifier</Definition>
+		<Term termID="5.1">
+			<Name xml:lang="en">Tumblr hashtag</Name>
+			<Definition xml:lang="en">A reference to a Tumblr hashtag</Definition>
+		</Term>
+		<Term termID="5.2">
+			<Name xml:lang="en">Tumblr handle</Name>
+			<Definition xml:lang="en">A reference to a Tumblr handle</Definition>
+		</Term>
+		<Term termID="5.3">
+			<Name xml:lang="en">Tumblr page</Name>
+			<Definition xml:lang="en">A reference to to the URL of the page of a Tumblr user</Definition>
+		</Term>
+	</Term>
+	<Term termID="6">
+		<Name xml:lang="en">Flickr</Name>
+		<Definition xml:lang="en">A reference to a Flickrr resource identifier</Definition>
+		<Term termID="6.1">
+			<Name xml:lang="en">Flickr hashtag</Name>
+			<Definition xml:lang="en">A reference to a Flickr hashtag</Definition>
+		</Term>
+		<Term termID="6.2">
+			<Name xml:lang="en">Flickr screen name</Name>
+			<Definition xml:lang="en">A reference to a Flickr screen name</Definition>
+		</Term>
+		<Term termID="6.3">
+			<Name xml:lang="en">Flickr page</Name>
+			<Definition xml:lang="en">A reference to to the URL of the page of a Flickr user</Definition>
+		</Term>
+	</Term>
+	<Term termID="7">
+		<Name xml:lang="en">Pinterest</Name>
+		<Definition xml:lang="en">A reference to a Pinterest resource identifier</Definition>
+		<Term termID="7.1">
+			<Name xml:lang="en">Pinterest hashtag</Name>
+			<Definition xml:lang="en">A reference to a Pinterest hashtag</Definition>
+		</Term>
+		<Term termID="7.2">
+			<Name xml:lang="en">Pinterest screen name</Name>
+			<Definition xml:lang="en">A reference to the screen name of a Pinterest user</Definition>
+		</Term>
+		<Term termID="7.3">
+			<Name xml:lang="en">Pinterest page</Name>
+			<Definition xml:lang="en">A reference to the URL of the page of a Pinterest user</Definition>
+		</Term>
+	</Term>
+	<Term termID="8">
+		<Name xml:lang="en">Reddit</Name>
+		<Definition xml:lang="en">A reference to a Reddit resource identifier</Definition>
+		<Term termID="8.1">
+			<Name xml:lang="en">Reddit hashtag</Name>
+			<Definition xml:lang="en">A reference to a Pinterest hashtag</Definition>
+		</Term>
+		<Term termID="8.2">
+			<Name xml:lang="en">Reddit screen name</Name>
+			<Definition xml:lang="en">A reference to the screen name of a Reddit user</Definition>
+		</Term>
+	</Term>
+</ClassificationScheme>

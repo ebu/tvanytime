@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:extended:cs:WeatherTypeCS:2011">
+	<Term termID="1">
+		<Name xml:lang="en">Spring</Name>
+		<Definition xml:lang="en">
+			The season between winter and summer in which leaves and flowers appear.
+		</Definition>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">Summer</Name>
+		<Definition xml:lang="en">
+			The season between spring and autumn when the sun is hot and there are many flower.
+		</Definition>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">Autumn</Name>
+		<Definition xml:lang="en">
+			The season between summer and winter when leaves turn gold and fruits become ripe.
+		</Definition>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">Winter</Name>
+		<Definition xml:lang="en">
+			The season between autumn and spring when it is cold and most trees have lost their leaves.
+		</Definition>
+	</Term>
+	<Term termID="5">
+		<Name xml:lang="en">Sunny</Name>
+		<Definition xml:lang="en">
+			Having bright sunlight.
+		</Definition>
+	</Term>
+	<Term termID="6">
+		<Name xml:lang="en">Rainy</Name>
+		<Definition xml:lang="en">
+			Having a lot of rain.
+		</Definition>
+	</Term>
+	<Term termID="7">
+		<Name xml:lang="en">Cloudy</Name>
+		<Definition xml:lang="en">
+			Full of clouds.
+		</Definition>
+	</Term>
+	<Term termID="8">
+		<Name xml:lang="en">Snowy</Name>
+		<Definition xml:lang="en">
+			Full of snow or snowing.
+		</Definition>
+	</Term>
+	<Term termID="9">
+		<Name xml:lang="en">Windy</Name>
+		<Definition xml:lang="en">
+			With a lot of wind.
+		</Definition>
+	</Term>
+	<Term termID="10">
+		<Name xml:lang="en">Foggy</Name>
+		<Definition xml:lang="en">
+			With a lot of fog.
+		</Definition>
+	</Term>
+	<Term termID="11">
+		<Name xml:lang="en">Frosty</Name>
+		<Definition xml:lang="en">
+			With a lot of frost.
+		</Definition>
+	</Term>
+	<Term termID="12">
+		<Name xml:lang="en">Storm</Name>
+		<Definition xml:lang="en">
+			A rough weather condition with wind, rain, and often lightning.
+		</Definition>
+		<Term termID="12.1">
+			<Name xml:lang="en">ThunderStorm</Name>
+		</Term>
+		<Term termID="12.2">
+			<Name xml:lang="en">RainStorm</Name>
+		</Term>
+		<Term termID="12.3">
+			<Name xml:lang="en">SnowStorm</Name>
+		</Term>
+	</Term>
+	<Term termID="13">
+		<Name xml:lang="en">Extreme Weather</Name>
+		<Term termID="13.1">
+			<Name xml:lang="en">Hurricane</Name>
+		</Term>
+		<Term termID="13.2">
+			<Name xml:lang="en">Typhoon</Name>
+		</Term>
+		<Term termID="13.3">
+			<Name xml:lang="en">Tornado</Name>
+		</Term>
+	</Term>
+</ClassificationScheme>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:ActionTypeCS:2010">
+	<!-- ##################################################################### -->
+	<!-- ACTIONTYPE                                                                                  -->
+	<!-- Definition: Types of user action being monitored to analyse viewing habits-->
+	<!-- ##################################################################### -->
+	<Term termID="1">
+		<Name xml:lang="en">Audio-Video</Name>
+		<Definition xml:lang="en">Actions Related to Audio and Video</Definition>
+		<Term termID="1.1">
+			<Name xml:lang="en">PlayRecording</Name>
+			<Definition xml:lang="en">Play content from a recording</Definition>
+		</Term>
+		<Term termID="1.2">
+			<Name xml:lang="en">PlayStream</Name>
+			<Definition xml:lang="en">Play content from input stream</Definition>
+		</Term>
+		<Term termID="1.3">
+			<Name xml:lang="en">Record</Name>
+			<Definition xml:lang="en">Record input stream to local storage media</Definition>
+		</Term>
+		<Term termID="1.4">
+			<Name xml:lang="en">Preview</Name>
+			<Definition xml:lang="en">View or listen to a summary of the input stream</Definition>
+		</Term>
+		<Term termID="1.5">
+			<Name xml:lang="en">Pause</Name>
+			<Definition xml:lang="en">Pause the input stream</Definition>
+		</Term>
+		<Term termID="1.6">
+			<Name xml:lang="en">FastForward</Name>
+			<Definition xml:lang="en">Fast forward the input stream</Definition>
+		</Term>
+		<Term termID="1.7">
+			<Name xml:lang="en">Rewind</Name>
+			<Definition xml:lang="en">Rewind the input stream</Definition>
+		</Term>
+		<Term termID="1.8">
+			<Name xml:lang="en">SkipForward</Name>
+			<Definition xml:lang="en">Skip forward over a portion of the input stream</Definition>
+		</Term>
+		<Term termID="1.9">
+			<Name xml:lang="en">SkipBackward</Name>
+			<Definition xml:lang="en">Skip backward over a portion of the input stream</Definition>
+		</Term>
+		<Term termID="1.10">
+			<Name xml:lang="en">Mute</Name>
+			<Definition xml:lang="en">Turn sound off</Definition>
+		</Term>
+		<Term termID="1.11">
+			<Name xml:lang="en">VolumeUp</Name>
+			<Definition xml:lang="en">Increase volume</Definition>
+		</Term>
+		<Term termID="1.12">
+			<Name xml:lang="en">VolumeDown</Name>
+			<Definition xml:lang="en">Reduce volume</Definition>
+		</Term>
+		<Term termID="1.13">
+			<Name xml:lang="en">Loop/Repeat</Name>
+			<Definition xml:lang="en">Repeat/loop (part of) the input stream</Definition>
+		</Term>
+		<Term termID="1.14">
+			<Name xml:lang="en">Shuffle</Name>
+			<Definition xml:lang="en">Randomly select next track</Definition>
+		</Term>
+		<Term termID="1.15">
+			<Name xml:lang="en">SkipToStart</Name>
+			<Definition xml:lang="en">Go to the beginning of the stream</Definition>
+		</Term>
+		<Term termID="1.16">
+			<Name xml:lang="en">SkipToEnd</Name>
+			<Definition xml:lang="en">Go to the end of the stream</Definition>
+		</Term>
+		<Term termID="1.17">
+			<Name xml:lang="en">CopyCD</Name>
+			<Definition xml:lang="en">Copy all or part of a CD</Definition>
+		</Term>
+		<Term termID="1.18">
+			<Name xml:lang="en">RatingAction</Name>
+			<Definition xml:lang="en">Express a rating.</Definition>
+		</Term>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">Video </Name>
+		<Definition xml:lang="en">Actions related to video</Definition>
+		<Term termID="2.1">
+			<Name xml:lang="en">Zoom</Name>
+			<Definition xml:lang="en">Zoom (in) to the on-screen image or sequence</Definition>
+		</Term>
+		<Term termID="2.2">
+			<Name xml:lang="en">SlowMotion</Name>
+			<Definition xml:lang="en">View input stream in slow motion</Definition>
+		</Term>
+		<Term termID="2.3">
+			<Name xml:lang="en">CCOn</Name>
+			<Definition xml:lang="en">Closed caption is on</Definition>
+		</Term>
+		<Term termID="2.4">
+			<Name xml:lang="en">StepForward</Name>
+			<Definition xml:lang="en">Advance to next frame</Definition>
+		</Term>
+		<Term termID="2.5">
+			<Name xml:lang="en">StepBackward</Name>
+			<Definition xml:lang="en">Return to previous frame</Definition>
+		</Term>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">Data</Name>
+		<Definition xml:lang="en">Actions related to miscellaneous data</Definition>
+		<Term termID="3.1">
+			<Name xml:lang="en">ClickThrough</Name>
+			<Definition xml:lang="en">Follow an available link</Definition>
+		</Term>
+		<Term termID="3.2">
+			<Name xml:lang="en">ScrollUp</Name>
+			<Definition xml:lang="en">Scroll up in a web page/composite page</Definition>
+		</Term>
+		<Term termID="3.3">
+			<Name xml:lang="en">ScrollDown</Name>
+			<Definition xml:lang="en">Scroll down in a web page/composite page</Definition>
+		</Term>
+		<Term termID="3.4">
+			<Name xml:lang="en">ViewGuide</Name>
+			<Definition xml:lang="en">View program/resource guide</Definition>
+		</Term>
+		<Term termID="3.5">
+			<Name xml:lang="en">SavePage</Name>
+			<Definition xml:lang="en">Save web page/composite page</Definition>
+		</Term>
+		<Term termID="3.6">
+			<Name xml:lang="en">PrintPage</Name>
+			<Definition xml:lang="en">Print web page/composite page</Definition>
+		</Term>
+		<Term termID="3.7">
+			<Name xml:lang="en">Search</Name>
+			<Definition xml:lang="en">Search the web or local resources</Definition>
+		</Term>
+		<Term termID="3.8">
+			<Name xml:lang="en">SubmitForm</Name>
+			<Definition xml:lang="en">Submit a form with requested information</Definition>
+		</Term>
+		<Term termID="3.9">
+			<Name xml:lang="en">SubmitQuery</Name>
+			<Definition xml:lang="en">Submit a query</Definition>
+		</Term>
+		<Term termID="3.10">
+			<Name xml:lang="en">Archive</Name>
+			<Definition xml:lang="en">Archive content to persistent local storage media</Definition>
+		</Term>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">Commerce</Name>
+		<Definition xml:lang="en">Actions related to commerce</Definition>
+		<Term termID="4.1">
+			<Name xml:lang="en">Buy</Name>
+			<Definition xml:lang="en">Purchase a product or item</Definition>
+		</Term>
+		<Term termID="4.2">
+			<Name xml:lang="en">AddToWishList</Name>
+			<Definition xml:lang="en">Designate a product or item as possible future purchasing item</Definition>
+		</Term>
+		<Term termID="4.3">
+			<Name xml:lang="en">AddToCart</Name>
+			<Definition xml:lang="en">Designate a product or item as potential immediate purchase item</Definition>
+		</Term>
+	</Term>
+</ClassificationScheme>

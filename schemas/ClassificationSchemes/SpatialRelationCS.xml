@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:extended:cs:SpatialRelationCS:2005">
+	<!-- ##################################################################### 	-->
+	<!-- SPATIAL RELATION                                                                     	-->
+	<!-- Definition: This is a set of terms used within Content Packaging to indicate 	-->
+	<!-- what kinds of spatial relation components/items have with others                -->
+	<!-- It makes the recieving terminal know where the component and/or item        -->
+	<!-- has to be presented                                                                                -->
+	<!-- ##################################################################### 	-->
+	<Term termID="south">
+		<Name xml:lang="en">south</Name>
+		<Definition> 
+			B south C if and only if, in the dimension x, B starts after or at the same time as C starts and B ends at the same time as or before C ends, or B starts at the same time as or before C starts and B ends after or at the same time as C ends; and, in the dimension y, B ends at the same time as or before C starts.
+		</Definition>
+	</Term>
+	<Term termID="north">
+		<Name xml:lang="en">north</Name>
+		<Definition> Inverse relation of south </Definition>
+	</Term>
+	<Term termID="west">
+		<Name xml:lang="en">west</Name>
+		<Definition>
+			B west C if and only if, in the dimension x, B ends at the same time as or before C starts; and, in the dimension y, B starts after or at the same time as C starts and B ends at the same time as or before C ends, or B starts at the same time as or before C starts and B ends after or at the same time as C ends.
+		</Definition>
+	</Term>
+	<Term termID="east">
+		<Name xml:lang="en">east</Name>
+		<Definition> Inverse relation of west </Definition>
+	</Term>
+	<Term termID="northwest">
+		<Name xml:lang="en">northwest</Name>
+		<Definition>
+			B northwest C if and only if, in the dimension x, B ends at the same time as or before C starts; and, in the dimension y, B starts after or at the same time as C ends.
+		</Definition>
+	</Term>
+	<Term termID="southeast">
+		<Name xml:lang="en">southeast</Name>
+		<Definition> Inverse relation of northwest </Definition>
+	</Term>
+	<Term termID="southwest">
+		<Name xml:lang="en">southwest</Name>
+		<Definition>
+			B southwest C if and only if, in the dimension x, B ends at the same time as or before C starts; and, in the dimension y, B ends at the same time as or before C starts.
+		</Definition>
+	</Term>
+	<Term termID="northeast">
+		<Name xml:lang="en">northeast</Name>
+		<Definition> Inverse relation of southwest </Definition>
+	</Term>
+	<Term termID="left">
+		<Name xml:lang="en">left</Name>
+		<Definition>
+			B left C if and only if, in the dimension x, B ends at the same time as or before C starts.
+		</Definition>
+	</Term>
+	<Term termID="right">
+		<Name xml:lang="en">right</Name>
+		<Definition> Inverse relation of left </Definition>
+	</Term>
+	<Term termID="below">
+		<Name xml:lang="en">below</Name>
+		<Definition>
+			B below C if and only if, in the dimension y, B ends at the same time as or before C starts.
+		</Definition>
+	</Term>
+	<Term termID="above">
+		<Name xml:lang="en">above</Name>
+		<Definition> Inverse relation of below </Definition>
+	</Term>
+	<Term termID="over">
+		<Name xml:lang="en">over</Name>
+		<Definition>
+			B over C if and only if, in the dimension x, B starts at the same time as or before C starts and B ends after C starts, or B starts after C starts and B starts before C ends; and, in the dimension y, B starts at the same time as C ends.
+		</Definition>
+	</Term>
+	<Term termID="under">
+		<Name xml:lang="en">under</Name>
+		<Definition> Inverse relation of over </Definition>
+	</Term>
+	<Term termID="equals">
+		<Name xml:lang="en">equals</Name>
+		<Definition>B equals C if and only if B is equal to C.</Definition>
+	</Term>
+	<Term termID="inside">
+		<Name xml:lang="en">inside</Name>
+		<Definition>B1, B2, ..., Bn is inside C if and only if the union of B1, ..., Bn is a subset of C</Definition>
+	</Term>
+	<Term termID="contains">
+		<Name xml:lang="en">contains</Name>
+		<Definition> Inverse relation of inside </Definition>
+	</Term>
+	<Term termID="covers">
+		<Name xml:lang="en">covers</Name>
+		<Definition>B1, B2, ..., Bn covers argument C if and only if the union of B1, B2, ..., Bn contains C AND that union is not equal to C</Definition>
+	</Term>
+	<Term termID="coveredBy">
+		<Name xml:lang="en">coveredBy</Name>
+		<Definition> Inverse relation of covers </Definition>
+	</Term>
+	<Term termID="overlaps">
+		<Name xml:lang="en">overlaps</Name>
+		<Definition>B overlaps C if and only if B intersect C has non-empty interior</Definition>
+	</Term>
+	<Term termID="touches">
+		<Name xml:lang="en">touches</Name>
+		<Definition>B1, B2, ..., Bn touches argument C if and only if B union C is connected</Definition>
+	</Term>
+	<Term termID="disjoint">
+		<Name xml:lang="en">disjoint"</Name>
+		<Definition>B is disjoint with C if and only if the intersection of B and C is empty.</Definition>
+	</Term>
+	<Term termID="separated">
+		<Name xml:lang="en">separated</Name>
+		<Definition>E is separated from O if and only if the intersection of E and the closure of A is empty AND the intersection of the closure of 
+			E with O is empty. 
+		</Definition>
+	</Term>
+</ClassificationScheme>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:CaptionCodingFormatCS:2015">
+    <!-- ##################################################################### -->
+    <!-- CAPTIONCODINGFORMAT -->
+    <!-- ##################################################################### -->
+    <Term termID="1">
+        <Name xml:lang="en">WST Subtitles</Name>
+        <Definition xml:lang="en">World System Teletext subtitles.</Definition>
+    </Term>
+    <Term termID="2">
+        <Name xml:lang="en">DVB Subtitles</Name>
+        <Definition xml:lang="en">Digital Video Broadcasting Subtitles [ETSI EN 300
+            743].</Definition>
+        <Term termID="2.1">
+            <Name>DVB Subtitles (bitmaps)</Name>
+            <Definition>DVB subtitling service containing object_data_segment{}s with
+                object_coding_method=0x00.</Definition>
+        </Term>
+        <Term termID="2.2">
+            <Name>DVB Subtitles (characters)</Name>
+            <Definition>DVB subtitling service containing object_data_segment{}s with
+                object_coding_method=0x01.</Definition>
+        </Term>
+    </Term>
+    <Term termID="3">
+        <Name xml:lang="en">TTML Subtitles</Name>
+        <Definition xml:lang="en">Timed Text Markup Language subtitles, version 1.0</Definition>
+        <Term termID="3.1">
+            <Name>EBU-TT</Name>
+            <Definition>EBU Timed Text Subtitles</Definition>
+        </Term>
+        <Term termID="3.2">
+            <Name>EBU-TT-D</Name>
+            <Definition>EBU-TT Distribution Format Subtitles</Definition>
+        </Term>
+        <Term termID="3.3">
+            <Name>SMPTE-TT</Name>
+            <Definition>SMPTE Timed Text Subtitles</Definition>
+        </Term>
+        <Term termID="3.4">
+            <Name>CFF-TT</Name>
+            <Definition>DECE CFF Timed Text Subtitles</Definition>
+            <Term termID="3.4.1">
+                <Name>CFF-TT Text</Name>
+                <Definition>DECE CFF TT text based Subtitles</Definition>
+            </Term>
+            <Term termID="3.4.2">
+                <Name>CFF-TT Image</Name>
+                <Definition>DECE CFF TT image based Subtitles</Definition>
+            </Term>
+        </Term>
+        <Term termID="3.5">
+            <Name>SDP-US</Name>
+            <Definition>Simple Delivery Profile for Closed Captions</Definition>
+        </Term>
+        <Term termID="3.6">
+            <Name xml:lang="en">IMSC Subtitles</Name>
+            <Definition xml:lang="en">Internet Media Subtitles and Captions, version
+                1.0</Definition>
+            <Term termID="3.6.1">
+                <Name xml:lang="en">IMSC Subtitles Text Profile</Name>
+                <Definition xml:lang="en">Internet Media Subtitles and Captions, text-only profile,
+                    version 1.0</Definition>
+            </Term>
+            <Term termID="3.6.2">
+                <Name xml:lang="en">IMSC Subtitles Image Profile</Name>
+                <Definition xml:lang="en">Internet Media Subtitles and Captions, image-only profile
+                    version 1.0</Definition>
+            </Term>
+        </Term>
+        <Term termID="3.7">
+            <Name xml:lang="en">ARIB-TT Subtitles</Name>
+            <Definition xml:lang="en">ARIB-TT subtitles.</Definition>
+        </Term>
+    </Term>
+    <Term termID="4">
+        <Name xml:lang="en">WebVTT Subtitles</Name>
+        <Definition xml:lang="en">Web Video Text Tracks subtitles.</Definition>
+    </Term>
+    <Term termID="5">
+        <Name xml:lang="en">SRT Subtitles</Name>
+        <Definition xml:lang="en">Subtitle Resource Tracks subtitles.</Definition>
+    </Term>
+    <Term termID="8">
+        <Name xml:lang="en">Application Subtitles</Name>
+        <Definition xml:lang="en">In-application rendered subtitles.</Definition>
+    </Term>
+</ClassificationScheme>

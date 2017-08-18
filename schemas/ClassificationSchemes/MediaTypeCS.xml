@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:MediaTypeCS:2010">
+	<!-- ##################################################################### -->
+	<!--MEDIATYPE                                                                                     -->
+	<!-- ##################################################################### -->
+	<Term termID="7.0">
+		<Name xml:lang="en">Proprietary</Name>
+		<Definition xml:lang="en">For use where proprietary extensions are required, or the use of keywords that do not fit in any classification below</Definition>
+	</Term>
+	<Term termID="7.1">
+		<Name xml:lang="en">Linear</Name>
+		<Definition xml:lang="en">content that is consumed in real time</Definition>
+		<Term termID="7.1.1">
+			<Name xml:lang="en">Audio only</Name>
+			<Definition xml:lang="en">Radio programme</Definition>
+		</Term>
+		<Term termID="7.1.2">
+			<Name xml:lang="en">Video only</Name>
+		</Term>
+		<Term termID="7.1.3">
+			<Name xml:lang="en">Audio and video</Name>
+			<Definition xml:lang="en">TV programme</Definition>
+		</Term>
+		<Term termID="7.1.4">
+			<Name xml:lang="en">Multimedia</Name>
+			<Term termID="7.1.4.1">
+				<Name xml:lang="en">Text</Name>
+				<Definition xml:lang="en">Digital text</Definition>
+			</Term>
+			<Term termID="7.1.4.2">
+				<Name xml:lang="en">Graphics</Name>
+				<Definition xml:lang="en">Images, Graphics</Definition>
+			</Term>
+			<Term termID="7.1.4.3">
+				<Name xml:lang="en">Application</Name>
+				<Definition xml:lang="en">a software application that controls the consumer experience</Definition>
+			</Term>
+		</Term>
+		<Term termID="7.1.5">
+			<Name xml:lang="en">Data</Name>
+			<Definition xml:lang="en">eg a weather data service</Definition>
+		</Term>
+	</Term>
+	<Term termID="7.2">
+		<Name xml:lang="en">Non Linear</Name>
+		<Definition xml:lang="en">content where the consumer can navigate within the content to alter their experience eg DVD scene by scene consumption,</Definition>
+		<Term termID="7.2.1">
+			<Name xml:lang="en">Audio only</Name>
+		</Term>
+		<Term termID="7.2.2">
+			<Name xml:lang="en">Video only</Name>
+		</Term>
+		<Term termID="7.2.3">
+			<Name xml:lang="en">Audio and video</Name>
+		</Term>
+		<Term termID="7.2.4">
+			<Name xml:lang="en">Multimedia</Name>
+			<Term termID="7.2.4.1">
+				<Name xml:lang="en">Text</Name>
+			</Term>
+			<Term termID="7.2.4.2">
+				<Name xml:lang="en">Graphics</Name>
+			</Term>
+			<Term termID="7.2.4.3">
+				<Name xml:lang="en">Application</Name>
+			</Term>
+		</Term>
+		<Term termID="7.2.5">
+			<Name xml:lang="en">Data</Name>
+			<Definition xml:lang="en">eg a weather data service</Definition>
+		</Term>
+	</Term>
+	<Term termID="7.3">
+		<Name xml:lang="en">AUDIO VIDEO ENHANCEMENTS</Name>
+		<Term termID="7.3.1">
+			<Name xml:lang="en">Linear with non-sync</Name>
+			<Definition xml:lang="en">Linear programme with non-syncronised, non av content</Definition>
+		</Term>
+		<Term termID="7.3.2">
+			<Name xml:lang="en">Linear with sync</Name>
+			<Definition xml:lang="en">Linear programme with syncronised non av content</Definition>
+		</Term>
+		<Term termID="7.3.3">
+			<Name xml:lang="en">Multi stream audio</Name>
+			<Definition xml:lang="en">Multi, parallel stream linear audio programme</Definition>
+		</Term>
+		<Term termID="7.3.4">
+			<Name xml:lang="en">Multi stream video</Name>
+			<Definition xml:lang="en">Multi, parallel stream linear audio/video programme</Definition>
+		</Term>
+		<Term termID="7.3.5">
+			<Name xml:lang="en">Non-linear one stream av show</Name>
+			<Definition xml:lang="en">Non-linear single video/audio programme</Definition>
+		</Term>
+		<Term termID="7.3.6">
+			<Name xml:lang="en">Non-linear multi stream</Name>
+			<Definition xml:lang="en">Non-linear multi, parallel stream video programme</Definition>
+		</Term>
+		<Term termID="7.3.7">
+			<Name xml:lang="en">Hybrid NVOD</Name>
+			<Definition xml:lang="en">Hybrid NVOD - lcoally stored material linking back to scheduled av content</Definition>
+		</Term>
+		<Term termID="7.3.8">
+			<Name xml:lang="en">Mix and match</Name>
+			<Definition xml:lang="en">Video with audio programme (component) Ids eg: BBC. video with BBC2 audio</Definition>
+		</Term>
+		<Term termID="7.3.9">
+			<Name xml:lang="en">Parallel 'layer controlled' audio or video support</Name>
+			<Definition xml:lang="en">Multiple decoders allow dynamic mixing of audio or video</Definition>
+		</Term>
+		<Term termID="7.3.10">
+			<Name xml:lang="en">Linear broadcast with online insertions</Name>
+			<Definition xml:lang="en">Linear broadcast programme with dynamically inserted online content</Definition>
+		</Term>
+		<Term termID="7.3.11">
+			<Name xml:lang="en">Multimedia MashUp</Name>
+			<Definition xml:lang="en">A Mash-Up / Interactive Session of linear
+				broadcast programme, non-linear video/audio programme, graphics, interactive
+				text and dynamically inserted online content</Definition>
+		</Term>
+	</Term>
+</ClassificationScheme>

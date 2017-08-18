@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:ContentCommercialCS:2005-03">
+	<!-- ##################################################################### -->
+	<!--ContentCommercial                                                                                     -->
+	<!-- Definition: This dimension is used to classify programmes according to their content or subject. Unlike in the case of the form dimension, it is essential to hear the programme.  -->
+	<!-- ##################################################################### -->
+	<Term termID="3.50">
+		<Name xml:lang="en">Commercial/Products</Name>
+		<Term termID="3.50.1">
+			<Name xml:lang="en">Agriculture, forestry and fishery products</Name>
+			<Term termID="3.50.1.1">
+				<Name xml:lang="en">Products of agriculture, horticulture and market gardening</Name>
+			</Term>
+			<Term termID="3.50.1.2">
+				<Name xml:lang="en">Live animals and animal products</Name>
+			</Term>
+			<Term termID="3.50.1.3">
+				<Name xml:lang="en">Forestry and logging products</Name>
+			</Term>
+			<Term termID="3.50.1.4">
+				<Name xml:lang="en">Fish and other fishing products</Name>
+			</Term>
+		</Term>
+		<Term termID="3.50.2">
+			<Name xml:lang="en">Ores and minerals; electricity, gas and water</Name>
+			<Term termID="3.50.2.1">
+				<Name xml:lang="en">Coal and lignite; peat</Name>
+			</Term>
+			<Term termID="3.50.2.2">
+				<Name xml:lang="en">Crude petroleum and natural gas</Name>
+			</Term>
+			<Term termID="3.50.2.3">
+				<Name xml:lang="en">Uranium and thorium ores</Name>
+			</Term>
+			<Term termID="3.50.2.4">
+				<Name xml:lang="en">Metal ores</Name>
+			</Term>
+			<Term termID="3.50.2.5">
+				<Name xml:lang="en">Stone, sand and clay</Name>
+			</Term>
+			<Term termID="3.50.2.6">
+				<Name xml:lang="en">Other minerals</Name>
+			</Term>
+			<Term termID="3.50.2.7">
+				<Name xml:lang="en">Electricity, town gas, steam and hot water</Name>
+			</Term>
+			<Term termID="3.50.2.8">
+				<Name xml:lang="en">Water</Name>
+			</Term>
+		</Term>
+		<Term termID="3.50.3">
+			<Name xml:lang="en">Food products, beverages and tobacco; textiles, apparel and leather products</Name>
+			<Term termID="3.50.3.1">
+				<Name xml:lang="en">Meat, fish, fruit, vegetables, oils and fats</Name>
+			</Term>
+			<Term termID="3.50.3.2">
+				<Name xml:lang="en">Dairy products</Name>
+			</Term>
+			<Term termID="3.50.3.3">
+				<Name xml:lang="en">Grain mill products, starches and starch products; other food products</Name>
+			</Term>
+			<Term termID="3.50.3.4">
+				<Name xml:lang="en">Beverages</Name>
+			</Term>
+			<Term termID="3.50.3.5">
+				<Name xml:lang="en">Tobacco products</Name>
+			</Term>
+			<Term termID="3.50.3.6">
+				<Name xml:lang="en">Yarn and thread; woven and tufted textile fabrics</Name>
+			</Term>
+			<Term termID="3.50.3.7">
+				<Name xml:lang="en">Textile articles other than apparel</Name>
+			</Term>
+			<Term termID="3.50.3.8">
+				<Name xml:lang="en">Knitted or crocheted fabrics; wearing apparel</Name>
+			</Term>
+			<Term termID="3.50.3.9">
+				<Name xml:lang="en">Leather and leather products; footwear</Name>
+			</Term>
+		</Term>
+		<Term termID="3.50.4">
+			<Name xml:lang="en">Other transportable goods, except metal products, machinery and equipment</Name>
+			<Term termID="3.50.4.1">
+				<Name xml:lang="en">Products of wood, cork, straw and plaiting materials</Name>
+			</Term>
+			<Term termID="3.50.4.2">
+				<Name xml:lang="en">Pulp, paper and paper products; printed matter and related articles</Name>
+			</Term>
+			<Term termID="3.50.4.3">
+				<Name xml:lang="en">Coke oven products; refined petroleum products; nuclear fuel</Name>
+			</Term>
+			<Term termID="3.50.4.4">
+				<Name xml:lang="en">Basic chemicals</Name>
+			</Term>
+			<Term termID="3.50.4.5">
+				<Name xml:lang="en">Other chemical products; man-made fibres</Name>
+			</Term>
+			<Term termID="3.50.4.6">
+				<Name xml:lang="en">Rubber and plastics products</Name>
+			</Term>
+			<Term termID="3.50.4.7">
+				<Name xml:lang="en">Glass and glass products and other non-metallic products n.e.c.</Name>
+			</Term>
+			<Term termID="3.50.4.8">
+				<Name xml:lang="en">Furniture; other transportable goods n.e.c.</Name>
+			</Term>
+			<Term termID="3.50.4.9">
+				<Name xml:lang="en">Wastes or scraps</Name>
+			</Term>
+		</Term>
+		<Term termID="3.50.5">
+			<Name xml:lang="en">Metal products, machinery and equipment</Name>
+			<Term termID="3.50.5.1">
+				<Name xml:lang="en">Basic metals</Name>
+			</Term>
+			<Term termID="3.50.5.2">
+				<Name xml:lang="en">Fabricated metal products, except machinery and equipment</Name>
+			</Term>
+			<Term termID="3.50.5.3">
+				<Name xml:lang="en">General purpose machinery</Name>
+			</Term>
+			<Term termID="3.50.5.4">
+				<Name xml:lang="en">Special purpose machinery</Name>
+			</Term>
+			<Term termID="3.50.5.5">
+				<Name xml:lang="en">Office, accounting and computing machinery</Name>
+			</Term>
+			<Term termID="3.50.5.6">
+				<Name xml:lang="en">Electrical machinery and apparatus</Name>
+			</Term>
+			<Term termID="3.50.5.7">
+				<Name xml:lang="en">Radio, television and communication equipment and apparatus</Name>
+			</Term>
+			<Term termID="3.50.5.8">
+				<Name xml:lang="en">Medical appliances, precision and optical instruments, watches and clocks</Name>
+			</Term>
+			<Term termID="3.50.5.9">
+				<Name xml:lang="en">Transport equipment</Name>
+			</Term>
+		</Term>
+		<Term termID="3.50.6">
+			<Name xml:lang="en">Intangible assets; land; constructions; construction services</Name>
+			<Term termID="3.50.6.1">
+				<Name xml:lang="en">Intangible assets</Name>
+			</Term>
+			<Term termID="3.50.6.2">
+				<Name xml:lang="en">Land</Name>
+			</Term>
+			<Term termID="3.50.6.3">
+				<Name xml:lang="en">Constructions</Name>
+			</Term>
+			<Term termID="3.50.6.4">
+				<Name xml:lang="en">Construction services</Name>
+			</Term>
+		</Term>
+		<Term termID="3.50.7">
+			<Name xml:lang="en">Distributive trade services; lodging; food and beverage serving services; transport services; and utilities distribution services</Name>
+			<Term termID="3.50.7.1">
+				<Name xml:lang="en">Wholesale trade services</Name>
+			</Term>
+			<Term termID="3.50.7.2">
+				<Name xml:lang="en">Retail trade services</Name>
+			</Term>
+			<Term termID="3.50.7.3">
+				<Name xml:lang="en">Lodging; food and beverage serving services</Name>
+			</Term>
+			<Term termID="3.50.7.4">
+				<Name xml:lang="en">Land transport services</Name>
+			</Term>
+			<Term termID="3.50.7.5">
+				<Name xml:lang="en">Water transport services</Name>
+			</Term>
+			<Term termID="3.50.7.6">
+				<Name xml:lang="en">Air transport services</Name>
+			</Term>
+			<Term termID="3.50.7.7">
+				<Name xml:lang="en">Supporting and auxiliary transport services</Name>
+			</Term>
+			<Term termID="3.50.7.8">
+				<Name xml:lang="en">Postal and courier services</Name>
+			</Term>
+			<Term termID="3.50.7.9">
+				<Name xml:lang="en">Electricity distribution services; gas and water distribution services through mains</Name>
+			</Term>
+		</Term>
+		<Term termID="3.50.8">
+			<Name xml:lang="en">Financial and related services; real estate services; and rental and leasing services</Name>
+			<Term termID="3.50.8.1">
+				<Name xml:lang="en">Financial intermediation, insurance and auxiliary services</Name>
+			</Term>
+			<Term termID="3.50.8.2">
+				<Name xml:lang="en">Real estate services</Name>
+			</Term>
+			<Term termID="3.50.8.3">
+				<Name xml:lang="en">Leasing or rental services without operator</Name>
+			</Term>
+		</Term>
+		<Term termID="3.50.9">
+			<Name xml:lang="en">Business and production services</Name>
+			<Term termID="3.50.9.1">
+				<Name xml:lang="en">Research and development services</Name>
+			</Term>
+			<Term termID="3.50.9.2">
+				<Name xml:lang="en">Professional, scientific and technical services</Name>
+			</Term>
+			<Term termID="3.50.9.3">
+				<Name xml:lang="en">Other professional, scientific and technical services</Name>
+			</Term>
+			<Term termID="3.50.9.4">
+				<Name xml:lang="en">Telecommunications services; information retrieval and supply services</Name>
+			</Term>
+			<Term termID="3.50.9.5">
+				<Name xml:lang="en">Support services</Name>
+			</Term>
+			<Term termID="3.50.9.6">
+				<Name xml:lang="en">Production services, on a fee or contract basis</Name>
+			</Term>
+			<Term termID="3.50.9.7">
+				<Name xml:lang="en">Maintenance and repair services</Name>
+			</Term>
+		</Term>
+		<Term termID="3.50.10">
+			<Name xml:lang="en">Community, social and personal services</Name>
+			<Term termID="3.50.10.1">
+				<Name xml:lang="en">Public administration and other services to the community as a whole; compulsory social security services</Name>
+			</Term>
+			<Term termID="3.50.10.2">
+				<Name xml:lang="en">Education services</Name>
+			</Term>
+			<Term termID="3.50.10.3">
+				<Name xml:lang="en">Health and social services</Name>
+			</Term>
+			<Term termID="3.50.10.4">
+				<Name xml:lang="en">Sewage and refuse disposal, sanitation and other environmental protection services</Name>
+			</Term>
+			<Term termID="3.50.10.5">
+				<Name xml:lang="en">Services of membership organizations</Name>
+			</Term>
+			<Term termID="3.50.10.6">
+				<Name xml:lang="en">Recreational, cultural and sporting services</Name>
+			</Term>
+			<Term termID="3.50.10.7">
+				<Name xml:lang="en">Other services</Name>
+			</Term>
+			<Term termID="3.50.10.8">
+				<Name xml:lang="en">Domestic services</Name>
+			</Term>
+			<Term termID="3.50.10.9">
+				<Name xml:lang="en">Services provided by extraterritorial organizations and bodies</Name>
+			</Term>
+		</Term>
+	</Term>
+</ClassificationScheme>

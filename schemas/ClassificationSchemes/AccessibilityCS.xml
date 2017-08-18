@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:extended:cs:AccessibilityCS:2005">
+	<Term termID="AbleToUseRemote">
+		<Name xml:lang="en">Able to use remote</Name>
+	</Term>
+	<Term termID="UnableToUseRemote">
+		<Name xml:lang="en">Unable to use remote control</Name>
+	</Term>
+	<Term termID="AbleToUseKeyboard">
+		<Name xml:lang="en">Able to use keyboard</Name>
+	</Term>
+	<Term termID="UnableToUseKeyboard">
+		<Name xml:lang="en">Unable to use keyboard</Name>
+	</Term>
+	<Term termID="AbleToUsePointingDevice">
+		<Name xml:lang="en">Able to use pointing device</Name>
+	</Term>
+	<Term termID="UnableToUsePointingDevice">
+		<Name xml:lang="en">Unable to use pointing device</Name>
+	</Term>
+	<Term termID="VoiceOnly">
+		<Name xml:lang="en">Voice interaction only</Name>
+	</Term>
+</ClassificationScheme>

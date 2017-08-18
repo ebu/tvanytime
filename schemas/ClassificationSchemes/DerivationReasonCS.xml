@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:DerivationReasonCS:2007">
+    <!-- ##################################################################### -->
+    <!-- DERIVATIONREASON -->
+    <!-- ##################################################################### -->
+    <Term termID="VIOLENCE">
+        <Name xml:lang="en">Violence</Name>
+        <Definition xml:lang="en">The derivative has been edited to remove violent scenes.</Definition>
+    </Term>
+    <Term termID="LANGUAGE">
+        <Name xml:lang="en">Language</Name>
+        <Definition xml:lang="en">The derivative has been edited to remove bad language.</Definition>
+    </Term>
+    <Term termID="SEX">
+        <Name xml:lang="en">Sex</Name>
+        <Definition xml:lang="en">The derivative has been edited to remove scenes of a sexual nature.</Definition>
+    </Term>
+    <Term termID="DURATION">
+        <Name xml:lang="en">Duration</Name>
+        <Definition xml:lang="en">The derivative has been edited to alter its length.</Definition>
+        <Term termID="DURATION.LONGER">
+            <Name>Longer</Name>
+            <Definition xml:lang="en">The derivative is an extended variant of the original.</Definition>
+        </Term>
+        <Term termID="DURATION.SHORTER">
+            <Name>Shorter</Name>
+            <Definition xml:lang="en">The derivative is a shorter variant of the original, such as edited highlights.</Definition>
+        </Term>
+    </Term>
+    <Term termID="SIGNING">
+        <Name xml:lang="en">Signing</Name>
+        <Definition xml:lang="en">The derivative is a signed variant of the original.</Definition>
+    </Term>
+    <Term termID="CUT">
+        <Name xml:lang="en">Special cut</Name>
+        <Definition xml:lang="en">The derivative is a special cut of the original.</Definition>
+        <Term termID="CUT.DIRECTOR">
+            <Name>Director's cut</Name>
+            <Definition xml:lang="en">The derivative is the Director's Cut of the original.</Definition>
+        </Term>
+        <Term termID="CUT.AIRLINE">
+            <Name>Airline cut</Name>
+            <Definition xml:lang="en">The derivative is a cut of the original to make it suitable for viewing on an aeroplane.</Definition>
+        </Term>
+    </Term>
+</ClassificationScheme>

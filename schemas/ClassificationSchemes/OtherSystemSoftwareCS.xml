@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:extended:cs:OtherSystemSoftwareCS:2005">
+	<!-- ########################################################################-->
+	<!--OtherSystemSoftwareCS						                                              -->
+	<!--Definition: This is a set of terms used within Content Packaging to indicate     -->
+	<!-- what kind of system softwares are needed in the Terminal written by HeeKyung Lee	-->
+	<!-- ########################################################################-->
+	<Term termID="1">
+		<Name xml:lang="en">Graphic library</Name>
+		<Term termID="1.1">
+			<Name xml:lang="en">DirectX</Name>
+			<Term termID="1.1.1">
+				<Name xml:lang="en">DirectX8.0</Name>
+			</Term>
+			<Term termID="1.1.2">
+				<Name xml:lang="en">DirectX8.1</Name>
+			</Term>
+			<Term termID="1.1.3">
+				<Name xml:lang="en">DirectX9.0</Name>
+			</Term>
+		</Term>
+		<Term termID="1.2">
+			<Name xml:lang="en">OpenGL</Name>
+		</Term>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">Media</Name>
+		<Term termID="2.1">
+			<Name xml:lang="en">mpeg-1 codec</Name>
+		</Term>
+		<Term termID="2.2">
+			<Name xml:lang="en">mpeg-2 codec</Name>
+		</Term>
+		<Term termID="2.3">
+			<Name xml:lang="en">real audio codec</Name>
+		</Term>
+		<Term termID="2.4">
+			<Name xml:lang="en">quicktime format codec</Name>
+		</Term>
+		<Term termID="2.5">
+			<Name xml:lang="en">windows media player</Name>
+		</Term>
+		<Term termID="2.6">
+			<Name xml:lang="en">flash</Name>
+		</Term>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">DB</Name>
+		<Term termID="3.1">
+			<Name xml:lang="en">JDBC</Name>
+		</Term>
+		<Term termID="3.2">
+			<Name xml:lang="en">Firebird/InterBase</Name>
+		</Term>
+		<Term termID="3.3">
+			<Name xml:lang="en">Microsoft SQL Server</Name>
+		</Term>
+		<Term termID="3.4">
+			<Name xml:lang="en">MySQL</Name>
+		</Term>
+		<Term termID="3.5">
+			<Name xml:lang="en">Oracle</Name>
+		</Term>
+		<Term termID="3.6">
+			<Name xml:lang="en">Other network-based DBMS</Name>
+		</Term>
+		<Term termID="3.7">
+			<Name xml:lang="en">PostgreSQL</Name>
+		</Term>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">GUI Library</Name>
+		<Term termID="4.1">
+			<Name xml:lang="en">Amulet</Name>
+		</Term>
+		<Term termID="4.2">
+			<Name xml:lang="en">FLTK</Name>
+		</Term>
+		<Term termID="4.3">
+			<Name xml:lang="en">GTK</Name>
+		</Term>
+		<Term termID="4.4">
+			<Name xml:lang="en">MFC</Name>
+		</Term>
+		<Term termID="4.5">
+			<Name xml:lang="en">Morphic</Name>
+		</Term>
+		<Term termID="4.6">
+			<Name xml:lang="en">Motif</Name>
+		</Term>
+		<Term termID="4.7">
+			<Name xml:lang="en">Python</Name>
+		</Term>
+		<Term termID="4.8">
+			<Name xml:lang="en">Qt</Name>
+		</Term>
+		<Term termID="4.9">
+			<Name xml:lang="en">wxWindows </Name>
+		</Term>
+	</Term>
+	<Term termID="5">
+		<Name xml:lang="en">Mobile</Name>
+		<Term termID="5.1">
+			<Name xml:lang="en">ActiveSync</Name>
+		</Term>
+		<Term termID="5.2">
+			<Name xml:lang="en">.Net Framework</Name>
+		</Term>
+		<Term termID="5.3">
+			<Name xml:lang="en">DioPen V5.0</Name>
+		</Term>
+	</Term>
+</ClassificationScheme>

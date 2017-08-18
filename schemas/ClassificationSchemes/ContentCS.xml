@@ -1,0 +1,2362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:ContentCS:2011">
+	<!-- ##################################################################### -->
+	<!--CONTENT 	                                                                                     -->
+	<!-- Definition: This dimension is used to classify programmes according to their content or subject.  -->
+	<!-- Unlike in the case of the form dimension, it is essential to hear the programme.    -->
+	<!-- ##################################################################### -->
+	<Term termID="3.0">
+		<Name xml:lang="en">Proprietary</Name>
+		<Definition xml:lang="en">For use where proprietary extensions are required, or the use of
+			keywords that do not fit in any classification below</Definition>
+	</Term>
+	<Term termID="3.1">
+		<Name xml:lang="en">NON-FICTION/INFORMATION</Name>
+		<Term termID="3.1.1">
+			<Name xml:lang="en">News</Name>
+			<Definition xml:lang="en">Time-sensitive information</Definition>
+			<Term termID="3.1.1.1">
+				<Name xml:lang="en">Daily news</Name>
+				<Definition xml:lang="en">regular programme carrying breaking and current news
+					stories e.g. News at ..</Definition>
+			</Term>
+			<Term termID="3.1.1.2">
+				<Name xml:lang="en">Special news/edition</Name>
+				<Definition xml:lang="en">one off programme to carry specific news events e.g.
+					coverage of breaking news such as train crash</Definition>
+			</Term>
+			<Term termID="3.1.1.3">
+				<Name xml:lang="en">Special Report</Name>
+				<Definition xml:lang="en">one off programme to carry specific news worthy events
+					e.g.exclusive report on specific item</Definition>
+			</Term>
+			<Term termID="3.1.1.4">
+				<Name xml:lang="en">Commentary</Name>
+			</Term>
+			<Term termID="3.1.1.5">
+				<Name xml:lang="en">Periodical/General</Name>
+				<Definition xml:lang="en">regular timely programme covering general newsworthy
+				items</Definition>
+			</Term>
+			<Term termID="3.1.1.6">
+				<Name xml:lang="en">National politics/National assembly</Name>
+				<Definition xml:lang="en">new coverage of political events eg parliamentary
+				coverage</Definition>
+			</Term>
+			<Term termID="3.1.1.7">
+				<Name xml:lang="en">Economy/Market/Financial/Business</Name>
+				<Definition xml:lang="en">e.g. financial news programme from stock
+				market</Definition>
+			</Term>
+			<Term termID="3.1.1.8">
+				<Name xml:lang="en">Foreign/International</Name>
+				<Definition xml:lang="en">news from abroad</Definition>
+			</Term>
+			<Term termID="3.1.1.9">
+				<Name xml:lang="en">Sports</Name>
+				<Definition xml:lang="en">news of sporting events NB not to be used for regular
+					sporting coverage</Definition>
+			</Term>
+			<Term termID="3.1.1.10">
+				<Name xml:lang="en">Cultural</Name>
+				<Definition xml:lang="en">news of cultural significance. NB only to be used when
+					coverage is newsworthy. Oterwise use 3.1.4 or 3.1.10</Definition>
+				<Term termID="3.1.1.10.1">
+					<Name xml:lang="en">Arts</Name>
+				</Term>
+				<Term termID="3.1.1.10.2">
+					<Name xml:lang="en">Entertainment</Name>
+				</Term>
+				<Term termID="3.1.1.10.3">
+					<Name xml:lang="en">Film</Name>
+				</Term>
+				<Term termID="3.1.1.10.4">
+					<Name xml:lang="en">Music</Name>
+				</Term>
+				<Term termID="3.1.1.10.5">
+					<Name xml:lang="en">Radio</Name>
+				</Term>
+				<Term termID="3.1.1.10.6">
+					<Name xml:lang="en">TV</Name>
+				</Term>
+			</Term>
+			<Term termID="3.1.1.11">
+				<Name xml:lang="en">Local/Regional</Name>
+			</Term>
+			<Term termID="3.1.1.12">
+				<Name xml:lang="en">Traffic</Name>
+			</Term>
+			<Term termID="3.1.1.13">
+				<Name xml:lang="en">Weather forecasts</Name>
+			</Term>
+			<Term termID="3.1.1.14">
+				<Name xml:lang="en">Service information</Name>
+			</Term>
+			<Term termID="3.1.1.15">
+				<Name xml:lang="en">Public affairs</Name>
+			</Term>
+			<Term termID="3.1.1.16">
+				<Name xml:lang="en">Current affairs</Name>
+			</Term>
+			<Term termID="3.1.1.17">
+				<Name xml:lang="en">Consumer affairs</Name>
+				<Definition xml:lang="en">e.g. Watchdog</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.1.2">
+			<Name xml:lang="en">Religion/Philosophies</Name>
+			<Term termID="3.1.2.1">
+				<Name xml:lang="en">Religion</Name>
+				<Term termID="3.1.2.1.1">
+					<Name xml:lang="en">Buddhism</Name>
+				</Term>
+				<Term termID="3.1.2.1.2">
+					<Name xml:lang="en">Hinduism</Name>
+				</Term>
+				<Term termID="3.1.2.1.3">
+					<Name xml:lang="en">Christianity</Name>
+				</Term>
+				<Term termID="3.1.2.1.4">
+					<Name xml:lang="en">Islam</Name>
+				</Term>
+				<Term termID="3.1.2.1.5">
+					<Name xml:lang="en">Judaism</Name>
+				</Term>
+				<Term termID="3.1.2.1.8">
+					<Name xml:lang="en">Shintoism</Name>
+				</Term>
+				<Term termID="3.1.2.1.9">
+					<Name xml:lang="en">Baha'i</Name>
+				</Term>
+				<Term termID="3.1.2.1.10">
+					<Name xml:lang="en">Confucianism</Name>
+				</Term>
+				<Term termID="3.1.2.1.11">
+					<Name xml:lang="en">Jainism</Name>
+				</Term>
+				<Term termID="3.1.2.1.12">
+					<Name xml:lang="en">Sikhism</Name>
+				</Term>
+				<Term termID="3.1.2.1.13">
+					<Name xml:lang="en">Taoism</Name>
+				</Term>
+				<Term termID="3.1.2.1.14">
+					<Name xml:lang="en">Vodun (Voodoo)</Name>
+				</Term>
+				<Term termID="3.1.2.1.15">
+					<Name xml:lang="en">Asatru (Nordic Paganism)</Name>
+					<Definition xml:lang="en">AKA "Heathens"</Definition>
+				</Term>
+				<Term termID="3.1.2.1.16">
+					<Name xml:lang="en">Drudism</Name>
+				</Term>
+				<Term termID="3.1.2.1.17">
+					<Name xml:lang="en">Goddess worship</Name>
+				</Term>
+				<Term termID="3.1.2.1.18">
+					<Name xml:lang="en">Wicca</Name>
+				</Term>
+				<Term termID="3.1.2.1.19">
+					<Name xml:lang="en">Witchcraft</Name>
+				</Term>
+				<Term termID="3.1.2.1.20">
+					<Name xml:lang="en">Caodaism</Name>
+				</Term>
+				<Term termID="3.1.2.1.21">
+					<Name xml:lang="en">Damanhur Community</Name>
+				</Term>
+				<Term termID="3.1.2.1.22">
+					<Name xml:lang="en">Druse (Mowahhidoon)</Name>
+				</Term>
+				<Term termID="3.1.2.1.23">
+					<Name xml:lang="en">Eckankar</Name>
+				</Term>
+				<Term termID="3.1.2.1.24">
+					<Name xml:lang="en">Gnosticism</Name>
+				</Term>
+				<Term termID="3.1.2.1.25">
+					<Name xml:lang="en">Rroma (Gypsies)</Name>
+				</Term>
+				<Term termID="3.1.2.1.26">
+					<Name xml:lang="en">Hare Krishna and ISKCON</Name>
+				</Term>
+				<Term termID="3.1.2.1.27">
+					<Name xml:lang="en">Lukumi (Santeria)</Name>
+				</Term>
+				<Term termID="3.1.2.1.28">
+					<Name xml:lang="en">Macumba</Name>
+				</Term>
+				<Term termID="3.1.2.1.29">
+					<Name xml:lang="en">Native American spirituality</Name>
+				</Term>
+				<Term termID="3.1.2.1.30">
+					<Name xml:lang="en">New Age</Name>
+				</Term>
+				<Term termID="3.1.2.1.31">
+					<Name xml:lang="en">Osho</Name>
+					<Definition xml:lang="en">Formerly known as Bhagwan Shree Rajneesh</Definition>
+				</Term>
+				<Term termID="3.1.2.1.32">
+					<Name xml:lang="en">Satanism</Name>
+				</Term>
+				<Term termID="3.1.2.1.33">
+					<Name xml:lang="en">Scientology</Name>
+				</Term>
+				<Term termID="3.1.2.1.34">
+					<Name xml:lang="en">Thelema</Name>
+				</Term>
+				<Term termID="3.1.2.1.35">
+					<Name xml:lang="en">Unitarian-Universalism</Name>
+				</Term>
+				<Term termID="3.1.2.1.36">
+					<Name xml:lang="en">The Creativity Movement</Name>
+					<Definition xml:lang="en">Formerly called World Church of the
+					Creator</Definition>
+				</Term>
+				<Term termID="3.1.2.1.37">
+					<Name xml:lang="en">Zoroastrianism</Name>
+				</Term>
+				<Term termID="3.1.2.1.38">
+					<Name xml:lang="en">Quakerism</Name>
+				</Term>
+				<Term termID="3.1.2.1.39">
+					<Name xml:lang="en">Rastafarianism</Name>
+				</Term>
+			</Term>
+			<Term termID="3.1.2.2">
+				<Name xml:lang="en">Non-religious philosophies</Name>
+				<Term termID="3.1.2.2.1">
+					<Name xml:lang="en">Communism</Name>
+				</Term>
+				<Term termID="3.1.2.2.2">
+					<Name xml:lang="en">Humanism</Name>
+				</Term>
+				<Term termID="3.1.2.2.5">
+					<Name xml:lang="en">Libertarianism</Name>
+				</Term>
+				<Term termID="3.1.2.2.7">
+					<Name xml:lang="en">Deism</Name>
+				</Term>
+				<Term termID="3.1.2.2.8">
+					<Name xml:lang="en">Falun Gong and Falun Dafa</Name>
+				</Term>
+				<Term termID="3.1.2.2.9">
+					<Name xml:lang="en">Objectivism</Name>
+				</Term>
+				<Term termID="3.1.2.2.10">
+					<Name xml:lang="en">Universism</Name>
+				</Term>
+				<Term termID="3.1.2.2.11">
+					<Name xml:lang="en">Atheism</Name>
+				</Term>
+				<Term termID="3.1.2.2.12">
+					<Name xml:lang="en">Agnosticism</Name>
+				</Term>
+			</Term>
+		</Term>
+		<Term termID="3.1.3">
+			<Name xml:lang="en">General non-fiction</Name>
+			<Term termID="3.1.3.1">
+				<Name xml:lang="en">Political</Name>
+				<Term termID="3.1.3.1.1">
+					<Name xml:lang="en">Capitalism</Name>
+				</Term>
+				<Term termID="3.1.3.1.2">
+					<Name xml:lang="en">Fascism</Name>
+				</Term>
+				<Term termID="3.1.3.1.3">
+					<Name xml:lang="en">Republicanism</Name>
+				</Term>
+				<Term termID="3.1.3.1.4">
+					<Name xml:lang="en">Socialism</Name>
+				</Term>
+			</Term>
+			<Term termID="3.1.3.2">
+				<Name xml:lang="en">Social</Name>
+				<Term termID="3.1.3.2.1">
+					<Name xml:lang="en">Disability Issues</Name>
+				</Term>
+			</Term>
+			<Term termID="3.1.3.3">
+				<Name xml:lang="en">Economic</Name>
+			</Term>
+			<Term termID="3.1.3.4">
+				<Name xml:lang="en">Legal</Name>
+			</Term>
+			<Term termID="3.1.3.5">
+				<Name xml:lang="en">Finance</Name>
+			</Term>
+			<Term termID="3.1.3.6">
+				<Name xml:lang="en">Education</Name>
+				<Term termID="3.1.3.6.1">
+					<Name xml:lang="en">Pre-School</Name>
+				</Term>
+				<Term termID="3.1.3.6.2">
+					<Name xml:lang="en">Primary</Name>
+				</Term>
+				<Term termID="3.1.3.6.3">
+					<Name xml:lang="en">Secondary</Name>
+				</Term>
+				<Term termID="3.1.3.6.4">
+					<Name xml:lang="en">Colleges and Universities</Name>
+				</Term>
+				<Term termID="3.1.3.6.5">
+					<Name xml:lang="en">Adult education</Name>
+				</Term>
+				<Term termID="3.1.3.6.6">
+					<Name xml:lang="en">Non-formal education</Name>
+				</Term>
+				<Term termID="3.1.3.6.7">
+					<Name xml:lang="en">Homework</Name>
+				</Term>
+				<Term termID="3.1.3.6.8">
+					<Name xml:lang="en">Reading groups</Name>
+				</Term>
+				<Term termID="3.1.3.6.9">
+					<Name xml:lang="en">Distance learning</Name>
+				</Term>
+				<Term termID="3.1.3.6.10">
+					<Name xml:lang="en">Religious schools</Name>
+				</Term>
+				<Term termID="3.1.3.6.11">
+					<Name xml:lang="en">Student organisations</Name>
+				</Term>
+				<Term termID="3.1.3.6.12">
+					<Name xml:lang="en">Testing</Name>
+				</Term>
+				<Term termID="3.1.3.6.13">
+					<Name xml:lang="en">Theory and methods</Name>
+				</Term>
+				<Term termID="3.1.3.6.14">
+					<Name xml:lang="en">Interdisciplinary studies</Name>
+				</Term>
+			</Term>
+			<Term termID="3.1.3.7">
+				<Name xml:lang="en">International affairs</Name>
+			</Term>
+			<Term termID="3.1.3.8">
+				<Name xml:lang="en">Military/Defence</Name>
+			</Term>
+			<Term termID="3.1.3.9">
+				<Name xml:lang="en">Industry/Manufacturing</Name>
+			</Term>
+			<Term termID="3.1.3.10">
+				<Name xml:lang="en">Agriculture</Name>
+			</Term>
+			<Term termID="3.1.3.11">
+				<Name xml:lang="en">Construction / Civil Engineering</Name>
+			</Term>
+			<Term termID="3.1.3.12">
+				<Name xml:lang="en">Activities</Name>
+				<Definition>Activities, particularly children's activities, which may or may not be
+					educational.</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.1.4">
+			<Name xml:lang="en">Arts</Name>
+			<Term termID="3.1.4.1">
+				<Name xml:lang="en">Music</Name>
+				<Definition xml:lang="en">Programme about a musical subject: NB if the content is
+					predominantly the music itself this is not the category to be used - instead
+					refer to 3.6 Music e.g. biography of Mozart not a relay of a concert of his
+					music</Definition>
+			</Term>
+			<Term termID="3.1.4.2">
+				<Name xml:lang="en">Dance</Name>
+				<Definition xml:lang="en">including ballet</Definition>
+			</Term>
+			<Term termID="3.1.4.3">
+				<Name xml:lang="en">Theatre</Name>
+				<Definition xml:lang="en">Programme about the theatre such as a review programme:
+					not a programme consisting of the play itself</Definition>
+			</Term>
+			<Term termID="3.1.4.4">
+				<Name xml:lang="en">Opera</Name>
+			</Term>
+			<Term termID="3.1.4.5">
+				<Name xml:lang="en">Cinema</Name>
+				<Definition xml:lang="en">Programme about subject concerning the world of the film
+					and cinema not the film itself</Definition>
+			</Term>
+			<Term termID="3.1.4.6">
+				<Name xml:lang="en">Poetry</Name>
+			</Term>
+			<Term termID="3.1.4.8">
+				<Name xml:lang="en">Plastic arts</Name>
+				<Definition xml:lang="en">Includes sculpture, carving, pottery and
+				weaving</Definition>
+			</Term>
+			<Term termID="3.1.4.9">
+				<Name xml:lang="en">Fine arts</Name>
+			</Term>
+			<Term termID="3.1.4.10">
+				<Name xml:lang="en">Experimental arts</Name>
+			</Term>
+			<Term termID="3.1.4.11">
+				<Name xml:lang="en">Architecture</Name>
+			</Term>
+			<Term termID="3.1.4.12">
+				<Name xml:lang="en">Showbiz</Name>
+			</Term>
+		</Term>
+		<Term termID="3.1.5">
+			<Name xml:lang="en">Humanities</Name>
+			<Definition xml:lang="en">The branches of learning regarded as having primarily a
+				cultural character and which usually include language, literature, history,
+				mathematics and philosophy</Definition>
+			<Term termID="3.1.5.1">
+				<Name xml:lang="en">Literature</Name>
+			</Term>
+			<Term termID="3.1.5.2">
+				<Name xml:lang="en">Languages</Name>
+			</Term>
+			<Term termID="3.1.5.3">
+				<Name xml:lang="en">History</Name>
+			</Term>
+			<Term termID="3.1.5.4">
+				<Name xml:lang="en">Culture/Tradition/Anthropology/Ethnic studies</Name>
+			</Term>
+			<Term termID="3.1.5.5">
+				<Name xml:lang="en">War/Conflict</Name>
+			</Term>
+			<Term termID="3.1.5.6">
+				<Name xml:lang="en">Philosophy</Name>
+			</Term>
+			<Term termID="3.1.5.7">
+				<Name xml:lang="en">Political Science</Name>
+			</Term>
+		</Term>
+		<Term termID="3.1.6">
+			<Name xml:lang="en">Sciences</Name>
+			<Term termID="3.1.6.1">
+				<Name xml:lang="en">Applied sciences</Name>
+				<Definition xml:lang="en">Sciences dealing with material phenomena or industrial
+					processes</Definition>
+			</Term>
+			<Term termID="3.1.6.2">
+				<Name xml:lang="en">Nature/Natural sciences</Name>
+				<Definition xml:lang="en">Biology, botany, geology and zoology</Definition>
+				<Term termID="3.1.6.2.1">
+					<Name xml:lang="en">Biology</Name>
+				</Term>
+				<Term termID="3.1.6.2.2">
+					<Name xml:lang="en">Geology</Name>
+				</Term>
+				<Term termID="3.1.6.2.3">
+					<Name xml:lang="en">Botany</Name>
+				</Term>
+				<Term termID="3.1.6.2.4">
+					<Name xml:lang="en">Zoology</Name>
+				</Term>
+			</Term>
+			<Term termID="3.1.6.3">
+				<Name xml:lang="en">Animals/Wildlife</Name>
+			</Term>
+			<Term termID="3.1.6.4">
+				<Name xml:lang="en">Environment/Geography</Name>
+			</Term>
+			<Term termID="3.1.6.5">
+				<Name xml:lang="en">Space/Universe</Name>
+				<Definition xml:lang="en">Astronomy, astrophysics</Definition>
+			</Term>
+			<Term termID="3.1.6.6">
+				<Name xml:lang="en">Physical sciences</Name>
+				<Definition xml:lang="en">Chemistry, electricity, mechanics, physics</Definition>
+			</Term>
+			<Term termID="3.1.6.6.1">
+				<Name xml:lang="en">Physics</Name>
+			</Term>
+			<Term termID="3.1.6.6.2">
+				<Name xml:lang="en">Chemistry</Name>
+			</Term> 
+			<Term termID="3.1.6.6.3">
+				<Name xml:lang="en">Mechanics</Name>
+			</Term> 
+			<Term termID="3.1.6.6.4">
+				<Name xml:lang="en">Engineering</Name>
+			</Term>
+			<Term termID="3.1.6.7">
+				<Name xml:lang="en">Medicine</Name>
+				<Definition xml:lang="en">Programmes about medical subjects, health etc</Definition>
+				<Term termID="3.1.6.7.1">
+					<Name xml:lang="en">Alternative Medicine</Name>
+				</Term>
+			</Term>
+			<Term termID="3.1.6.8">
+				<Name xml:lang="en">Technology</Name>
+			</Term>
+			<Term termID="3.1.6.9">
+				<Name xml:lang="en">Physiology</Name>
+			</Term>
+			<Term termID="3.1.6.10">
+				<Name xml:lang="en">Psychology</Name>
+			</Term>
+			<Term termID="3.1.6.11">
+				<Name xml:lang="en">Social</Name>
+			</Term>
+			<Term termID="3.1.6.12">
+				<Name xml:lang="en">Spiritual</Name>
+			</Term>
+			<Term termID="3.1.6.13">
+				<Name xml:lang="en">Mathematics</Name>
+			</Term>
+			<Term termID="3.1.6.14">
+				<Name xml:lang="en">Archaeology</Name>
+			</Term>
+			<Term termID="3.1.6.15">
+				<Name xml:lang="en">Statistics</Name>
+			</Term>
+			<Term termID="3.1.6.16">
+				<Name xml:lang="en">Liberal Arts and Science</Name>
+			</Term>
+		</Term>
+		<Term termID="3.1.7">
+			<Name xml:lang="en">Human interest</Name>
+			<Term termID="3.1.7.1">
+				<Name xml:lang="en">Reality</Name>
+				<Definition xml:lang="en">Programme based on real life, usually by the camera
+					observing without changing what is happening ("fly on the wall documentary" for
+					example)</Definition>
+			</Term>
+			<Term termID="3.1.7.2">
+				<Name xml:lang="en">Society/Show business/Gossip</Name>
+			</Term>
+			<Term termID="3.1.7.3">
+				<Name xml:lang="en">Biography/Notable personalities</Name>
+			</Term>
+			<Term termID="3.1.7.4">
+				<Name xml:lang="en">Personal problems</Name>
+			</Term>
+			<Term termID="3.1.7.5">
+				<Name xml:lang="en">Investigative journalism</Name>
+			</Term>
+			<Term termID="3.1.7.6">
+				<Name xml:lang="en">Museums</Name>
+			</Term>
+			<Term termID="3.1.7.7">
+				<Name xml:lang="en">Religious buildings</Name>
+			</Term>
+			<Term termID="3.1.7.8">
+				<Name xml:lang="en">Personal stories</Name>
+			</Term>
+			<Term termID="3.1.7.9">
+				<Name xml:lang="en">Family life</Name>
+			</Term>
+			<Term termID="3.1.7.10">
+				<Name xml:lang="en">libraries</Name>
+			</Term>
+		</Term>
+		<Term termID="3.1.8">
+			<Name xml:lang="en">Transport and Communications</Name>
+			<Term termID="3.1.8.1">
+				<Name xml:lang="en">Air</Name>
+				<Definition xml:lang="en">Programme consisting of elements on aviation as means of
+					commercial aviation. Elements concerning private pilots and general aviation
+					should go in leisure/Hobbies, aviation (3.3.34) Programme consisting of elements
+					on aviation as sport should go in (3.2.14)</Definition>
+			</Term>
+			<Term termID="3.1.8.2">
+				<Name xml:lang="en">Land</Name>
+			</Term>
+			<Term termID="3.1.8.3">
+				<Name xml:lang="en">Sea</Name>
+			</Term>
+			<Term termID="3.1.8.4">
+				<Name xml:lang="en">Space</Name>
+			</Term>
+		</Term>
+		<Term termID="3.1.9">
+			<Name xml:lang="en">Events</Name>
+			<Definition xml:lang="en">Coverage of events, not the event itself (see format)</Definition>
+			<Term termID="3.1.9.1">
+				<Name xml:lang="en">Anniversary</Name>
+			</Term>
+			<Term termID="3.1.9.2">
+				<Name xml:lang="en">Fair</Name>
+			</Term>
+			<Term termID="3.1.9.3">
+				<Name xml:lang="en">Tradeshow</Name>
+			</Term>
+			<Term termID="3.1.9.4">
+				<Name xml:lang="en">Musical</Name>
+			</Term>
+			<Term termID="3.1.9.5">
+				<Name xml:lang="en">Exhibition</Name>
+			</Term>
+			<Term termID="3.1.9.6">
+				<Name xml:lang="en">Royal</Name>
+			</Term>
+			<Term termID="3.1.9.7">
+				<Name xml:lang="en">State</Name>
+			</Term>
+			<Term termID="3.1.9.8">
+				<Name xml:lang="en">International</Name>
+			</Term>
+			<Term termID="3.1.9.9">
+				<Name xml:lang="en">National</Name>
+			</Term>
+			<Term termID="3.1.9.10">
+				<Name xml:lang="en">Local/Regional</Name>
+			</Term>
+			<Term termID="3.1.9.11">
+				<Name xml:lang="en">Seasonal</Name>
+			</Term>
+			<Term termID="3.1.9.12">
+				<Name xml:lang="en">Sporting</Name>
+			</Term>
+			<Term termID="3.1.9.13">
+				<Name xml:lang="en">Festival</Name>
+			</Term>
+			<Term termID="3.1.9.14">
+				<Name xml:lang="en">Concert</Name>
+			</Term>
+			<Term termID="3.1.9.15">
+				<Name xml:lang="en">Funeral/Memorial</Name>
+			</Term>
+		</Term>
+		<Term termID="3.1.10">
+			<Name xml:lang="en">Media</Name>
+			<Term termID="3.1.10.1">
+				<Name xml:lang="en">Advertising</Name>
+			</Term>
+			<Term termID="3.1.10.2">
+				<Name xml:lang="en">Print media</Name>
+			</Term>
+			<Term termID="3.1.10.3">
+				<Name xml:lang="en">Television</Name>
+			</Term>
+			<Term termID="3.1.10.4">
+				<Name xml:lang="en">Radio</Name>
+			</Term>
+			<Term termID="3.1.10.5">
+				<Name xml:lang="en">New media</Name>
+			</Term>
+			<Term termID="3.1.10.6">
+				<Name xml:lang="en">Marketing</Name>
+			</Term>
+		</Term>
+		<Term termID="3.1.11">
+			<Name xml:lang="en">Listings</Name>
+			<Definition xml:lang="en">information about schedules to be broadcast</Definition>
+		</Term>
+	</Term>
+	<Term termID="3.2">
+		<Name xml:lang="en">SPORTS</Name>
+		<Term termID="3.2.1">
+			<Name xml:lang="en">Athletics</Name>
+			<Term termID="3.2.1.1">
+				<Name xml:lang="en">Field</Name>
+			</Term>
+			<Term termID="3.2.1.2">
+				<Name xml:lang="en">Track</Name>
+			</Term>
+			<Term termID="3.2.1.3">
+				<Name xml:lang="en">Combined athletics</Name>
+			</Term>
+			<Term termID="3.2.1.4">
+				<Name xml:lang="en">Running</Name>
+			</Term>
+			<Term termID="3.2.1.5">
+				<Name xml:lang="en">Cross-country</Name>
+			</Term>
+			<Term termID="3.2.1.6">
+				<Name xml:lang="en">Triathlon</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.2">
+			<Name xml:lang="en">Cycling/Bicycle</Name>
+			<Term termID="3.2.2.1">
+				<Name xml:lang="en">Mountainbike</Name>
+			</Term>
+			<Term termID="3.2.2.2">
+				<Name xml:lang="en">Bicross</Name>
+			</Term>
+			<Term termID="3.2.2.3">
+				<Name xml:lang="en">Indoor cycling</Name>
+			</Term>
+			<Term termID="3.2.2.4">
+				<Name xml:lang="en">Road cycling</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.3">
+			<Name xml:lang="en">Team sports</Name>
+			<Term termID="3.2.3.1">
+				<Name xml:lang="en">Football (American)</Name>
+			</Term>
+			<Term termID="3.2.3.2">
+				<Name xml:lang="en">Football (Australian)</Name>
+			</Term>
+			<Term termID="3.2.3.3">
+				<Name xml:lang="en">Football (Gaelic)</Name>
+			</Term>
+			<Term termID="3.2.3.4">
+				<Name xml:lang="en">Football (Indoor)</Name>
+			</Term>
+			<Term termID="3.2.3.5">
+				<Name xml:lang="en">Beach soccer</Name>
+			</Term>
+			<Term termID="3.2.3.6">
+				<Name xml:lang="en">Bandy</Name>
+			</Term>
+			<Term termID="3.2.3.7">
+				<Name xml:lang="en">Baseball</Name>
+			</Term>
+			<Term termID="3.2.3.8">
+				<Name xml:lang="en">Basketball</Name>
+			</Term>
+			<Term termID="3.2.3.9">
+				<Name xml:lang="en">Cricket</Name>
+			</Term>
+			<Term termID="3.2.3.10">
+				<Name xml:lang="en">Croquet</Name>
+			</Term>
+			<Term termID="3.2.3.11">
+				<Name xml:lang="en">Faustball</Name>
+			</Term>
+			<Term termID="3.2.3.12">
+				<Name xml:lang="en">Football (Soccer)</Name>
+			</Term>
+			<Term termID="3.2.3.13">
+				<Name xml:lang="en">Handball</Name>
+			</Term>
+			<Term termID="3.2.3.14">
+				<Name xml:lang="en">Hockey</Name>
+			</Term>
+			<Term termID="3.2.3.15">
+				<Name xml:lang="en">Korfball</Name>
+			</Term>
+			<Term termID="3.2.3.16">
+				<Name xml:lang="en">Lacrosse</Name>
+			</Term>
+			<Term termID="3.2.3.17">
+				<Name xml:lang="en">Netball</Name>
+			</Term>
+			<Term termID="3.2.3.18">
+				<Name xml:lang="en">Roller skating</Name>
+			</Term>
+			<Term termID="3.2.3.19">
+				<Name xml:lang="en">Rugby</Name>
+			</Term>
+			<Term termID="3.2.3.19.1">
+				<Name xml:lang="en">Rugby union</Name>
+			</Term>
+			<Term termID="3.2.3.19.2">
+				<Name xml:lang="en">Rugby league</Name>
+			</Term>
+			<Term termID="3.2.3.20">
+				<Name xml:lang="en">Softball</Name>
+			</Term>
+			<Term termID="3.2.3.21">
+				<Name xml:lang="en">Volleyball</Name>
+			</Term>
+			<Term termID="3.2.3.22">
+				<Name xml:lang="en">Beach volley</Name>
+			</Term>
+			<Term termID="3.2.3.23">
+				<Name xml:lang="en">Hurling</Name>
+			</Term>
+			<Term termID="3.2.3.24">
+				<Name xml:lang="en">Flying Disc/ Frisbee</Name>
+			</Term>
+			<Term termID="3.2.3.25">
+				<Name xml:lang="en">Kabadi</Name>
+			</Term>
+			<Term termID="3.2.3.26">
+				<Name xml:lang="en">Camogie</Name>
+				<Definition xml:lang="en">Female version of Hurling.</Definition>
+			</Term>
+			<Term termID="3.2.3.27">
+				<Name xml:lang="en">Shinty</Name>
+				<Definition xml:lang="en">Scottish game, also known as Camanachd.</Definition>
+			</Term>
+			<Term termID="3.2.3.28">
+				<Name xml:lang="en">Street Soccer</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.4">
+			<Name xml:lang="en">Racket sports</Name>
+			<Term termID="3.2.4.1">
+				<Name xml:lang="en">Badminton</Name>
+			</Term>
+			<Term termID="3.2.4.2">
+				<Name xml:lang="en">Racketball</Name>
+			</Term>
+			<Term termID="3.2.4.3">
+				<Name xml:lang="en">Short tennis</Name>
+			</Term>
+			<Term termID="3.2.4.4">
+				<Name xml:lang="en">Soft tennis</Name>
+			</Term>
+			<Term termID="3.2.4.5">
+				<Name xml:lang="en">Squash</Name>
+			</Term>
+			<Term termID="3.2.4.6">
+				<Name xml:lang="en">Table tennis</Name>
+			</Term>
+			<Term termID="3.2.4.7">
+				<Name xml:lang="en">Tennis</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.5">
+			<Name xml:lang="en">Martial Arts</Name>
+			<Term termID="3.2.5.1">
+				<Name xml:lang="en">Aikido</Name>
+			</Term>
+			<Term termID="3.2.5.2">
+				<Name xml:lang="en">Jai-alai</Name>
+			</Term>
+			<Term termID="3.2.5.3">
+				<Name xml:lang="en">Judo</Name>
+			</Term>
+			<Term termID="3.2.5.4">
+				<Name xml:lang="en">Ju-jitsu</Name>
+			</Term>
+			<Term termID="3.2.5.5">
+				<Name xml:lang="en">Karate</Name>
+			</Term>
+			<Term termID="3.2.5.6">
+				<Name xml:lang="en">Sumo/Fighting games</Name>
+			</Term>
+			<Term termID="3.2.5.7">
+				<Name xml:lang="en">Sambo</Name>
+			</Term>
+			<Term termID="3.2.5.8">
+				<Name xml:lang="en">Taekwondo</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.6">
+			<Name xml:lang="en">Water sports</Name>
+			<Term termID="3.2.6.1">
+				<Name xml:lang="en">Bodyboarding</Name>
+			</Term>
+			<Term termID="3.2.6.2">
+				<Name xml:lang="en">Yatching</Name>
+			</Term>
+			<Term termID="3.2.6.3">
+				<Name xml:lang="en">Canoeing</Name>
+			</Term>
+			<Term termID="3.2.6.4">
+				<Name xml:lang="en">Diving</Name>
+			</Term>
+			<Term termID="3.2.6.5">
+				<Name xml:lang="en">Fishing</Name>
+			</Term>
+			<Term termID="3.2.6.6">
+				<Name xml:lang="en">Polo</Name>
+			</Term>
+			<Term termID="3.2.6.7">
+				<Name xml:lang="en">Rowing</Name>
+			</Term>
+			<Term termID="3.2.6.8">
+				<Name xml:lang="en">Sailing</Name>
+			</Term>
+			<Term termID="3.2.6.9">
+				<Name xml:lang="en">Sub-aquatics</Name>
+			</Term>
+			<Term termID="3.2.6.10">
+				<Name xml:lang="en">Surfing</Name>
+			</Term>
+			<Term termID="3.2.6.11">
+				<Name xml:lang="en">Swimming</Name>
+			</Term>
+			<Term termID="3.2.6.12">
+				<Name xml:lang="en">Water polo</Name>
+			</Term>
+			<Term termID="3.2.6.13">
+				<Name xml:lang="en">Water skiing</Name>
+			</Term>
+			<Term termID="3.2.6.14">
+				<Name xml:lang="en">Windsurfing</Name>
+				<Definition xml:lang="en">includes kite surfing</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.2.7">
+			<Name xml:lang="en">Winter sports</Name>
+			<Term termID="3.2.7.1">
+				<Name xml:lang="en">Bobsleigh/Tobogganing</Name>
+			</Term>
+			<Term termID="3.2.7.2">
+				<Name xml:lang="en">Curling</Name>
+			</Term>
+			<Term termID="3.2.7.3">
+				<Name xml:lang="en">Ice-hockey</Name>
+			</Term>
+			<Term termID="3.2.7.4">
+				<Name xml:lang="en">Ice-skating</Name>
+			</Term>
+			<Term termID="3.2.7.5">
+				<Name xml:lang="en">Luge</Name>
+			</Term>
+			<Term termID="3.2.7.6">
+				<Name xml:lang="en">Skating</Name>
+			</Term>
+			<Term termID="3.2.7.7">
+				<Name xml:lang="en">Skibob</Name>
+			</Term>
+			<Term termID="3.2.7.8">
+				<Name xml:lang="en">Skiing</Name>
+			</Term>
+			<Term termID="3.2.7.9">
+				<Name xml:lang="en">Sleddog</Name>
+			</Term>
+			<Term termID="3.2.7.10">
+				<Name xml:lang="en">Snowboarding</Name>
+			</Term>
+			<Term termID="3.2.7.11">
+				<Name xml:lang="en">Alpine skiing</Name>
+			</Term>
+			<Term termID="3.2.7.12">
+				<Name xml:lang="en">Freestyle skiing </Name>
+			</Term>
+			<Term termID="3.2.7.13">
+				<Name xml:lang="en">Inline skating</Name>
+			</Term>
+			<Term termID="3.2.7.14">
+				<Name xml:lang="en">Nordic skiing</Name>
+			</Term>
+			<Term termID="3.2.7.15">
+				<Name xml:lang="en">Ski jumping</Name>
+			</Term>
+			<Term termID="3.2.7.16">
+				<Name xml:lang="en">Speed skating</Name>
+			</Term>
+			<Term termID="3.2.7.17">
+				<Name xml:lang="en">Figure skating</Name>
+			</Term>
+			<Term termID="3.2.7.18">
+				<Name xml:lang="en">Ice-dance</Name>
+			</Term>
+			<Term termID="3.2.7.19">
+				<Name xml:lang="en">Marathon</Name>
+			</Term>
+			<Term termID="3.2.7.20">
+				<Name xml:lang="en">Short-track</Name>
+			</Term>
+			<Term termID="3.2.7.21">
+				<Name xml:lang="en">Biathlon</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.8">
+			<Name xml:lang="en">Motor sports</Name>
+			<Term termID="3.2.8.1">
+				<Name xml:lang="en">Auto racing</Name>
+				<Definition xml:lang="en">Motor car racing not covered elsewhere - eg Formula Ford,
+					Formula .000, V8 championship etc</Definition>
+			</Term>
+			<Term termID="3.2.8.2">
+				<Name xml:lang="en">Motor boating</Name>
+				<Definition xml:lang="en">Motor racing on water!</Definition>
+			</Term>
+			<Term termID="3.2.8.3">
+				<Name xml:lang="en">Motor cycling</Name>
+				<Definition xml:lang="en">Speedway, TT etc</Definition>
+			</Term>
+			<Term termID="3.2.8.4">
+				<Name xml:lang="en">Formula 1</Name>
+			</Term>
+			<Term termID="3.2.8.5">
+				<Name xml:lang="en">Indy car</Name>
+			</Term>
+			<Term termID="3.2.8.6">
+				<Name xml:lang="en">Karting</Name>
+			</Term>
+			<Term termID="3.2.8.7">
+				<Name xml:lang="en">Rally</Name>
+			</Term>
+			<Term termID="3.2.8.8">
+				<Name xml:lang="en">Trucking</Name>
+			</Term>
+			<Term termID="3.2.8.9">
+				<Name xml:lang="en">Tractor pulling</Name>
+			</Term>
+			<Term termID="3.2.8.10">
+				<Name xml:lang="en">Stock car</Name>
+				<Definition xml:lang="en">eg Nascar, demolition derby</Definition>
+			</Term>
+			<Term termID="3.2.8.11">
+				<Name xml:lang="en">Hill Climb</Name>
+				<Definition xml:lang="en">speed racing up steep hills</Definition>
+			</Term>
+			<Term termID="3.2.8.12">
+				<Name xml:lang="en">Trials</Name>
+				<Definition xml:lang="en">autotesting - skill and vehicle testing</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.2.9">
+			<Name xml:lang="en">'Social' sports</Name>
+			<Term termID="3.2.9.1">
+				<Name xml:lang="en">Billiards</Name>
+			</Term>
+			<Term termID="3.2.9.2">
+				<Name xml:lang="en">Boules</Name>
+			</Term>
+			<Term termID="3.2.9.3">
+				<Name xml:lang="en">Bowling</Name>
+			</Term>
+			<Term termID="3.2.9.5">
+				<Name xml:lang="en">Dance sport</Name>
+			</Term>
+			<Term termID="3.2.9.6">
+				<Name xml:lang="en">Darts</Name>
+			</Term>
+			<Term termID="3.2.9.7">
+				<Name xml:lang="en">Pool</Name>
+			</Term>
+			<Term termID="3.2.9.8">
+				<Name xml:lang="en">Snooker</Name>
+			</Term>
+			<Term termID="3.2.9.9">
+				<Name xml:lang="en">Tug-of-war</Name>
+			</Term>
+			<Term termID="3.2.9.10">
+				<Name xml:lang="en">Balle pelote</Name>
+			</Term>
+			<Term termID="3.2.9.11">
+				<Name xml:lang="en">Basque pelote</Name>
+			</Term>
+			<Term termID="3.2.9.12">
+				<Name xml:lang="en">Trickshot</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.10">
+			<Name xml:lang="en">Gymnastics</Name>
+			<Term termID="3.2.10.1">
+				<Name xml:lang="en">Asymmetric bars</Name>
+			</Term>
+			<Term termID="3.2.10.2">
+				<Name xml:lang="en">Beam</Name>
+			</Term>
+			<Term termID="3.2.10.3">
+				<Name xml:lang="en">Horse</Name>
+			</Term>
+			<Term termID="3.2.10.4">
+				<Name xml:lang="en">Mat</Name>
+			</Term>
+			<Term termID="3.2.10.5">
+				<Name xml:lang="en">Parallel bars</Name>
+			</Term>
+			<Term termID="3.2.10.6">
+				<Name xml:lang="en">Rings</Name>
+			</Term>
+			<Term termID="3.2.10.7">
+				<Name xml:lang="en">Trampoline</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.11">
+			<Name xml:lang="en">Equestrian</Name>
+			<Term termID="3.2.11.1">
+				<Name xml:lang="en">Cart</Name>
+			</Term>
+			<Term termID="3.2.11.2">
+				<Name xml:lang="en">Dressage</Name>
+			</Term>
+			<Term termID="3.2.11.3">
+				<Name xml:lang="en">Horse racing</Name>
+			</Term>
+			<Term termID="3.2.11.4">
+				<Name xml:lang="en">Polo</Name>
+			</Term>
+			<Term termID="3.2.11.5">
+				<Name xml:lang="en">Jumping</Name>
+			</Term>
+			<Term termID="3.2.11.6">
+				<Name xml:lang="en">Crossing</Name>
+			</Term>
+			<Term termID="3.2.11.7">
+				<Name xml:lang="en">Trotting</Name>
+				<Definition xml:lang="en">Horse with two wheel cart and a jockey</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.2.12">
+			<Name xml:lang="en">Adventure sports</Name>
+			<Term termID="3.2.12.1">
+				<Name xml:lang="en">Archery</Name>
+			</Term>
+			<Term termID="3.2.12.2">
+				<Name xml:lang="en">Extreme sports</Name>
+			</Term>
+			<Term termID="3.2.12.3">
+				<Name xml:lang="en">Mountaineering</Name>
+			</Term>
+			<Term termID="3.2.12.4">
+				<Name xml:lang="en">Climbing</Name>
+			</Term>
+			<Term termID="3.2.12.5">
+				<Name xml:lang="en">Orienteering</Name>
+			</Term>
+			<Term termID="3.2.12.6">
+				<Name xml:lang="en">Shooting</Name>
+			</Term>
+			<Term termID="3.2.12.7">
+				<Name xml:lang="en">Sport acrobatics</Name>
+			</Term>
+			<Term termID="3.2.12.8">
+				<Name xml:lang="en">Rafting</Name>
+			</Term>
+			<Term termID="3.2.12.9">
+				<Name xml:lang="en">Caving</Name>
+			</Term>
+			<Term termID="3.2.12.10">
+				<Name xml:lang="en">Skateboarding</Name>
+			</Term>
+			<Term termID="3.2.12.11">
+				<Name xml:lang="en">Treking</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.13">
+			<Name xml:lang="en">Strength-based sports</Name>
+			<Term termID="3.2.13.1">
+				<Name xml:lang="en">Body-building</Name>
+			</Term>
+			<Term termID="3.2.13.2">
+				<Name xml:lang="en">Boxing</Name>
+			</Term>
+			<Term termID="3.2.13.3">
+				<Name xml:lang="en">Combative sports</Name>
+				<Definition xml:lang="en">Other than martial arts</Definition>
+			</Term>
+			<Term termID="3.2.13.4">
+				<Name xml:lang="en">Power-lifting</Name>
+			</Term>
+			<Term termID="3.2.13.5">
+				<Name xml:lang="en">Weight-lifting</Name>
+			</Term>
+			<Term termID="3.2.13.6">
+				<Name xml:lang="en">Wrestling</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.14">
+			<Name xml:lang="en">Air sports</Name>
+			<Definition xml:lang="en">Programme consisting of elements on aviation as sport.
+				Elements concerning commercial aviation should be categorized in Air Transport
+				(3.1.8.1) and elements concerning private pilots and general aviation should go in
+				Leisure/Hobbies, aviation (3.3.34) </Definition>
+			<Term termID="3.2.14.1">
+				<Name xml:lang="en">Ballooning</Name>
+			</Term>
+			<Term termID="3.2.14.2">
+				<Name xml:lang="en">Hang gliding</Name>
+			</Term>
+			<Term termID="3.2.14.3">
+				<Name xml:lang="en">Sky diving</Name>
+			</Term>
+			<Term termID="3.2.14.4">
+				<Name xml:lang="en">Delta-plane</Name>
+			</Term>
+			<Term termID="3.2.14.5">
+				<Name xml:lang="en">Parachuting</Name>
+			</Term>
+			<Term termID="3.2.14.6">
+				<Name xml:lang="en">Kiting</Name>
+			</Term>
+			<Term termID="3.2.14.7">
+				<Name xml:lang="en">Aeronautics</Name>
+			</Term>
+			<Term termID="3.2.14.8">
+				<Name xml:lang="en">Gliding</Name>
+				<Definition xml:lang="en">Airplane without engine </Definition>
+			</Term>
+			<Term termID="3.2.14.9">
+				<Name xml:lang="en">Flying</Name>
+				<Definition xml:lang="en">Airplane with engine(s)</Definition>
+			</Term>
+			<Term termID="3.2.14.10">
+				<Name xml:lang="en">Aerobatics</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.15">
+			<Name xml:lang="en">Golf</Name>
+		</Term>
+		<Term termID="3.2.16">
+			<Name xml:lang="en">Fencing</Name>
+		</Term>
+		<Term termID="3.2.17">
+			<Name xml:lang="en">Dog racing</Name>
+		</Term>
+		<Term termID="3.2.18">
+			<Name xml:lang="en">Casting</Name>
+		</Term>
+		<Term termID="3.2.19">
+			<Name xml:lang="en">Maccabi</Name>
+		</Term>
+		<Term termID="3.2.20">
+			<Name xml:lang="en">Modern Pentathlon</Name>
+		</Term>
+		<Term termID="3.2.21">
+			<Name xml:lang="en">Sombo</Name>
+		</Term>
+		<Term termID="3.2.22">
+			<Name xml:lang="en">Mind Games</Name>
+			<Definition xml:lang="en">Competetive tests of mental acuity. This category should only
+				be used where the coverage relates to the competetivemness of the event. It is not
+				intended for use where the coverage is intended for education purposes</Definition>
+			<Term termID="3.2.22.1">
+				<Name xml:lang="en">Bridge</Name>
+			</Term>
+			<Term termID="3.2.22.2">
+				<Name xml:lang="en">Chess</Name>
+			</Term>
+			<Term termID="3.2.22.3">
+				<Name xml:lang="en">Poker</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2.23">
+			<Name xml:lang="en">Traditional Games</Name>
+			<Definition xml:lang="en">Intended for local use for specific traditional national
+			games</Definition>
+		</Term>
+		<Term termID="3.2.24">
+			<Name xml:lang="en">Disabled Sport</Name>
+			<Term termID="3.2.24.1">
+				<Name xml:lang="en">Physically Challenged</Name>
+			</Term>
+			<Term termID="3.2.24.2">
+				<Name xml:lang="en">Mentally Challenged</Name>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="3.4">
+		<Name xml:lang="en">FICTION/DRAMA</Name>
+		<Definition xml:lang="en">Programme consisting of a prose or verse composition, resp. one
+			telling a story, written for or as if for performance by actors, puppets or animated</Definition>
+		<Term termID="3.4.1">
+			<Name xml:lang="en">General light drama</Name>
+			<Definition xml:lang="en">Drama written after approximately 1918 and without literary or
+				cultural pretensions. Popular drama, e.g. Upstairs, Downstairs</Definition>
+		</Term>
+		<Term termID="3.4.2">
+			<Name xml:lang="en">Soap</Name>
+			<Definition xml:lang="en">Dramatized serial programme dealing with easy-to-grasp
+				situations performed by a limited cast</Definition>
+			<Term termID="3.4.2.1">
+				<Name xml:lang="en">Soap opera</Name>
+			</Term>
+			<Term termID="3.4.2.2">
+				<Name xml:lang="en">Soap special</Name>
+			</Term>
+			<Term termID="3.4.2.3">
+				<Name xml:lang="en">Soap talk</Name>
+			</Term>
+		</Term>
+		<Term termID="3.4.3">
+			<Name xml:lang="en">Romance</Name>
+			<Definition xml:lang="en">e.g. Romeo and Juliet</Definition>
+		</Term>
+		<Term termID="3.4.4">
+			<Name xml:lang="en">Legal Melodrama</Name>
+			<Definition xml:lang="en">Drama production where the primary action takes place in law
+				courts and/or law firms e.g. Philadelphia</Definition>
+		</Term>
+		<Term termID="3.4.5">
+			<Name xml:lang="en">Medical melodrama</Name>
+			<Definition xml:lang="en">Drama production situated in hospitals and/or dealing with
+				medical subjects e.g. ER, Dr kildaire, Casualty</Definition>
+		</Term>
+		<Term termID="3.4.6">
+			<Name xml:lang="en">Action</Name>
+			<Term termID="3.4.6.1">
+				<Name xml:lang="en">Adventure</Name>
+				<Definition xml:lang="en">e.g. Tomb Raider</Definition>
+			</Term>
+			<Term termID="3.4.6.2">
+				<Name xml:lang="en">Disaster</Name>
+				<Definition xml:lang="en">e.g. Towering Inferno, Earthquake, Airport
+				.990</Definition>
+			</Term>
+			<Term termID="3.4.6.3">
+				<Name xml:lang="en">Mystery</Name>
+			</Term>
+			<Term termID="3.4.6.4">
+				<Name xml:lang="en">Detective/Police</Name>
+				<Definition xml:lang="en">e.g. Perry Mason, HillSt blues</Definition>
+			</Term>
+			<Term termID="3.4.6.5">
+				<Name xml:lang="en">Historical/Epic</Name>
+				<Definition xml:lang="en">e.g. Hornblower</Definition>
+			</Term>
+			<Term termID="3.4.6.6">
+				<Name xml:lang="en">Horror</Name>
+				<Definition xml:lang="en">e.g. Dracula</Definition>
+			</Term>
+			<Term termID="3.4.6.7">
+				<Name xml:lang="en">Science fiction</Name>
+				<Definition xml:lang="en">e.g. Dr Who, Star Trek</Definition>
+			</Term>
+			<Term termID="3.4.6.8">
+				<Name xml:lang="en">War</Name>
+				<Definition xml:lang="en">e.g. Band of Brothers</Definition>
+			</Term>
+			<Term termID="3.4.6.9">
+				<Name xml:lang="en">Western</Name>
+				<Definition xml:lang="en">e.g. The Virginian, The Alamo</Definition>
+			</Term>
+			<Term termID="3.4.6.10">
+				<Name xml:lang="en">Thriller</Name>
+			</Term>
+			<Term termID="3.4.6.11">
+				<Name xml:lang="en">Sports</Name>
+				<Definition xml:lang="en">e.g. Chariots of Fire</Definition>
+			</Term>
+			<Term termID="3.4.6.12">
+				<Name xml:lang="en">Martial arts</Name>
+				<Definition xml:lang="en">e.g. Enter the Dragon</Definition>
+			</Term>
+			<Term termID="3.4.6.13">
+				<Name xml:lang="en">Epic</Name>
+				<Definition xml:lang="en">Dramatized narrative about the deeds of a traditional or
+					historical hero or heroes and/or dealing with or characterized by events of
+					historical or legendary importance e.g. El Cid</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.4.7">
+			<Name xml:lang="en">Fantasy/Fairy tale</Name>
+			<Definition xml:lang="en">EG Alice in Wonderland</Definition>
+		</Term>
+		<Term termID="3.4.8">
+			<Name xml:lang="en">Erotica</Name>
+			<Definition xml:lang="en">EG Emannuelle</Definition>
+		</Term>
+		<Term termID="3.4.9">
+			<Name xml:lang="en">Drama based on real events (docudrama)</Name>
+			<Definition xml:lang="en">Drama based upon reality sometimes with documentary
+			inserts</Definition>
+		</Term>
+		<Term termID="3.4.10">
+			<Name xml:lang="en">Musical</Name>
+			<Definition xml:lang="en">EG Mary Poppins,</Definition>
+		</Term>
+		<Term termID="3.4.13">
+			<Name xml:lang="en">Classical drama</Name>
+			<Definition xml:lang="en">Drama written before approximately 1918 e.g. Hamlet,
+			Othello</Definition>
+		</Term>
+		<Term termID="3.4.14">
+			<Name xml:lang="en">Period drama</Name>
+			<Definition xml:lang="en">Drama depicting events before 1918 e.g. Pride and
+			Prejudice</Definition>
+		</Term>
+		<Term termID="3.4.15">
+			<Name xml:lang="en">Contemporary drama</Name>
+			<Definition xml:lang="en">Drama written after approximately 1918 and with literary
+				and/or cultural value e.g. Waiting for Godot</Definition>
+		</Term>
+		<Term termID="3.4.16">
+			<Name xml:lang="en">Religious</Name>
+			<Definition xml:lang="en">e.g. The Red Robe,</Definition>
+		</Term>
+		<Term termID="3.4.17">
+			<Name xml:lang="en">Poems/Stories</Name>
+		</Term>
+		<Term termID="3.4.18">
+			<Name xml:lang="en">Biography</Name>
+			<Definition xml:lang="en">e.g. Young Winston,</Definition>
+		</Term>
+		<Term termID="3.4.19">
+			<Name xml:lang="en">Psychological drama</Name>
+		</Term>
+		<Term termID="3.4.20">
+			<Name xml:lang="en">Political Drama</Name>
+			<Definition xml:lang="en">Telling a story or recounting events in which the main
+				characters are politicians or where the main action takes place in political
+				institutions.</Definition>
+		</Term>
+	</Term>
+	<Term termID="3.5">
+		<Name xml:lang="en">AMUSEMENT/ENTERTAINMENT</Name>
+		<Term termID="3.5.2">
+			<Name xml:lang="en">Quiz/Contest</Name>
+			<Definition xml:lang="en">Competitions calling into play the competitors' special
+				knowledge and intelligence</Definition>
+			<Term termID="3.5.2.1">
+				<Name xml:lang="en">Quiz</Name>
+				<Definition xml:lang="en">Who Wants to be a millionaire - questions and answers form
+					the entertainment</Definition>
+			</Term>
+			<Term termID="3.5.2.2">
+				<Name xml:lang="en">Contest</Name>
+				<Definition xml:lang="en">Participants compete directly with each other eg Americas
+					Top Model, Generation Game</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.5.3">
+			<Name xml:lang="en">Variety/Talent</Name>
+			<Definition xml:lang="en">Programme with various performers such as comedians,
+				magicians, singers etc. e.g. Paul Daniels Show, Relay from a circus</Definition>
+			<Term termID="3.5.3.1">
+				<Name xml:lang="en">Cabaret</Name>
+				<Definition xml:lang="en">Specific instance of Variety in an intimate
+				environment</Definition>
+			</Term>
+			<Term termID="3.5.3.2">
+				<Name xml:lang="en">Talent</Name>
+				<Definition xml:lang="en">Spelling Bees, singing talent shows - Stars in their eyes,
+					American Idol</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.5.4">
+			<Name xml:lang="en">Surprise</Name>
+			<Definition xml:lang="en">Programme of 'dream comes true' type e.g. Jim'llFix
+			It</Definition>
+		</Term>
+		<Term termID="3.5.5">
+			<Name xml:lang="en">Reality</Name>
+		</Term>
+		<Term termID="3.5.7">
+			<Name xml:lang="en">Comedy</Name>
+			<Term termID="3.5.7.1">
+				<Name xml:lang="en">Broken comedy</Name>
+				<Definition xml:lang="en">Humorous and/or satirical programme consisting of short
+					dramatical sequences, sketches, performed by comedians e,g, Benny Hill, Monty
+					Python</Definition>
+			</Term>
+			<Term termID="3.5.7.2">
+				<Name xml:lang="en">Romantic comedy</Name>
+			</Term>
+			<Term termID="3.5.7.3">
+				<Name xml:lang="en">Sitcom</Name>
+				<Definition xml:lang="en">Dramatized series in a humorous style and performed by a
+					more or less fixed cast e.g. Friends, The Office</Definition>
+			</Term>
+			<Term termID="3.5.7.4">
+				<Name xml:lang="en">Satire</Name>
+				<Definition xml:lang="en">Letterman, Dave Allen, etc.</Definition>
+			</Term>
+			<Term termID="3.5.7.5">
+				<Name xml:lang="en">Candid Camera</Name>
+				<Definition xml:lang="en">Programme in which the recording device is hidden so the
+					participants are not aware they are being recorded.</Definition>
+			</Term>
+			<Term termID="3.5.7.6">
+				<Name xml:lang="en">Humour</Name>
+				<Definition xml:lang="en">Programme without sketches or “broken drama”, consisting
+					(mainly) of verbal jokes, gags, bloopers etc.</Definition>
+			</Term>
+			<Term termID="3.5.7.7">
+				<Name xml:lang="en">Spoof</Name>
+				<Definition xml:lang="en">Imitating other works in order to ridicule or derive
+					humour from the work itself and its subject matter.</Definition>
+			</Term>
+			<Term termID="3.5.7.8">
+				<Name xml:lang="en">Character</Name>
+				<Definition xml:lang="en"/>
+			</Term>
+			<Term termID="3.5.7.9">
+				<Name xml:lang="en">Impressionists</Name>
+				<Definition xml:lang="en"/>
+			</Term>
+			<Term termID="3.5.7.10">
+				<Name xml:lang="en">Stunt</Name>
+				<Definition xml:lang="en"/>
+			</Term>
+			<Term termID="3.5.7.11">
+				<Name xml:lang="en">Music comedy</Name>
+				<Definition xml:lang="en"/>
+			</Term>
+		</Term>
+		<Term termID="3.5.10">
+			<Name xml:lang="en">Magic/Hypnotism</Name>
+		</Term>
+		<Term termID="3.5.11">
+			<Name xml:lang="en">Circus</Name>
+		</Term>
+		<Term termID="3.5.12">
+			<Name xml:lang="en">Dating</Name>
+		</Term>
+		<Term termID="3.5.13">
+			<Name xml:lang="en">Bullfighting</Name>
+		</Term>
+		<Term termID="3.5.14">
+			<Name xml:lang="en">Rodeo</Name>
+		</Term>
+		<Term termID="3.5.16">
+			<Name xml:lang="en">Chat</Name>
+			<Definition xml:lang="en">Chat Show in which a presenter interviews a
+			celebrity</Definition>
+		</Term>
+	</Term>
+	<Term termID="3.6">
+		<Name xml:lang="en">Music</Name>
+		<Term termID="3.6.1">
+			<Name xml:lang="en">Classical music</Name>
+			<Definition xml:lang="en">Music including chamber, instrumental, operatic, symphonic,
+				vocal and choral music</Definition>
+			<Term termID="3.6.1.1">
+				<Name xml:lang="en">Early</Name>
+				<Definition xml:lang="en">Music written before the middle of the 17th
+				Century</Definition>
+			</Term>
+			<Term termID="3.6.1.2">
+				<Name xml:lang="en">Classical</Name>
+				<Definition xml:lang="en">Music from the middle of the 18th until the end of the
+					19th Century</Definition>
+			</Term>
+			<Term termID="3.6.1.3">
+				<Name xml:lang="en">Romantic</Name>
+				<Definition xml:lang="en">"1820-.900"</Definition>
+			</Term>
+			<Term termID="3.6.1.4">
+				<Name xml:lang="en">Contemporary</Name>
+				<Definition xml:lang="en">Music from the 20th Century onwards</Definition>
+			</Term>
+			<Term termID="3.6.1.5">
+				<Name xml:lang="en">Light classical</Name>
+				<Definition xml:lang="en">Music by Strauss, Lehar, etc.</Definition>
+			</Term>
+			<Term termID="3.6.1.6">
+				<Name xml:lang="en">Middle Ages</Name>
+			</Term>
+			<Term termID="3.6.1.7">
+				<Name xml:lang="en">Renaissance</Name>
+				<Definition xml:lang="en">"1400-1600"</Definition>
+			</Term>
+			<Term termID="3.6.1.8">
+				<Name xml:lang="en">Baroque</Name>
+				<Definition xml:lang="en">"1600-1750"</Definition>
+			</Term>
+			<Term termID="3.6.1.9">
+				<Name xml:lang="en">Opera</Name>
+				<Definition xml:lang="en">e.g. La Boheme</Definition>
+			</Term>
+			<Term termID="3.6.1.10">
+				<Name xml:lang="en">Solo instruments</Name>
+				<Definition xml:lang="en">(e.g. Piano)</Definition>
+			</Term>
+			<Term termID="3.6.1.11">
+				<Name xml:lang="en">Chamber</Name>
+				<Definition xml:lang="en">Small group of instruments</Definition>
+			</Term>
+			<Term termID="3.6.1.12">
+				<Name xml:lang="en">Symphonic</Name>
+				<Definition xml:lang="en">Large group of instruments</Definition>
+			</Term>
+			<Term termID="3.6.1.13">
+				<Name xml:lang="en">Vocal</Name>
+				<Definition xml:lang="en">Solo or individual singing</Definition>
+			</Term>
+			<Term termID="3.6.1.14">
+				<Name xml:lang="en">Choral</Name>
+				<Definition xml:lang="en">Group of singers</Definition>
+			</Term>
+			<Term termID="3.6.1.15">
+				<Name xml:lang="en">Song</Name>
+			</Term>
+			<Term termID="3.6.1.16">
+				<Name xml:lang="en">Orchestral</Name>
+			</Term>
+			<Term termID="3.6.1.17">
+				<Name xml:lang="en">Organ</Name>
+			</Term>
+			<Term termID="3.6.1.18">
+				<Name xml:lang="en">String Quartet</Name>
+			</Term>
+			<Term termID="3.6.1.19">
+				<Name xml:lang="en">Experimental/Avant Garde</Name>
+				<Definition xml:lang="en">e.g. John Cage</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.6.2">
+			<Name xml:lang="en">Jazz</Name>
+			<Definition xml:lang="en">Indigenous American popular music, born in New Orleans of
+				African slaves social circumstances. The jazz idiom is characterized by certain
+				syncopations over strongly reiterated rhythms in which improvisation plays an
+				important part</Definition>
+			<Term termID="3.6.2.1">
+				<Name xml:lang="en">New Orleans/Early jazz</Name>
+			</Term>
+			<Term termID="3.6.2.2">
+				<Name xml:lang="en">Big band/Swing/Dixie</Name>
+				<Definition xml:lang="en">e.g. Glenn Miller, Chris Barber</Definition>
+			</Term>
+			<Term termID="3.6.2.3">
+				<Name xml:lang="en">Blues/Soul jazz</Name>
+				<Definition xml:lang="en">e.g. L. Armstrong</Definition>
+			</Term>
+			<Term termID="3.6.2.4">
+				<Name xml:lang="en">Bop/Hard bop/Bebop/Postbop</Name>
+				<Definition xml:lang="en">e.g. Sonny Rollings, Oscar Peterson, J. Coltrane, T.
+				Monk</Definition>
+			</Term>
+			<Term termID="3.6.2.5">
+				<Name xml:lang="en">Traditional/Smooth</Name>
+			</Term>
+			<Term termID="3.6.2.6">
+				<Name xml:lang="en">Cool</Name>
+				<Definition xml:lang="en">e.g. Modern Jazz Quartet</Definition>
+			</Term>
+			<Term termID="3.6.2.7">
+				<Name xml:lang="en">Modern/Avant-garde/Free</Name>
+			</Term>
+			<Term termID="3.6.2.8">
+				<Name xml:lang="en">Latin and World jazz</Name>
+				<Definition xml:lang="en">e.g. Manu Dibango</Definition>
+			</Term>
+			<Term termID="3.6.2.9">
+				<Name xml:lang="en">Pop jazz/Jazz funk</Name>
+			</Term>
+			<Term termID="3.6.2.10">
+				<Name xml:lang="en">Acid jazz/Fusion</Name>
+				<Definition xml:lang="en">e.g. G. Benson, Miles Davis</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.6.3">
+			<Name xml:lang="en">Background music</Name>
+			<Term termID="3.6.3.1">
+				<Name xml:lang="en">Middle-of-the-road</Name>
+				<Definition xml:lang="en">Music which, in varying circumstances, gives pleasure to
+					the widest possible spectrum of the music-loving audience</Definition>
+			</Term>
+			<Term termID="3.6.3.2">
+				<Name xml:lang="en">Easy listening</Name>
+			</Term>
+			<Term termID="3.6.3.3">
+				<Name xml:lang="en">Ambient</Name>
+			</Term>
+			<Term termID="3.6.3.4">
+				<Name xml:lang="en">Mood music</Name>
+			</Term>
+			<Term termID="3.6.3.5">
+				<Name xml:lang="en">Oldies</Name>
+			</Term>
+			<Term termID="3.6.3.6">
+				<Name xml:lang="en">Love songs</Name>
+			</Term>
+			<Term termID="3.6.3.7">
+				<Name xml:lang="en">Dance hall</Name>
+			</Term>
+			<Term termID="3.6.3.8">
+				<Name xml:lang="en">Soundtrack</Name>
+			</Term>
+			<Term termID="3.6.3.9">
+				<Name xml:lang="en">Trailer</Name>
+			</Term>
+			<Term termID="3.6.3.10">
+				<Name xml:lang="en">Showtunes</Name>
+			</Term>
+			<Term termID="3.6.3.11">
+				<Name xml:lang="en">TV</Name>
+			</Term>
+			<Term termID="3.6.3.12">
+				<Name xml:lang="en">Cabaret</Name>
+			</Term>
+			<Term termID="3.6.3.13">
+				<Name xml:lang="en">Instrumental</Name>
+			</Term>
+			<Term termID="3.6.3.14">
+				<Name xml:lang="en">Sound clip</Name>
+			</Term>
+			<Term termID="3.6.3.15">
+				<Name xml:lang="en">Retro</Name>
+			</Term>
+		</Term>
+		<Term termID="3.6.4">
+			<Name xml:lang="en">Pop-rock</Name>
+			<Definition xml:lang="en">The most central and widely circulated types of popular music,
+				in particular rock and roll, etc</Definition>
+			<Term termID="3.6.4.1">
+				<Name xml:lang="en">Pop</Name>
+				<Definition xml:lang="en">e.g. early Beatles</Definition>
+			</Term>
+			<Term termID="3.6.4.2">
+				<Name xml:lang="en">Chanson/Ballad</Name>
+				<Definition xml:lang="en">e.g. Juliette Gréco, Leonard Cohen</Definition>
+			</Term>
+			<Term termID="3.6.4.3">
+				<Name xml:lang="en">Traditional rock and roll</Name>
+				<Definition xml:lang="en">e.g. Elvis Presley</Definition>
+			</Term>
+			<Term termID="3.6.4.5">
+				<Name xml:lang="en">Classic/Dance/Pop-rock</Name>
+				<Definition xml:lang="en">e.g. Michael Jackson, Spice Girls, Johnny Halliday,
+					Rolling Stones</Definition>
+			</Term>
+			<Term termID="3.6.4.6">
+				<Name xml:lang="en">Folk</Name>
+				<Definition xml:lang="en">e.g. Bob Dylan</Definition>
+			</Term>
+			<Term termID="3.6.4.8">
+				<Name xml:lang="en">New Age</Name>
+			</Term>
+			<Term termID="3.6.4.11">
+				<Name xml:lang="en">Seasonal/Holiday</Name>
+				<Definition xml:lang="en">e.g. Christmas</Definition>
+			</Term>
+			<Term termID="3.6.4.12">
+				<Name xml:lang="en">Japanese pop-rock</Name>
+			</Term>
+			<Term termID="3.6.4.13">
+				<Name xml:lang="en">Karaoke/Singing contests</Name>
+				<Definition xml:lang="en">e.g. Pizzicato Five</Definition>
+			</Term>
+			<Term termID="3.6.4.14">
+				<Name xml:lang="en">Rock</Name>
+				<Term termID="3.6.4.14.1">
+					<Name xml:lang="en">AOR / Slow Rock / Soft Rock</Name>
+					<Definition xml:lang="en">Adult-Orientated Rock e.g. The Eagles.</Definition>
+				</Term>
+				<Term termID="3.6.4.14.2">
+					<Name xml:lang="en">Metal</Name>
+					<Definition xml:lang="en">e.g. Iron Maiden</Definition>
+				</Term>
+				<Term termID="3.6.4.14.3">
+					<Name xml:lang="en">Glam Rock</Name>
+					<Definition xml:lang="en">e.g. T-Rex</Definition>
+				</Term>
+				<Term termID="3.6.4.14.4">
+					<Name xml:lang="en">Punk Rock</Name>
+					<Definition xml:lang="en">e.g. The Sex Pistols</Definition>
+				</Term>
+				<Term termID="3.6.4.14.5">
+					<Name xml:lang="en">Prog / Symphonic Rock</Name>
+					<Definition xml:lang="en">e.g. Yes</Definition>
+				</Term>
+				<Term termID="3.6.4.14.6">
+					<Name xml:lang="en">Alternative / Indie</Name>
+				</Term>
+				<Term termID="3.6.4.14.7">
+					<Name xml:lang="en">Experimental / Avant Garde</Name>
+					<Definition xml:lang="en">e.g. Coil</Definition>
+				</Term>
+				<Term termID="3.6.4.14.8">
+					<Name xml:lang="en">Art Rock</Name>
+					<Definition xml:lang="en">e.g. Talking Heads</Definition>
+				</Term>
+				<Term termID="3.6.4.14.9">
+					<Name xml:lang="en">Folk Rock</Name>
+					<Definition xml:lang="en">e.g. The Byrds</Definition>
+				</Term>
+				<Term termID="3.6.4.14.10">
+					<Name xml:lang="en">Nu Punk</Name>
+					<Definition xml:lang="en">e.g. Rancid</Definition>
+				</Term>
+				<Term termID="3.6.4.14.11">
+					<Name xml:lang="en">Grunge</Name>
+					<Definition xml:lang="en">e.g. Nirvana</Definition>
+				</Term>
+				<Term termID="3.6.4.14.12">
+					<Name xml:lang="en">Garage Punk/Psychedelia</Name>
+					<Definition xml:lang="en">1960s. e.g. The Sonics</Definition>
+				</Term>
+				<Term termID="3.6.4.14.13">
+					<Name xml:lang="en">Heavy Rock</Name>
+					<Definition xml:lang="en">e.g. Led Zeppelin, Cream, Hendrix</Definition>
+				</Term>
+			</Term>
+			<Term termID="3.6.4.15">
+				<Name xml:lang="en">New Wave</Name>
+				<Definition xml:lang="en">e.g. Blondie</Definition>
+			</Term>
+			<Term termID="3.6.4.16">
+				<Name xml:lang="en">Easy listening / Exotica</Name>
+				<Definition xml:lang="en">e.g. Yma Sumac</Definition>
+			</Term>
+			<Term termID="3.6.4.17">
+				<Name xml:lang="en">Singer/Songwriter</Name>
+				<Definition xml:lang="en">e.g. Paul Simon, James Taylor</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.6.5">
+			<Name xml:lang="en">Blues/Rhythm and Blues/Soul/Gospel</Name>
+			<Term termID="3.6.5.1">
+				<Name xml:lang="en">Blues</Name>
+			</Term>
+			<Term termID="3.6.5.2">
+				<Name xml:lang="en">R and B</Name>
+				<Definition xml:lang="en">1990s RandB (e.g. Teddy Riley) not 1960s Rhythm and Blues
+					(e.g. The Rolling Stones).</Definition>
+				<Term termID="3.6.5.2.1">
+					<Name xml:lang="en">Hip Hop Soul</Name>
+				</Term>
+				<Term termID="3.6.5.2.2">
+					<Name xml:lang="en">Neo Soul</Name>
+				</Term>
+				<Term termID="3.6.5.2.3">
+					<Name xml:lang="en">New Jack Swing</Name>
+				</Term>
+			</Term>
+			<Term termID="3.6.5.3">
+				<Name xml:lang="en">Soul</Name>
+			</Term>
+			<Term termID="3.6.5.4">
+				<Name xml:lang="en">Gospel</Name>
+			</Term>
+			<Term termID="3.6.5.5">
+				<Name xml:lang="en">Rhythm and Blues</Name>
+				<Definition xml:lang="en">1960s RandB (eg. The Rolling Stones) not 1990s RandB (eg.
+					Teddy Riley).</Definition>
+			</Term>
+			<Term termID="3.6.5.6">
+				<Name xml:lang="en">Funk</Name>
+				<Definition xml:lang="en">e.g. James Brown</Definition>
+				<Term termID="3.6.5.6.1">
+					<Name xml:lang="en">Afro Funk</Name>
+				</Term>
+				<Term termID="3.6.5.6.2">
+					<Name xml:lang="en">Rare Groove</Name>
+				</Term>
+			</Term>
+		</Term>
+		<Term termID="3.6.6">
+			<Name xml:lang="en">Country and Western</Name>
+		</Term>
+		<Term termID="3.6.7">
+			<Name xml:lang="en">Rap/Hip Hop/Reggae</Name>
+			<Term termID="3.6.7.1">
+				<Name xml:lang="en">Rap/Christian rap</Name>
+				<Term termID="3.6.7.1.1">
+					<Name xml:lang="en">Gangsta Rap</Name>
+				</Term>
+			</Term>
+			<Term termID="3.6.7.2">
+				<Name xml:lang="en">Hip Hop/Trip-Hop</Name>
+				<Term termID="3.6.7.2.1">
+					<Name xml:lang="en">Dirty South Hip Hop</Name>
+				</Term>
+				<Term termID="3.6.7.2.2">
+					<Name xml:lang="en">East Coast Hip Hop</Name>
+				</Term>
+				<Term termID="3.6.7.2.4">
+					<Name xml:lang="en">UK Hip Hop</Name>
+				</Term>
+				<Term termID="3.6.7.2.5">
+					<Name xml:lang="en">West Coast Hip Hop</Name>
+				</Term>
+			</Term>
+			<Term termID="3.6.7.3">
+				<Name xml:lang="en">Reggae</Name>
+				<Term termID="3.6.7.3.1">
+					<Name xml:lang="en">Dancehall</Name>
+					<Definition xml:lang="en">Also known as Ragga or Bashment</Definition>
+				</Term>
+				<Term termID="3.6.7.3.2">
+					<Name xml:lang="en">Dub</Name>
+				</Term>
+				<Term termID="3.6.7.3.3">
+					<Name xml:lang="en">Lovers Rock</Name>
+				</Term>
+				<Term termID="3.6.7.3.4">
+					<Name xml:lang="en">Raggamuffin</Name>
+				</Term>
+				<Term termID="3.6.7.3.5">
+					<Name xml:lang="en">Rocksteady</Name>
+				</Term>
+				<Term termID="3.6.7.3.6">
+					<Name xml:lang="en">Ska</Name>
+				</Term>
+			</Term>
+		</Term>
+		<Term termID="3.6.8">
+			<Name xml:lang="en">Electronic/Club/Urban/Dance</Name>
+			<Term termID="3.6.8.1">
+				<Name xml:lang="en">Acid/Punk/Acid Punk</Name>
+			</Term>
+			<Term termID="3.6.8.2">
+				<Name xml:lang="en">Disco</Name>
+			</Term>
+			<Term termID="3.6.8.3">
+				<Name xml:lang="en">Techno/Euro-Techno/Techno-Industrial/Industrial</Name>
+			</Term>
+			<Term termID="3.6.8.4">
+				<Name xml:lang="en">House/Techno House</Name>
+				<Term termID="3.6.8.4.1">
+					<Name xml:lang="en">Progressive House</Name>
+					<Definition xml:lang="en">eg. Gat Decor</Definition>
+				</Term>
+				<Term termID="3.6.8.4.2">
+					<Name xml:lang="en">Soulful Underground</Name>
+				</Term>
+			</Term>
+			<Term termID="3.6.8.5">
+				<Name xml:lang="en">Rave</Name>
+			</Term>
+			<Term termID="3.6.8.6">
+				<Name xml:lang="en">Jungle/Tribal</Name>
+			</Term>
+			<Term termID="3.6.8.7">
+				<Name xml:lang="en">Trance</Name>
+			</Term>
+			<Term termID="3.6.8.11">
+				<Name xml:lang="en">Drum and Bass</Name>
+			</Term>
+			<Term termID="3.6.8.14">
+				<Name xml:lang="en">Dance/Dance-pop</Name>
+			</Term>
+			<Term termID="3.6.8.15">
+				<Name xml:lang="en">Garage (1990s)</Name>
+				<Definition xml:lang="en">1990s US Garage not 1960s Garage Punk.</Definition>
+			</Term>
+			<Term termID="3.6.8.16">
+				<Name xml:lang="en">UK Garage</Name>
+				<Term termID="3.6.8.16.1">
+					<Name xml:lang="en">2 Step</Name>
+				</Term>
+				<Term termID="3.6.8.16.2">
+					<Name xml:lang="en">4/4 Vocal Garage</Name>
+				</Term>
+				<Term termID="3.6.8.16.3">
+					<Name xml:lang="en">8 Bar</Name>
+				</Term>
+				<Term termID="3.6.8.16.4">
+					<Name xml:lang="en">Dubstep</Name>
+				</Term>
+				<Term termID="3.6.8.16.5">
+					<Name xml:lang="en">Eski-Beat</Name>
+				</Term>
+				<Term termID="3.6.8.16.6">
+					<Name xml:lang="en">Grime</Name>
+				</Term>
+				<Term termID="3.6.8.16.7">
+					<Name xml:lang="en">Soulful House and Garage</Name>
+				</Term>
+				<Term termID="3.6.8.16.8">
+					<Name xml:lang="en">Speed Garage</Name>
+				</Term>
+				<Term termID="3.6.8.16.9">
+					<Name xml:lang="en">Sublow</Name>
+				</Term>
+			</Term>
+			<Term termID="3.6.8.17">
+				<Name xml:lang="en">Breakbeat</Name>
+				<Definition xml:lang="en">e.g. Fatboy Slim</Definition>
+			</Term>
+			<Term termID="3.6.8.18">
+				<Name xml:lang="en">Broken Beat</Name>
+			</Term>
+			<Term termID="3.6.8.22">
+				<Name xml:lang="en">Ambient Dance</Name>
+				<Definition xml:lang="en">e.g. The Orb</Definition>
+			</Term>
+			<Term termID="3.6.8.23">
+				<Name xml:lang="en">Alternative Dance</Name>
+				<Definition xml:lang="en">e.g. Moby</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.6.9">
+			<Name xml:lang="en">World/Traditional/Ethnic/Folk music</Name>
+			<Definition xml:lang="en">Music that is the product of a tradition that has been evolved
+				through the process of oral transmission</Definition>
+			<Term termID="3.6.9.1">
+				<Name xml:lang="en">Africa</Name>
+			</Term>
+			<Term termID="3.6.9.2">
+				<Name xml:lang="en">Asia</Name>
+			</Term>
+			<Term termID="3.6.9.3">
+				<Name xml:lang="en">Australia/Oceania</Name>
+			</Term>
+			<Term termID="3.6.9.4">
+				<Name xml:lang="en">Caribbean</Name>
+				<Term termID="3.6.9.4.1">
+					<Name xml:lang="en">Calypso</Name>
+					<Definition xml:lang="en">e.g. Lord Kitchener</Definition>
+				</Term>
+				<Term termID="3.6.9.4.2">
+					<Name xml:lang="en">SOCA</Name>
+					<Definition xml:lang="en">e.g. Baha Men</Definition>
+				</Term>
+			</Term>
+			<Term termID="3.6.9.5">
+				<Name xml:lang="en">Europe</Name>
+				<Term termID="3.6.9.5.1">
+					<Name xml:lang="en">Britain</Name>
+				</Term>
+				<Term termID="3.6.9.5.2">
+					<Name xml:lang="en">Ireland</Name>
+				</Term>
+			</Term>
+			<Term termID="3.6.9.6">
+				<Name xml:lang="en">Latin America</Name>
+			</Term>
+			<Term termID="3.6.9.7">
+				<Name xml:lang="en">Middle East</Name>
+			</Term>
+			<Term termID="3.6.9.8">
+				<Name xml:lang="en">North America</Name>
+			</Term>
+			<Term termID="3.6.9.9">
+				<Name xml:lang="en">Fusion</Name>
+			</Term>
+			<Term termID="3.6.9.10">
+				<Name xml:lang="en">Modern</Name>
+			</Term>
+		</Term>
+		<Term termID="3.6.10">
+			<Name xml:lang="en">Hit-Chart/Song Requests</Name>
+		</Term>
+		<Term termID="3.6.11">
+			<Name xml:lang="en">Children's songs</Name>
+		</Term>
+		<Term termID="3.6.12">
+			<Name xml:lang="en">Event music</Name>
+			<Term termID="3.6.12.1">
+				<Name xml:lang="en">Wedding</Name>
+			</Term>
+			<Term termID="3.6.12.2">
+				<Name xml:lang="en">Sports</Name>
+			</Term>
+			<Term termID="3.6.12.3">
+				<Name xml:lang="en">Ceremonial/Chants</Name>
+			</Term>
+		</Term>
+		<Term termID="3.6.13">
+			<Name xml:lang="en">Spoken</Name>
+		</Term>
+		<Term termID="3.6.14">
+			<Name xml:lang="en">Dance</Name>
+			<Term termID="3.6.14.1">
+				<Name xml:lang="en">Ballet</Name>
+			</Term>
+			<Term termID="3.6.14.2">
+				<Name xml:lang="en">Tap</Name>
+			</Term>
+			<Term termID="3.6.14.3">
+				<Name xml:lang="en">Modern</Name>
+			</Term>
+			<Term termID="3.6.14.4">
+				<Name xml:lang="en">Classical</Name>
+			</Term>
+			<Term termID="3.6.14.5">
+				<Name xml:lang="en">Ballroom</Name>
+			</Term>
+		</Term>
+		<Term termID="3.6.15">
+			<Name xml:lang="en">Religious music</Name>
+		</Term>
+		<Term termID="3.6.16">
+			<Name xml:lang="en">Era</Name>
+			<Term termID="3.6.16.1">
+				<Name xml:lang="en">Medieval (before 1400)</Name>
+			</Term>
+			<Term termID="3.6.16.2">
+				<Name xml:lang="en">Renaissance (1400-1600)</Name>
+			</Term>
+			<Term termID="3.6.16.3">
+				<Name xml:lang="en">Baroque (1600-1760)</Name>
+			</Term>
+			<Term termID="3.6.16.4">
+				<Name xml:lang="en">Classical (1730-1820)</Name>
+			</Term>
+			<Term termID="3.6.16.5">
+				<Name xml:lang="en">Romantic (1815-1910</Name>
+			</Term>
+			<Term termID="3.6.16.6">
+				<Name xml:lang="en">20th Century</Name>
+				<Term termID="3.6.16.6.1">
+					<Name xml:lang="en">1910s</Name>
+				</Term>
+				<Term termID="3.6.16.6.2">
+					<Name xml:lang="en">1920s</Name>
+				</Term>
+				<Term termID="3.6.16.6.3">
+					<Name xml:lang="en">1930s</Name>
+				</Term>
+				<Term termID="3.6.16.6.4">
+					<Name xml:lang="en">1940s</Name>
+				</Term>
+				<Term termID="3.6.16.6.5">
+					<Name xml:lang="en">1950s</Name>
+				</Term>
+				<Term termID="3.6.16.6.6">
+					<Name xml:lang="en">1960s</Name>
+				</Term>
+				<Term termID="3.6.16.6.7">
+					<Name xml:lang="en">1970s</Name>
+				</Term>
+				<Term termID="3.6.16.6.8">
+					<Name xml:lang="en">1980s</Name>
+				</Term>
+				<Term termID="3.6.16.6.9">
+					<Name xml:lang="en">1990s</Name>
+				</Term>
+			</Term>
+			<Term termID="3.6.16.7">
+				<Name xml:lang="en">21st Century</Name>
+				<Term termID="3.6.16.7.1">
+					<Name xml:lang="en">2000s</Name>
+				</Term>
+				<Term termID="3.6.16.7.2">
+					<Name xml:lang="en">2010s</Name>
+				</Term>
+				<Term termID="3.6.16.7.3">
+					<Name xml:lang="en">2020s</Name>
+				</Term>
+				<Term termID="3.6.16.7.4">
+					<Name xml:lang="en">2030s</Name>
+				</Term>
+				<Term termID="3.6.16.7.5">
+					<Name xml:lang="en">2040s</Name>
+				</Term>
+				<Term termID="3.6.16.7.6">
+					<Name xml:lang="en">2050s</Name>
+				</Term>
+				<Term termID="3.6.16.7.7">
+					<Name xml:lang="en">2060s</Name>
+				</Term>
+				<Term termID="3.6.16.7.8">
+					<Name xml:lang="en">2070s</Name>
+				</Term>
+				<Term termID="3.6.16.7.9">
+					<Name xml:lang="en">2080s</Name>
+				</Term>
+				<Term termID="3.6.16.7.10">
+					<Name xml:lang="en">2090s</Name>
+				</Term>
+			</Term>
+		</Term>
+		<Term termID="3.6.17">
+			<Name xml:lang="en">Desi</Name>
+			<Term termID="3.6.17.1">
+				<Name xml:lang="en">Asian Underground</Name>
+			</Term>
+			<Term termID="3.6.17.2">
+				<Name xml:lang="en">Bhangra</Name>
+			</Term>
+			<Term termID="3.6.17.3">
+				<Name xml:lang="en">Bollywood</Name>
+			</Term>
+		</Term>
+		<Term termID="3.6.18">
+			<Name xml:lang="en">Experimental</Name>
+		</Term>
+	</Term>
+	<Term termID="3.7">
+		<Name xml:lang="en">INTERACTIVE GAMES</Name>
+		<Term termID="3.7.1">
+			<Name xml:lang="en">CONTENT GAMES CATEGORIES</Name>
+			<Term termID="3.7.1.1">
+				<Name xml:lang="en">Action</Name>
+			</Term>
+			<Term termID="3.7.1.2">
+				<Name xml:lang="en">Adventure</Name>
+			</Term>
+			<Term termID="3.7.1.3">
+				<Name xml:lang="en">Fighting</Name>
+			</Term>
+			<Term termID="3.7.1.4">
+				<Name xml:lang="en">Online</Name>
+			</Term>
+			<Term termID="3.7.1.5">
+				<Name xml:lang="en">Platform</Name>
+			</Term>
+			<Term termID="3.7.1.6">
+				<Name xml:lang="en">Puzzle</Name>
+			</Term>
+			<Term termID="3.7.1.7">
+				<Name xml:lang="en">RPG/ MUDs</Name>
+			</Term>
+			<Term termID="3.7.1.8">
+				<Name xml:lang="en">Racing</Name>
+			</Term>
+			<Term termID="3.7.1.9">
+				<Name xml:lang="en">Simulation</Name>
+			</Term>
+			<Term termID="3.7.1.10">
+				<Name xml:lang="en">Sports</Name>
+			</Term>
+			<Term termID="3.7.1.11">
+				<Name xml:lang="en">Strategy</Name>
+			</Term>
+			<Term termID="3.7.1.12">
+				<Name xml:lang="en">Wrestling</Name>
+			</Term>
+			<Term termID="3.7.1.13">
+				<Name xml:lang="en">Classic/Retro</Name>
+			</Term>
+		</Term>
+		<Term termID="3.7.2">
+			<Name xml:lang="en">STYLE</Name>
+			<Term termID="3.7.2.1">
+				<Name xml:lang="en">Logic based</Name>
+			</Term>
+			<Term termID="3.7.2.2">
+				<Name xml:lang="en">Word games</Name>
+			</Term>
+			<Term termID="3.7.2.3">
+				<Name xml:lang="en">Positional</Name>
+			</Term>
+			<Term termID="3.7.2.4">
+				<Name xml:lang="en">Board games</Name>
+			</Term>
+			<Term termID="3.7.2.5">
+				<Name xml:lang="en">Text environments</Name>
+			</Term>
+			<Term termID="3.7.2.6">
+				<Name xml:lang="en">Dynamic 2D/3D graphics</Name>
+			</Term>
+			<Term termID="3.7.2.7">
+				<Name xml:lang="en">Non-linear video</Name>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="3.8">
+		<Name xml:lang="en">LEISURE/HOBBY/LIFESTYLE</Name>
+		<Term termID="3.8.1">
+			<Name xml:lang="en">General Consumer Advice</Name>
+			<Term termID="3.8.1.1">
+				<Name xml:lang="en">Road safety</Name>
+			</Term>
+			<Term termID="3.8.1.2">
+				<Name xml:lang="en">Consumer advice</Name>
+				<Term termID="3.8.1.2.1">
+					<Name xml:lang="en">Personal finance</Name>
+					<Definition xml:lang="en">Advice and information for individual consumers
+						concerning financial products and services.</Definition>
+				</Term>
+			</Term>
+			<Term termID="3.8.1.3">
+				<Name xml:lang="en">Employment Advice</Name>
+			</Term>
+			<Term termID="3.8.1.4">
+				<Name xml:lang="en">Self-help</Name>
+			</Term>
+		</Term>
+		<Term termID="3.8.2">
+			<Name xml:lang="en">Computing/Technology</Name>
+			<Term termID="3.8.2.1">
+				<Name xml:lang="en">Technology/Computing</Name>
+			</Term>
+			<Term termID="3.8.2.2">
+				<Name xml:lang="en">Computer Games</Name>
+				<Definition xml:lang="en">Programme about games played on a computer</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.8.3">
+			<Name xml:lang="en">Cookery, Food, Drink</Name>
+			<Term termID="3.8.3.1">
+				<Name xml:lang="en">Cookery</Name>
+			</Term>
+			<Term termID="3.8.3.2">
+				<Name xml:lang="en">Food and Drink</Name>
+			</Term>
+		</Term>
+		<Term termID="3.8.4">
+			<Name xml:lang="en">Homes/Interior/Gardening</Name>
+			<Term termID="3.8.4.1">
+				<Name xml:lang="en">Do-it-yourself</Name>
+				<Definition xml:lang="en">Where the consumer is given advice on how to perform home
+					improvements themselves</Definition>
+			</Term>
+			<Term termID="3.8.4.2">
+				<Name xml:lang="en">Home Improvement</Name>
+			</Term>
+			<Term termID="3.8.4.3">
+				<Name xml:lang="en">Gardening</Name>
+			</Term>
+			<Term termID="3.8.4.4">
+				<Name xml:lang="en">Property Buying and Selling</Name>
+			</Term>
+		</Term>
+		<Term termID="3.8.5">
+			<Name xml:lang="en">Hobbies</Name>
+			<Term termID="3.8.5.1">
+				<Name xml:lang="en">Fishing</Name>
+				<Definition xml:lang="en">Angling</Definition>
+			</Term>
+			<Term termID="3.8.5.2">
+				<Name xml:lang="en">Pet</Name>
+			</Term>
+			<Term termID="3.8.5.3">
+				<Name xml:lang="en">Craft/Handicraft</Name>
+				<Definition xml:lang="en">needlework, model making, sewing, etc</Definition>
+			</Term>
+			<Term termID="3.8.5.4">
+				<Name xml:lang="en">Art</Name>
+			</Term>
+			<Term termID="3.8.5.5">
+				<Name xml:lang="en">Music</Name>
+				<Definition xml:lang="en">teaching how to play musical imstruments on learning how
+					to appreciate music</Definition>
+			</Term>
+			<Term termID="3.8.5.6">
+				<Name xml:lang="en">Board Games</Name>
+				<Definition xml:lang="en">Monopoly, Scrabble, Mah-jong, Draughts (checkers),
+					Backgammon etc</Definition>
+			</Term>
+			<Term termID="3.8.5.7">
+				<Name xml:lang="en">Card Cames</Name>
+				<Definition xml:lang="en">Bridge, Poker, etc</Definition>
+			</Term>
+			<Term termID="3.8.5.8">
+				<Name xml:lang="en">Gaming</Name>
+				<Definition xml:lang="en">Non-card games such as roulette, craps, etc</Definition>
+			</Term>
+			<Term termID="3.8.5.9">
+				<Name xml:lang="en">Shopping</Name>
+				<Definition xml:lang="en">Consumer shopping advice: Not a programme designed to sell
+					a specific product to the consumer</Definition>
+			</Term>
+			<Term termID="3.8.5.10">
+				<Name xml:lang="en">Collectibles/Antiques</Name>
+			</Term>
+			<Term termID="3.8.5.11">
+				<Name xml:lang="en">Jewellery</Name>
+			</Term>
+			<Term termID="3.8.5.12">
+				<Name xml:lang="en">Aviation</Name>
+				<Definition xml:lang="en">Programme consisting of elements on aviation as a hobby,
+					eg private pilots and general aviation. Elements concerning commercial avaiaton
+					should be categoriesed in Air Transport (3.1.8.1) and elements concerning
+					Aviation as a sport should be in 3.2.14 and its sub-categories</Definition>
+			</Term>
+			<Term termID="3.8.5.13">
+				<Name xml:lang="en">Trains</Name>
+			</Term>
+			<Term termID="3.8.5.14">
+				<Name xml:lang="en">Boating</Name>
+			</Term>
+			<Term termID="3.8.5.15">
+				<Name xml:lang="en">Ornithology</Name>
+				<Definition xml:lang="en">Bird Watching</Definition>
+			</Term>
+		</Term>
+		<Term termID="3.8.6">
+			<Name xml:lang="en">Cars and Motoring</Name>
+			<Term termID="3.8.6.1">
+				<Name xml:lang="en">Car</Name>
+			</Term>
+			<Term termID="3.8.6.2">
+				<Name xml:lang="en">Motorcycle</Name>
+			</Term>
+		</Term>
+		<Term termID="3.8.7">
+			<Name xml:lang="en">Personal/Lifestyle/Family</Name>
+			<Term termID="3.8.7.1">
+				<Name xml:lang="en">Fitness / Keep-fit</Name>
+			</Term>
+			<Term termID="3.8.7.2">
+				<Name xml:lang="en">Personal health</Name>
+			</Term>
+			<Term termID="3.8.7.3">
+				<Name xml:lang="en">Fashion</Name>
+			</Term>
+			<Term termID="3.8.7.4">
+				<Name xml:lang="en">House Keeping</Name>
+			</Term>
+			<Term termID="3.8.7.5">
+				<Name xml:lang="en">Parenting</Name>
+			</Term>
+			<Term termID="3.8.7.6">
+				<Name xml:lang="en">Beauty</Name>
+			</Term>
+			<Term termID="3.8.7.7">
+				<Name xml:lang="en">Sex education</Name>
+			</Term>
+		</Term>
+		<Term termID="3.8.9">
+			<Name xml:lang="en">Travel/Tourism</Name>
+			<Term termID="3.8.9.1">
+				<Name xml:lang="en">Holidays</Name>
+				<Definition xml:lang="en">package and self organised holidays</Definition>
+			</Term>
+			<Term termID="3.8.9.2">
+				<Name xml:lang="en">Adventure/Expeditions</Name>
+			</Term>
+			<Term termID="3.8.9.3">
+				<Name xml:lang="en">Outdoor pursuits</Name>
+				<Definition xml:lang="en">hikng, camping, rambling</Definition>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="3.9">
+		<Name xml:lang="en">ADULT</Name>
+	</Term>
+</ClassificationScheme>

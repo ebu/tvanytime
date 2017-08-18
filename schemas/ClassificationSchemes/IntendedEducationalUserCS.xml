@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri=" urn:tva:metadata:extended:cs:IntendedEducationalUserCS:2011">
+	<Term termID="1">
+		<Name xml:lang="en">Teachers</Name>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">Managers</Name>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">Special learners</Name>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">General</Name>
+	</Term>
+	<Term termID="5">
+		<Name xml:lang="en">Beginner</Name>
+	</Term>
+</ClassificationScheme>

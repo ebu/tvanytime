@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:HowRelatedCS:2012">
+	<!-- ##################################################################### -->
+	<!-- HOWRELATED                                                             -->
+	<!--Definition: A series of definitions for possible relations between programmes-->
+	<!-- ##################################################################### -->
+	<Term termID="1">
+		<Name xml:lang="en">Trailer</Name>
+		<Definition xml:lang="en">By default, the reference points to a trailer of the currently
+			described resource</Definition>
+		<Term termID="1.1">
+			<Name xml:lang="en">HasTrailer</Name>
+			<Definition xml:lang="en">The reference points to a trailer of the currently described
+				resource</Definition>
+		</Term>
+		<Term termID="1.2">
+			<Name xml:lang="en">IsTrailerOf</Name>
+			<Definition xml:lang="en">The reference points to a resource of which the currently
+				described resource is a trailer</Definition>
+		</Term>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">GroupTrailer</Name>
+		<Definition xml:lang="en">By default, the reference points to a trailer for the group of
+			resources currently described.</Definition>
+		<Term termID="2.1">
+			<Name xml:lang="en">HasGroupTrailer</Name>
+			<Definition xml:lang="en">The reference points to a trailer for the group of resources
+				currently described.</Definition>
+		</Term>
+		<Term termID="2.2">
+			<Name xml:lang="en">IsGroupTrailerOf</Name>
+			<Definition xml:lang="en">The reference points to a group of resources for which the
+				currently described resource is a trailer.</Definition>
+		</Term>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">Sibling</Name>
+		<Definition xml:lang="en">The reference points to a sibling of the current resource.
+			Example: Record the next episode in a series whilst watching an earlier
+		episode</Definition>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">Alternative</Name>
+		<Definition xml:lang="en">The reference points to an alternative version of the current
+			resource. Example: Whilst watching a programme, or part of programme, the user is able
+			to discover that a high definition version is available elsewhere</Definition>
+		<Term termID="4.1">
+			<Name xml:lang="en">Simulcast</Name>
+			<Definition xml:lang="en">The reference points to an alternative version of the current
+				resource that is being shown simultaneously with the current resource. The use of
+				this term should be restricted to partial implementations of TV-Anytime where the
+				schema profile does not include the ProgramLocationTable. In all other cases use
+				should be made of the instance description tools available in the
+				ProgramLocationTable.</Definition>
+		</Term>
+		<Term termID="4.2">
+			<Name xml:lang="en">On-demand</Name>
+			<Definition xml:lang="en">The reference points to an alternative version of the current
+				resource that is available for consumption on demand, e.g. a link to a content
+				download descriptor, or a deep link to a page in a content provider's application.
+				The use of this term should be restricted to partial implementations of TV-Anytime
+				where the schema profile does not include the ProgramLocationTable. In all other
+				cases use should be made of the instance description tools available in the
+				ProgramLocationTable.</Definition>
+		</Term>
+	</Term>
+	<Term termID="5">
+		<Name xml:lang="en">Parent</Name>
+		<Definition xml:lang="en">The reference points to a group of resources to which belongs the
+			current resource. Example: &quot;Record an entire series, whilst watching one of the
+			episodes&quot;</Definition>
+	</Term>
+	<Term termID="6">
+		<Name xml:lang="en">Recommendation</Name>
+		<Definition xml:lang="en">The reference points to a resource recommended by the provider of
+			the current resource. The service provider considers there to be similarities between
+			the currently described resource and the referenced resource. Example: This could
+			provide access to previous or next episodes or to all episodes (the parent series as a
+			whole). Suggestion to record a programme which the broadcaster recommends because of
+			what the user is watching.It could also point to a Web site proposing related programmes
+			&apos;recommended&apos; by the service provider. A recommendation can be used to
+			suggest content or services or services bundles with a similar subject.</Definition>
+	</Term>
+	<Term termID="7">
+		<Name xml:lang="en">GroupRecommendation</Name>
+		<Definition xml:lang="en">The reference points to a group of resources recommended by the
+			provider of the current resource. The service provider considers there to be
+			similarities between the currently described resource and the referenced group of
+			resources. Example: Suggestion to record a series which the broadcaster recommends
+			because of what the user is watching.</Definition>
+	</Term>
+	<Term termID="8">
+		<Name xml:lang="en">Commercial advert</Name>
+		<Definition xml:lang="en">By default, the reference points to the advert for a product or
+			service featured in the current resource. Example: The user is watching a film
+			containing a desirable product. If the user indicates interest in that product an advert
+			is captured providing further information</Definition>
+		<Term termID="8.1">
+			<Name xml:lang="en">Normal Advert</Name>
+			<Definition xml:lang="en">By default, the reference points to the normal advert for a
+				product or service featured in the current resource</Definition>
+			<Term termID="8.1.1">
+				<Name xml:lang="en">HasNormalAdvert</Name>
+				<Definition xml:lang="en">The reference points to the normal advert for a product or
+					service featured in the current resource</Definition>
+			</Term>
+			<Term termID="8.1.2">
+				<Name xml:lang="en"> IsNormalAdvertOf</Name>
+				<Definition xml:lang="en">The reference points to the resource advertised by the
+					current normal advert</Definition>
+			</Term>
+		</Term>
+		<Term termID="8.2">
+			<Name xml:lang="en">Telescoped Advert </Name>
+			<Definition xml:lang="en">An extended version of an advertisement. By default, the
+				reference points to the telescoped advert for a product or service featured in the
+				current resource</Definition>
+			<Term termID="8.2.1">
+				<Name xml:lang="en">HasTelescopedAdvert</Name>
+				<Definition xml:lang="en">The reference points to the telescoped advert for a
+					product or service featured in the current resource</Definition>
+			</Term>
+			<Term termID="8.2.2">
+				<Name xml:lang="en"> IsTelescopedAdvertOf</Name>
+				<Definition xml:lang="en">The reference points to the resource advertised by the
+					current telescoped advert</Definition>
+			</Term>
+		</Term>
+		<Term termID="8.3">
+			<Name xml:lang="en">Speedbump </Name>
+			<Definition xml:lang="en">The superimposition of related or unrelated content over
+				content in trick play mode. By default, the reference points to the speedbump for a
+				product or service featured in the current resource</Definition>
+			<Term termID="8.3.1">
+				<Name xml:lang="en">HasSpeedbump</Name>
+				<Definition xml:lang="en">The reference points to the speedbump for a product or
+					service featured in the current resource</Definition>
+			</Term>
+			<Term termID="8.3.2">
+				<Name xml:lang="en"> IsSpeedbumpOf</Name>
+				<Definition xml:lang="en">The reference points to the resource advertised by the
+					current speedbump</Definition>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="9">
+		<Name xml:lang="en">Direct product purchase</Name>
+		<Definition xml:lang="en">The reference points to a product or service directly linked to
+			the current resource, which can be purchased directly from this linked resource.
+			Example: The user is watching a film containing a desirable product or service (The
+			recipe book from a cookery series for instance). If the user indicates interest in that
+			product they are taken to a web page (or interactive application) which is able to
+			fulfil their purchasing requirement</Definition>
+	</Term>
+	<Term termID="10">
+		<Name xml:lang="en">For more information</Name>
+		<Definition xml:lang="en">The reference points to additional information concerning the
+			current resource in the form of audio/video/text/graphics/interactive app/web content.
+			Example: The user watching a programme for which the content provider has made available
+			additional information. If the user indicates interest they are taken directly to that
+			additional content and then returned to the original content</Definition>
+		<Term termID="10.1">
+			<Name xml:lang="en">Programme E-mail Address</Name>
+			<Definition xml:lang="en">The e-mail address for the resource complying with
+				&quot;mailto:&quot; URI scheme.</Definition>
+		</Term>
+		<Term termID="10.2">
+			<Name xml:lang="en">Programme Website</Name>
+			<Definition xml:lang="en">The website for the resource expressed as a URL.</Definition>
+		</Term>
+		<Term termID="10.3">
+			<Name xml:lang="en">Telephone Number</Name>
+			<Definition xml:lang="en">The telephone number for the resource complying with [IETF RFC
+				2806] &quot;tel:&quot; URI scheme.</Definition>
+		</Term>
+		<Term termID="10.4">
+			<Name xml:lang="en">Programme Transcript</Name>
+			<Definition xml:lang="en">The transcript of the resource expressed as a
+			URI.</Definition>
+		</Term>
+		<Term termID="10.5">
+			<Name xml:lang="en">Interactive Enhancement</Name>
+			<Definition xml:lang="en">An interactive enhancement of the resource. The object pointed
+				to may be an external resource. Alternatively, it may be the CRID of a
+				ProgramInformation or Package record. The availability of an enhancement may be
+				presented to the end user as a &quot;red button&quot; icon or similar, as
+				defined by the application itself.</Definition>
+		</Term>
+	</Term>
+	<!-- '11. Programme Review Information' superseded by '32. Review Information'-->
+	<Term termID="12">
+		<Name xml:lang="en">Recap</Name>
+		<Definition xml:lang="en">The reference points to a text or av recap of the resource.
+			Example: The user can chose to read/watch a recap if they have missed a previous episode
+			or forgotten the thread of the series </Definition>
+	</Term>
+	<Term termID="13">
+		<Name xml:lang="en">The making of</Name>
+		<Definition xml:lang="en">By default, the reference points to the making-of of the current
+			resource. Example: &quot;The user, if interested can view the background to how the
+			programme was made&quot;</Definition>
+		<Term termID="13.1">
+			<Name xml:lang="en">HasMakingOf</Name>
+			<Definition xml:lang="en">The reference points to the making-of of the current
+			resource</Definition>
+		</Term>
+		<Term termID="13.2">
+			<Name xml:lang="en">IsMakingOfFor</Name>
+			<Definition xml:lang="en">The reference points to the resource corresponding to the
+				current making-of</Definition>
+		</Term>
+	</Term>
+	<Term termID="14">
+		<Name xml:lang="en">Support</Name>
+		<Definition xml:lang="en">The reference points to a resource that contains issues the user
+			may wish to enquire about. Example: The user can find out if there is support in the
+			form of a telephone help line, postal or email address or web page that provides them
+			with the ability to seek advice on the subject matter of the programme</Definition>
+		<Term termID="14.1">
+			<Name xml:lang="en">Support E-mail Address</Name>
+			<Definition xml:lang="en">A support e-mail address complying with
+				&quot;mailto:&quot; URI scheme.</Definition>
+		</Term>
+		<Term termID="14.2">
+			<Name xml:lang="en">Support Website</Name>
+			<Definition xml:lang="en">A support website expressed as a URL.</Definition>
+		</Term>
+		<Term termID="14.3">
+			<Name xml:lang="en">Telephone Helpline</Name>
+			<Definition xml:lang="en">A telephone helpline number complying with [IETF RFC 2806]
+				&quot;tel:&quot; URI scheme.</Definition>
+		</Term>
+	</Term>
+	<Term termID="15">
+		<Name xml:lang="en">Segmentation</Name>
+		<Definition xml:lang="en">The reference points to segmentation information</Definition>
+		<Term termID="15.1">
+			<Name xml:lang="en">Static Segmentation</Name>
+			<Definition xml:lang="en">Relation: The content referenced by this pointer is
+				&quot;static&quot; segmentation metadata which will not change as the
+				content progresses.</Definition>
+		</Term>
+		<Term termID="15.2">
+			<Name xml:lang="en">Live Segmentation</Name>
+			<Definition xml:lang="en">Relation: The content referenced by this pointer is
+				&quot;live&quot; segmentation metadata which will change dynamically as the
+				content progresses. Once the content has completed transmission the segmentation
+				metadata will not be updated.</Definition>
+		</Term>
+		<Term termID="15.3">
+			<Name xml:lang="en">Live &amp; Post Segmentation</Name>
+			<Definition xml:lang="en">Relation: The content referenced by this pointer is
+				&quot;live&quot; segmentation metadata which will change dynamically as the
+				content progresses. It may also be updated after the content has completed
+				transmission. </Definition>
+		</Term>
+		<Term termID="15.4">
+			<Name xml:lang="en">Post Segmentation</Name>
+			<Definition xml:lang="en">Relation: The content referenced by this pointer is
+				segmentation metadata which will only be available after the content has completed
+				transmission. </Definition>
+		</Term>
+	</Term>
+	<Term termID="16">
+		<Name xml:lang="en">Derived</Name>
+		<Definition xml:lang="en"/>
+	</Term>
+	<Term termID="17">
+		<Name xml:lang="en">TVA RMPI document</Name>
+		<Definition xml:lang="en">The reference points to TVA-compliant rights information that the
+			broadcaster and/or rights holder provides, for informative purposes only. Example:
+			&quot;The user, during the process of deciding whether to select a programme for
+			acquisition, can view information in the TVA RMPI document for that
+		programme.&quot;</Definition>
+	</Term>
+	<Term termID="18">
+		<Name xml:lang="en">Content Package</Name>
+		<Definition xml:lang="en">The resource points to a content package.</Definition>
+	</Term>
+	<Term termID="19">
+		<Name xml:lang="en">Promotional Still Image</Name>
+		<Definition xml:lang="en">The resource points to a promotional still image for the content
+			programme.</Definition>
+	</Term>
+	<Term termID="20">
+		<Name xml:lang="en">Broadcaster Website</Name>
+		<Definition xml:lang="en">The resource points to a more general web site for the
+			broadcaster.</Definition>
+	</Term>
+	<Term termID="21">
+		<Name xml:lang="en">HasFormat</Name>
+		<Definition xml:lang="en">The described resource pre-existed the referenced resource, which
+			is essentially the same intellectual content presented in another format.(Dublin
+		Core)</Definition>
+	</Term>
+	<Term termID="22">
+		<Name xml:lang="en">IsFormatOf</Name>
+		<Definition xml:lang="en">The described resource is the same intellectual content of the
+			referenced resource, but presented in another format.(Dublin Core)</Definition>
+	</Term>
+	<Term termID="23">
+		<Name xml:lang="en">HasPart</Name>
+		<Definition xml:lang="en">The described resource includes the referenced resource either
+			physically or logically.(Dublin Core)</Definition>
+	</Term>
+	<Term termID="24">
+		<Name xml:lang="en">IsPartOf</Name>
+		<Definition xml:lang="en">The described resource is a physical or logical part of the
+			referenced resource.(Dublin Core)</Definition>
+	</Term>
+	<Term termID="25">
+		<Name xml:lang="en">IsReferencedBy</Name>
+		<Definition xml:lang="en">The described resource is referenced, cited, or otherwise pointed
+			to by the referenced resource.(Dublin Core)</Definition>
+	</Term>
+	<Term termID="26">
+		<Name xml:lang="en">IsReplacedBy</Name>
+		<Definition xml:lang="en">The described resource is supplanted, displaced, or superseded by
+			the referenced resource.(Dublin Core)</Definition>
+	</Term>
+	<Term termID="27">
+		<Name xml:lang="en">IsRequiredBy</Name>
+		<Definition xml:lang="en">The described resource is required by the referenced resource,
+			either physically or logically.(Dublin Core)</Definition>
+	</Term>
+	<Term termID="28">
+		<Name xml:lang="en">HasVersion</Name>
+		<Definition xml:lang="en">The described resource has a version, edition, or adaptation,
+			namely, the referenced resource.(Dublin Core)</Definition>
+	</Term>
+	<Term termID="29">
+		<Name xml:lang="en">References</Name>
+		<Definition xml:lang="en">The described resource references, cites, or otherwise points to
+			the referenced resource.(Dublin Core)</Definition>
+	</Term>
+	<Term termID="30">
+		<Name xml:lang="en">Replaces</Name>
+		<Definition xml:lang="en">The described resource supplants, displaces, or supersedes the
+			referenced resource.(Dublin Core)</Definition>
+	</Term>
+	<Term termID="31">
+		<Name xml:lang="en">Requires</Name>
+		<Definition xml:lang="en">The described resource requires the referenced resource to support
+			its function, delivery, or coherence of content.(Dublin Core)</Definition>
+	</Term>
+	<Term termID="32">
+		<Name xml:lang="en">Review Information</Name>
+		<Definition xml:lang="en">By default the reference points to a review or critique of the
+			resource that may be of interest to the user in deciding whether to continue to watch,
+			download, etc. Example: The user can look at the additional information and use it to
+			decide whether to continue watching a programme</Definition>
+		<Term termID="32.1">
+			<Name xml:lang="en">HasReviewInformation</Name>
+			<Definition xml:lang="en">The reference points to a review or critique of the
+			resource</Definition>
+		</Term>
+		<Term termID="32.2">
+			<Name xml:lang="en">IsReviewInformationFor</Name>
+			<Definition xml:lang="en">The reference points to the resource that is the subject of
+				the review</Definition>
+		</Term>
+	</Term>
+	<Term termID="33">
+		<Name xml:lang="en">Preview</Name>
+		<Definition xml:lang="en">By default, in complement to a Trailer, the reference points to a
+			preview of the resource in a different format (e.g. longer sequences or interactive
+			content) to assess e.g. previously advertised content or services.</Definition>
+		<Term termID="33.1">
+			<Name xml:lang="en">HasPreview</Name>
+			<Definition xml:lang="en">In complement to a Trailer, the reference points to a preview
+				of the resource in a different format (e.g. longer sequences or interactive content)
+				to assess e.g. previously advertised content or services.</Definition>
+		</Term>
+		<Term termID="33.2">
+			<Name xml:lang="en">IsPreviewOf</Name>
+			<Definition xml:lang="en">The reference points to the resource addressed by the current
+				preview.</Definition>
+		</Term>
+	</Term>
+	<Term termID="34">
+		<Name xml:lang="en">Current Broadcast</Name>
+		<Definition xml:lang="en">Relation: The content referenced by this pointer is the current
+			broadcast content.</Definition>
+	</Term>
+	<Term termID="35">
+		<Name xml:lang="en">Package Main Content</Name>
+		<Definition xml:lang="en">A pointer to the main content component of a Package.</Definition>
+	</Term>
+	<Term termID="36">
+		<Name xml:lang="en">ChannelIdentification</Name>
+		<Definition xml:lang="en">By default, the reference points to a channel identification or
+			ident of the currently described resource.</Definition>
+		<Term termID="36.1">
+			<Name xml:lang="en">IsChannelIdentificationOf</Name>
+			<Definition xml:lang="en">The reference points to the channel/service whose identity the
+				current resource reinforces.</Definition>
+		</Term>
+		<Term termID="36.2">
+			<Name xml:lang="en">HasChannelIdentification</Name>
+			<Definition xml:lang="en">The reference points to a channel identification of the
+				current resource.</Definition>
+		</Term>
+	</Term>
+	<Term termID="37">
+		<Name xml:lang="en">Best of</Name>
+		<Definition xml:lang="en">By default, the reference points to a resource collecting best-of
+			selections from the currently described resource.</Definition>
+		<Term termID="37.1">
+			<Name xml:lang="en">IsBestOf</Name>
+			<Definition xml:lang="en">The reference points to the show or brand whose best-of
+				selections are collected in the current resource.</Definition>
+		</Term>
+		<Term termID="37.2">
+			<Name xml:lang="en">HasBestOf</Name>
+			<Definition xml:lang="en">The reference points to a resource collecting best-of
+				selections from the current resource.</Definition>
+		</Term>
+	</Term>
+	<Term termID="38">
+		<Name xml:lang="en">Additional Material</Name>
+		<Definition xml:lang="en">By default, the reference points to additional, supplementary
+			material such as an extended interview or report or an additional music track.</Definition>
+		<Term termID="38.1">
+			<Name xml:lang="en">IsAdditionalMaterialFor</Name>
+			<Definition xml:lang="en">The reference points to the programme for which the current
+				resource is additional material.</Definition>
+		</Term>
+		<Term termID="38.2">
+			<Name xml:lang="en">HasAdditionalMaterial</Name>
+			<Definition xml:lang="en">The reference points to additional material for the current
+				resource.</Definition>
+		</Term>
+	</Term>
+	<Term termID="39">
+		<Name xml:lang="en">Extract</Name>
+		<Definition xml:lang="en">By default, the reference points to an extract of the current
+			resource.</Definition>
+		<Term termID="39.1">
+			<Name xml:lang="en">IsExtractOf</Name>
+			<Definition xml:lang="en">The reference points to the resource of which the current
+				resource is an extract.</Definition>
+		</Term>
+		<Term termID="39.2">
+			<Name xml:lang="en">HasExtract</Name>
+			<Definition xml:lang="en">The reference points to an extract of the current
+			resource.</Definition>
+		</Term>
+	</Term>
+	<Term termID="40">
+		<Name xml:lang="en">Credit information</Name>
+		<Definition xml:lang="en">By default, the reference points to a resource that provides information concerning a credited person or organisation.</Definition>
+		<Term termID="40.1">
+			<Name xml:lang="en">Biographical information</Name>
+			<Definition xml:lang="en">The reference points to a resource that provides biographical information concerning a credited person.</Definition>
+		</Term>
+	</Term>
+	
+</ClassificationScheme>

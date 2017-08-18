@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri=" urn:tva:metadata:extended:cs:MiddlewareServiceCS:2011">
+	<Term termID="ACAP">
+		<Name xml:lang="en">ACAP</Name>
+	</Term>
+	<Term termID="MHP">
+		<Name xml:lang="en">MHP</Name>
+	</Term>
+	<Term termID="OCAP">
+		<Name xml:lang="en">OCAP</Name>
+	</Term>
+	<Term termID="BML">
+		<Name xml:lang="en">BML</Name>
+	</Term>
+		<Term termID="MHEG-5">
+		<Name xml:lang="en">MHEG-5</Name>
+	</Term>
+	<Term termID="Open-TV">
+		<Name xml:lang="en">Open-TV</Name>
+	</Term>
+	<Term termID="MediaHighway">
+		<Name xml:lang="en">MediaHighway</Name>
+	</Term>
+</ClassificationScheme>

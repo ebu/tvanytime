@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:extended:cs:TemporalRelationCS:2005">
+	<!-- ##################################################################### 	-->
+	<!-- TEMPORAL RELATION                                                                      	-->
+	<!-- Definition: This is a set of terms used within Content Packaging to indicate 	-->
+	<!-- what kinds of temporal relation components/items have with others             -->
+	<!-- It makes the recieving terminal know when the component and/or item          -->
+	<!-- has to be consumed                                                                               -->
+	<!-- ##################################################################### 	-->
+	<Term termID="precedes">
+		<Name xml:lang="en">precedes</Name>
+		<Definition> B precedes C if and only if B ends before C starts.</Definition>
+	</Term>
+	<Term termID="follows">
+		<Name xml:lang="en">follows</Name>
+		<Definition> Inverse relation of precedes </Definition>
+	</Term>
+	<Term termID="meets">
+		<Name xml:lang="en">meets</Name>
+		<Definition>B meets C if and only if B ends at the same time as C starts.</Definition>
+	</Term>
+	<Term termID="metBy">
+		<Name xml:lang="en">metBy</Name>
+		<Definition> Inverse relation of meets </Definition>
+	</Term>
+	<Term termID="overlaps">
+		<Name xml:lang="en">overlaps</Name>
+		<Definition>B overlaps C if and only if B starts before C starts, B ends after C starts and B ends before C ends.</Definition>
+	</Term>
+	<Term termID="overlappedBy">
+		<Name xml:lang="en">overlappedBy</Name>
+		<Definition> Inverse relation of overlaps </Definition>
+	</Term>
+	<Term termID="contains">
+		<Name xml:lang="en">contains</Name>
+		<Definition> 
+			B contains C if and only if C starts after B starts and C ends at the same time as or before B ends, or C starts after or at the same time as B starts and C ends before B ends.
+		</Definition>
+	</Term>
+	<Term termID="during">
+		<Name xml:lang="en">during</Name>
+		<Definition> Inverse relation of contains </Definition>
+	</Term>
+	<Term termID="strictContains">
+		<Name xml:lang="en">strictContains</Name>
+		<Definition>B strictContains C if and only if C starts after B starts and C ends before B ends.</Definition>
+	</Term>
+	<Term termID="strictDuring">
+		<Name xml:lang="en">strictDuring</Name>
+		<Definition> Inverse relation of strictContains </Definition>
+	</Term>
+	<Term termID="starts">
+		<Name xml:lang="en">starts</Name>
+		<Definition>B starts C if and only if B starts at the same time as C starts and B ends before C ends.</Definition>
+	</Term>
+	<Term termID="startedBy">
+		<Name xml:lang="en">startedBy</Name>
+		<Definition> Inverse relation of starts </Definition>
+	</Term>
+	<Term termID="finishes">
+		<Name xml:lang="en">finishes</Name>
+		<Definition>B finishes C if and only if B starts after C starts and B ends at the same time as C ends.</Definition>
+	</Term>
+	<Term termID="finishedBy">
+		<Name xml:lang="en">finishedBy</Name>
+		<Definition> Inverse relation of finishes </Definition>
+	</Term>
+	<Term termID="coOccurs">
+		<Name xml:lang="en">coOccurs</Name>
+		<Definition>B coOccurs if and only if B starts at the same time as C starts and B ends at the same time as C ends.</Definition>
+	</Term>
+	<Term termID="contiguous">
+		<Name xml:lang="en">contiguous</Name>
+		<Definition>A1, A2, Åc An contiguous if and only if they are temporally disjoint and connected.</Definition>
+	</Term>
+	<Term termID="sequential">
+		<Name xml:lang="en">sequential</Name>
+		<Definition>A1, A2, Åc An sequential if and only if they are temporally disjoint and not necessarily connected.</Definition>
+	</Term>
+	<Term termID="coBegin">
+		<Name xml:lang="en">coBegin</Name>
+		<Definition>A1, A2, Åc An coBegin if and only if they start at the same time.</Definition>
+	</Term>
+	<Term termID="coEnd">
+		<Name xml:lang="en">coEnd</Name>
+		<Definition>A1, A2, Åc An coEnd if and only if they end at the same time.</Definition>
+	</Term>
+	<Term termID="parallel">
+		<Name xml:lang="en">parallel</Name>
+		<Definition>A1, A2, Åc An parallel if and only if the intersection of A1, A2, Åc An has one non-empty interior.</Definition>
+	</Term>
+	<Term termID="overlapping">
+		<Name xml:lang="en">overlapping</Name>
+		<Definition>
+			A1, A2, Åc An overlapping if and only if the union of A1, A2, Åc An is connected and each Ai intersects at least one other Aj with non-empty interior.
+		</Definition>
+	</Term>
+</ClassificationScheme>

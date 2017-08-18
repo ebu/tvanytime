@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:PurchaseTypeCS:2004">
+	<!-- ##################################################################### -->
+	<!-- PURCHASETYPE -->
+	<!-- ##################################################################### -->
+	<Term termID="playForever">
+		<Name xml:lang="en">Play forever</Name>
+	</Term>
+	<Term termID="playForPeriod">
+		<Name xml:lang="en">Play for period</Name>
+	</Term>
+	<Term termID="playCounts">
+		<Name xml:lang="en">Play counts</Name>
+	</Term>
+</ClassificationScheme>

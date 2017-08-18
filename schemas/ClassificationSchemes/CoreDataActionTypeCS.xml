@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:CoreData:cs:CoreDataActionTypeCS:2005">
+    <Term termID="1">
+        <Name xml:lang="en">recordReplace</Name>
+        <Definition xml:lang="en"> to be recorded, replacing exiting one if it 
+            exists</Definition>
+    </Term>
+    <Term termID="2">
+        <Name xml:lang="en">recordAllowDuplicates</Name>
+        <Definition xml:lang="en"> to be recorded, authorize duplicate if a copy already 
+            exists : CRID for latest news, two media formats</Definition>
+    </Term>
+    <Term termID="3">
+        <Name xml:lang="en">recordIfNotYetExists</Name>
+        <Definition xml:lang="en"> to be recorded only if it is not yet recorded. E.g.: to 
+            complete a series without rerecording</Definition>
+    </Term>
+    <Term termID="4">
+        <Name xml:lang="en">remind</Name>
+        <Definition xml:lang="en">Message coming from another device of the end-user or a 
+            friend, just for information</Definition>
+    </Term>
+    <Term termID="5">
+        <Name xml:lang="en">recommend</Name>
+        <Definition xml:lang="en">preselection coming from me or suggestion coming from any 
+            user</Definition>
+    </Term>
+</ClassificationScheme>

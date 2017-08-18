@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:ndr:cs:ControlProtocolTypeCS:2005">
+    <annotation>Terms for recorded content control protocol</annotation>
+    <Term termID="rtsp">
+        <Name xml:lang="en">rtsp</Name>
+        <Definition>Real Time Streaming Protocol</Definition>
+    </Term>
+</ClassificationScheme>
+

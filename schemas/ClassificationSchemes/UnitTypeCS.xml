@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:UnitTypeCS:2007">
+	<!-- ##################################################################### -->
+	<!-- UNITTYPE -->
+	<!-- ##################################################################### -->
+	<Term termID="minutes">
+		<Name xml:lang="en">Minutes</Name>
+	</Term>
+	<Term termID="hours">
+		<Name xml:lang="en">Hours</Name>
+	</Term>
+	<Term termID="day">
+		<Name xml:lang="en">Day</Name>
+	</Term>
+	<Term termID="month">
+		<Name xml:lang="en">Month</Name>
+	</Term>
+	<Term termID="year">
+		<Name xml:lang="en">Year</Name>
+	</Term>
+	<Term termID="plays">
+		<Name xml:lang="en">Plays</Name>
+	</Term>
+</ClassificationScheme>

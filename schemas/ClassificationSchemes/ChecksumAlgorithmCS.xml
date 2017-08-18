@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:ChecksumAlgorithmCS:2008">
+	<!-- ##################################################################### -->
+	<!-- ChecksumAlgorithmCS -->
+	<!-- ##################################################################### -->
+	<!-- -->
+	<!-- Cyclic Redundancy Checksums -->
+	<Term termID="crc16">
+		<Name xml:lang="en">CRC16 (ITU-T)</Name>
+		<Definition xml:lang="en">As specified by CCITT/ITU-T and used by X.25, V.41, Bluetooth, PPP, IrDA.
+Polynomial: x^16 + x^12 + x^5 + 1</Definition>
+	</Term>
+	<Term termID="crc32">
+		<Name xml:lang="en">CRC32 (MPEG-2)</Name>
+		<Definition xml:lang="en">As specified in IEEE 802.3, ITU-T V.42 and MPEG-2.
+Polynomial: x^32 + x^26 + x^23 + x^22 + x^16 + x^12 + x^11 + x^10 + x^8 + x^7 + x^5 + x^4 + x^2 + x + 1</Definition>
+	</Term>
+	<Term termID="crc64">
+		<Name xml:lang="en">CRC64 (ISO)</Name>
+		<Definition xml:lang="en">As specified in ISO 3309 for use by HDLC.
+Polynomial: x^64 + x^4 + x^3 + x + 1</Definition>
+	</Term>
+	<Term termID="crc64-ecma">
+		<Name xml:lang="en">CRC64 (ECMA)</Name>
+		<Definition xml:lang="en">As specified in ECMA-182.
+Polynomial: x^64 + x^62 + x^57 + x^55 + x^54 + x^53 + x^52 + x^47 + x^46 + x^45 + x^40 + x^39 + x^38 + x^37 + x^35 + x^33 + x^32 + x^31 + x^29 + x^27 + x^24 + x^23 + x^22 + x^21 + x^19 + x^17 + x^13 + x^12 + x^10 + x^9 + x^7 + x^4 + x + 1</Definition>
+	</Term>
+	<!-- -->
+	<!-- Cryptographic hash functions -->
+	<Term termID="md5">
+		<Name xml:lang="en">MD5</Name>
+		<Definition xml:lang="en">Message-Digest algorithm 5, a 128-bit hash designed at MIT by Professor Ronald Rivest.</Definition>
+	</Term>
+	<Term termID="sha1">
+		<Name xml:lang="en">SHA-1</Name>
+		<Definition xml:lang="en">160-bit Secure Hash Algorithm, developed by the United States National Security Agency and published by NIST.</Definition>
+	</Term>
+</ClassificationScheme>

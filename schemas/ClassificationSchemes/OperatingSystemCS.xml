@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:extended:cs:OperatingSystemCS:2007">
+	<Term termID="1">
+		<Name xml:lang="en">DOS</Name>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">Windows</Name>
+		<Term termID="2.1">
+			<Name xml:lang="en">Windows 3.X</Name>
+		</Term>
+		<Term termID="2.2">
+			<Name xml:lang="en">Windows 95</Name>
+		</Term>
+		<Term termID="2.3">
+			<Name xml:lang="en">Windows 98</Name>
+		</Term>
+		<Term termID="2.4">
+			<Name xml:lang="en">Windows Me</Name>
+		</Term>
+		<Term termID="2.5">
+			<Name xml:lang="en">Windows NT</Name>
+		</Term>
+		<Term termID="2.6">
+			<Name xml:lang="en">Windows 2000</Name>
+		</Term>
+		<Term termID="2.7">
+			<Name xml:lang="en">Windows 2003 Server</Name>
+		</Term>
+		<Term termID="2.8">
+			<Name xml:lang="en">Windows XP</Name>
+		</Term>
+		<Term termID="2.9">
+			<Name xml:lang="en">Windows VISTA</Name>
+		</Term>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">Linux</Name>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">Unix</Name>
+	</Term>
+	<Term termID="5">
+		<Name xml:lang="en">Solaris</Name>
+	</Term>
+	<Term termID="6">
+		<Name xml:lang="en">OS2</Name>
+	</Term>
+	<Term termID="7">
+		<Name xml:lang="en">Mac</Name>
+		<Term termID="7.1">
+			<Name xml:lang="en">System 6</Name>
+		</Term>
+		<Term termID="7.2">
+			<Name xml:lang="en">System 7</Name>
+		</Term>
+		<Term termID="7.3">
+			<Name xml:lang="en">Mac OS 7.x</Name>
+		</Term>
+		<Term termID="7.4">
+			<Name xml:lang="en">Mac OS 8.x</Name>
+		</Term>
+		<Term termID="7.5">
+			<Name xml:lang="en">Mac OS 9.x</Name>
+		</Term>
+		<Term termID="7.6">
+			<Name xml:lang="en">Mac OS X</Name>
+		</Term>
+		<Term termID="7.7">
+			<Name xml:lang="en">Mac OS X Server</Name>
+		</Term>
+	</Term>
+	<Term termID="8">
+		<Name xml:lang="en">Mobile</Name>
+		<Term termID="8.1">
+			<Name xml:lang="en">Palm OS 1.x</Name>
+		</Term>
+		<Term termID="8.2">
+			<Name xml:lang="en">Palm OS 2.x</Name>
+		</Term>
+		<Term termID="8.3">
+			<Name xml:lang="en">Palm OS 3.x</Name>
+		</Term>
+		<Term termID="8.4">
+			<Name xml:lang="en">Palm OS 4.x</Name>
+		</Term>
+		<Term termID="8.5">
+			<Name xml:lang="en">Palm OS 5.x</Name>
+		</Term>
+		<Term termID="8.6">
+			<Name xml:lang="en">Windows CE 1.x</Name>
+		</Term>
+		<Term termID="8.7">
+			<Name xml:lang="en">Windows CE 2.x</Name>
+		</Term>
+		<Term termID="8.8">
+			<Name xml:lang="en">Pocket PC</Name>
+		</Term>
+		<Term termID="8.9">
+			<Name xml:lang="en">Pocket PC 2002</Name>
+		</Term>
+		<Term termID="8.10">
+			<Name xml:lang="en">Pocket PC 2003</Name>
+		</Term>
+		<Term termID="8.11">
+			<Name xml:lang="en">Celvic OS</Name>
+		</Term>
+		<Term termID="8.12">
+			<Name xml:lang="en">EPOC (Psion OS)</Name>
+		</Term>
+		<Term termID="8.13">
+			<Name xml:lang="en">Symbian</Name>
+		</Term>
+		<Term termID="8.14">
+			<Name xml:lang="en">Windows Mobile 2003 Phone Edition</Name>
+		</Term>
+	</Term>
+	<Term termID="9">
+		<Name xml:lang="en">Embedded OS</Name>
+		<Term termID="9.1">
+			<Name xml:lang="en">Windows CE</Name>
+		</Term>
+		<Term termID="9.2">
+			<Name xml:lang="en">Embedded Linux </Name>
+		</Term>
+		<Term termID="9.3">
+			<Name xml:lang="en">Embedded Java</Name>
+		</Term>
+	</Term>
+	<Term termID="10">
+		<Name xml:lang="en">RTOS (Real Time OS)</Name>
+		<Term termID="10.1">
+			<Name xml:lang="en">pSOS</Name>
+		</Term>
+		<Term termID="10.2">
+			<Name xml:lang="en">OS-9</Name>
+		</Term>
+		<Term termID="10.3">
+			<Name xml:lang="en">VxWorks</Name>
+		</Term>
+		<Term termID="10.4">
+			<Name xml:lang="en">QNX</Name>
+		</Term>
+		<Term termID="10.5">
+			<Name xml:lang="en">VRTX</Name>
+		</Term>
+		<Term termID="10.6">
+			<Name xml:lang="en">Nucleus</Name>
+		</Term>
+		<Term termID="10.7">
+			<Name xml:lang="en">Qplus</Name>
+		</Term>
+		<Term termID="10.8">
+			<Name xml:lang="en">Lynx</Name>
+		</Term>
+		<Term termID="10.9">
+			<Name xml:lang="en">RT-Linux</Name>
+		</Term>
+	</Term>
+</ClassificationScheme>

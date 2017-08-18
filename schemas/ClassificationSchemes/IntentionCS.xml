@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:cs:IntentionCS:2005">
+	<!-- ##################################################################### -->
+	<!--INTENTION                                                                                     -->
+	<!-- Definition: The primary apparent intention in transmitting the programme  -->
+	<!-- ##################################################################### -->
+	<Term termID="1.0">
+		<Name xml:lang="en">Proprietary</Name>
+		<Definition xml:lang="en">For use where proprietary extensions are required, or the use of keywords that do not fit in any classification below</Definition>
+	</Term>
+	<Term termID="1.1">
+		<Name xml:lang="en">ENTERTAIN</Name>
+		<Definition xml:lang="en">Programme intended primarily to evoke relaxation, feelings of pleasure and/or awareness of beauty.</Definition>
+		<Term termID="1.1.1">
+			<Name xml:lang="en">Pure entertainment</Name>
+		</Term>
+		<Term termID="1.1.2">
+			<Name xml:lang="en">Informative entertainment</Name>
+			<Definition xml:lang="en">Programmes intended primarily to entertain but with informative elements.</Definition>
+		</Term>
+	</Term>
+	<Term termID="1.2">
+		<Name xml:lang="en">INFORM</Name>
+		<Definition xml:lang="en">Programme intended primarily to inform about current facts, situations, events, theories or forecasts, or to provide explanatory background information and advice. Information programme content has to be non-durable, that is to say that one could not imagine that the same programme would be transmitted e.g. one year later without losing most of its relevance. Examples: news, documentaries about current subjects, consumer information</Definition>
+		<Term termID="1.2.1">
+			<Name xml:lang="en">Government</Name>
+			<Definition xml:lang="en">Official material on behalf of the government of the country concerned. Examples: A short message warning of the dangers of using fireworks, AIDS awareness campaigns etc</Definition>
+		</Term>
+		<Term termID="1.2.2">
+			<Name xml:lang="en">Pure information</Name>
+		</Term>
+		<Term termID="1.2.3">
+			<Name xml:lang="en">Infotainment</Name>
+			<Definition xml:lang="en">Programmes intended primarily to inform but with entertaining elements.</Definition>
+		</Term>
+		<Term termID="1.2.4">
+			<Name xml:lang="en">Advice</Name>
+			<Definition xml:lang="en">Programme intended to advise about matters of personal interest such as consumer prices and quality, financial matters, health, or, for the interest of special groups, weather or traffic information</Definition>
+		</Term>
+	</Term>
+	<Term termID="1.3">
+		<Name xml:lang="en">EDUCATE</Name>
+		<Definition xml:lang="en">Programme primarily intended to increase knowledge about non-current subjects in a didactic or non-didactic way, or to religiously inspire.</Definition>
+		<Term termID="1.3.1">
+			<Name xml:lang="en">School Programmes</Name>
+			<Term termID="1.3.1.1">
+				<Name xml:lang="en">Primary</Name>
+				<Definition xml:lang="en">Youth education in the first stages: between the ages of approx 4 and 12/13..</Definition>
+			</Term>
+			<Term termID="1.3.1.2">
+				<Name xml:lang="en">Secondary</Name>
+				<Definition xml:lang="en">Youth Education in the second stage - between the ages of approx 12/13. and 18</Definition>
+			</Term>
+			<Term termID="1.3.1.3">
+				<Name xml:lang="en">Tertiary</Name>
+				<Definition xml:lang="en">University/College education</Definition>
+			</Term>
+		</Term>
+		<Term termID="1.3.2">
+			<Name xml:lang="en">Lifelong/further education</Name>
+			<Definition xml:lang="en">Adult education: Additional learning such as post graduate and distance learning</Definition>
+		</Term>
+	</Term>
+	<Term termID="1.4">
+		<Name xml:lang="en">PROMOTE</Name>
+		<Definition xml:lang="en">Intended to promote content. Produced by the broadcaster or media owner. eg trails for TV/Radio</Definition>
+	</Term>
+	<Term termID="1.5">
+		<Name xml:lang="en">ADVERTISE</Name>
+		<Definition xml:lang="en">Intended to inform consumers about commercial products and services. Produced by/on behalf the owners/sellers of the product or service eg Interstitial commercials</Definition>
+	</Term>
+	<Term termID="1.6">
+		<Name xml:lang="en">RETAIL</Name>
+		<Definition xml:lang="en">Full length programmes designed to sell a product or service to the consumer</Definition>
+		<Term termID="1.6.1">
+			<Name xml:lang="en">Gambling</Name>
+			<Definition xml:lang="en">Programme that allows a consumer to participate in gambling. NB a programme ABOUT gambling, ie a documentary about Las Vegas does not belong in this category</Definition>
+		</Term>
+		<Term termID="1.6.2">
+			<Name xml:lang="en">Home Shopping</Name>
+			<Definition xml:lang="en">A programme that has the primary objective to allow consumer to make purchases as part of the programme. EG QVC Home Shopping channel. A programme ABOUT home shopping does not fit oin this category. Home shopping could also relate to devices outside the home - purchases of goods and sevices made through the device</Definition>
+		</Term>
+	</Term>
+	<Term termID="1.7">
+		<Name xml:lang="en">FUND RAISE/SOCIAL ACTION</Name>
+		<Definition xml:lang="en">Appeals for charities and other recognised good causes</Definition>
+		<Term termID="1.7.1">
+			<Name xml:lang="en">Fund Raising</Name>
+			<Definition xml:lang="en">Examples: Telethons and disaster appeal programmes</Definition>
+		</Term>
+		<Term termID="1.7.2">
+			<Name xml:lang="en">Social Action</Name>
+			<Definition xml:lang="en">Appeals by good causes for action, such as giving blood</Definition>
+		</Term>
+	</Term>
+	<Term termID="1.8">
+		<Name xml:lang="en">ENRICH</Name>
+		<Definition xml:lang="en">Programme primarily intended to increase knowledge about non-current subjects in a didactic or non-didactic way, or to religiously inspire. Enrichment programme content has to be durable, that is to say, one could very well imagine that the programme would be broadcast one year later, without loosing its relevance. Examples: travelogues, war documentaries, educational programmes, religious programmes .</Definition>
+		<Term termID="1.8.1">
+			<Name xml:lang="en">General enrichment</Name>
+			<Definition xml:lang="en">Programme primarily intended to increase knowledge about non current subjects in a non-didactic way.</Definition>
+		</Term>
+		<Term termID="1.8.2">
+			<Name xml:lang="en">Inspirational enrichment</Name>
+			<Definition xml:lang="en">Programme based on different forms of religious beliefs or intended to edify the audience.</Definition>
+		</Term>
+	</Term>
+	<Term termID="1.9">
+		<Name xml:lang="en">EDUCATIONAL DIFFICULTY</Name>
+		<Definition xml:lang="en">The level of difficulty of an educational programme</Definition>
+		<Term termID="1.9.1">
+			<Name xml:lang="en">Very Easy</Name>
+		</Term>
+		<Term termID="1.9.2">
+			<Name xml:lang="en">Easy</Name>
+		</Term>
+		<Term termID="1.9.3">
+			<Name xml:lang="en">Medium</Name>
+		</Term>
+		<Term termID="1.9.4">
+			<Name xml:lang="en">Difficult</Name>
+		</Term>
+		<Term termID="1.9.5">
+			<Name xml:lang="en">Very Difficult</Name>
+		</Term>
+	</Term>
+</ClassificationScheme>

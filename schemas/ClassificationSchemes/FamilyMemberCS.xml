@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:extended:cs:FamilyMemberCS:2005">
+	<Term termID="1">
+		<Name xml:lang="en">Mother</Name>
+		<Term termID="1.1">
+			<Name xml:lang="en">Step-mother</Name>
+		</Term>
+		<Term termID="1.2">
+			<Name xml:lang="en">Mother-in-law</Name>
+		</Term>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">Father</Name>
+		<Term termID="2.1">
+			<Name xml:lang="en">Step-father</Name>
+		</Term>
+		<Term termID="2.2">
+			<Name xml:lang="en">Father-in-law</Name>
+		</Term>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">Grandmother</Name>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">Grandfather</Name>
+	</Term>
+	<Term termID="5">
+		<Name xml:lang="en">Great-grandmother</Name>
+	</Term>
+	<Term termID="6">
+		<Name xml:lang="en">Great-grandfather</Name>
+	</Term>
+	<Term termID="7">
+		<Name xml:lang="en">Great-great-grandmother</Name>
+	</Term>
+	<Term termID="8">
+		<Name xml:lang="en">Great-great-grandfather</Name>
+	</Term>
+	<Term termID="9">
+		<Name xml:lang="en">Sibling</Name>
+		<Term termID="9.1">
+			<Name xml:lang="en">Brother</Name>
+			<Term termID="9.1.1">
+				<Name xml:lang="en">Half-brother</Name>
+				<Term termID="9.1.1.1">
+					<Name xml:lang="en">Younger half-brother</Name>
+				</Term>
+				<Term termID="9.1.1.2">
+					<Name xml:lang="en">Elder half-brother</Name>
+				</Term>
+			</Term>
+			<Term termID="9.1.2">
+				<Name xml:lang="en">Step-brother</Name>
+				<Term termID="9.1.2.1">
+					<Name xml:lang="en">Younger step-brother</Name>
+				</Term>
+				<Term termID="9.1.2.2">
+					<Name xml:lang="en">Elder step-brother</Name>
+				</Term>
+			</Term>
+			<Term termID="9.1.3">
+				<Name xml:lang="en">Brother-in-law</Name>
+				<Term termID="9.1.2.1">
+					<Name xml:lang="en">Younger brother-in-law</Name>
+				</Term>
+				<Term termID="9.1.2.2">
+					<Name xml:lang="en">Elder brother-in-law</Name>
+				</Term>
+			</Term>
+			<Term termID="9.1.4">
+				<Name xml:lang="en">Twin brother</Name>
+			</Term>
+		</Term>
+		<Term termID="9.2">
+			<Name xml:lang="en">Sister</Name>
+			<Term termID="9.2.1">
+				<Name xml:lang="en">Half-sister</Name>
+				<Term termID="9.2.1.1">
+					<Name xml:lang="en">Younger half-sister</Name>
+				</Term>
+				<Term termID="9.2.1.2">
+					<Name xml:lang="en">Elder half-sister</Name>
+				</Term>
+			</Term>
+			<Term termID="9.2.2">
+				<Name xml:lang="en">Step-sister</Name>
+				<Term termID="9.2.2.1">
+					<Name xml:lang="en">Younger step-sister</Name>
+				</Term>
+				<Term termID="9.2.2.2">
+					<Name xml:lang="en">Elder step-sister</Name>
+				</Term>
+			</Term>
+			<Term termID="9.2.3">
+				<Name xml:lang="en">Sister-in-law</Name>
+				<Term termID="9.2.2.1">
+					<Name xml:lang="en">Younger sister-in-law</Name>
+				</Term>
+				<Term termID="9.2.2.2">
+					<Name xml:lang="en">Elder sister-in-law</Name>
+				</Term>
+			</Term>
+			<Term termID="9.2.4">
+				<Name xml:lang="en">Twin sister</Name>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="10">
+		<Name xml:lang="en">Twin</Name>
+	</Term>
+	<Term termID="11">
+		<Name xml:lang="en">Cousin</Name>
+		<Term termID="11.1">
+			<Name xml:lang="en">First cousin</Name>
+			<Term termID="11.1.1">
+				<Name xml:lang="en">First cousin once removed</Name>
+			</Term>
+			<Term termID="11.1.2">
+				<Name xml:lang="en">First cousin twice removed</Name>
+			</Term>
+			<Term termID="11.1.3">
+				<Name xml:lang="en">First cousin three times removed</Name>
+			</Term>
+		</Term>
+		<Term termID="11.2">
+			<Name xml:lang="en">Second cousin</Name>
+			<Term termID="11.2.1">
+				<Name xml:lang="en">Second cousin once removed</Name>
+			</Term>
+			<Term termID="11.2.2">
+				<Name xml:lang="en">Second cousin twice removed</Name>
+			</Term>
+			<Term termID="11.2.3">
+				<Name xml:lang="en">Second cousin three times removed</Name>
+			</Term>
+		</Term>
+		<Term termID="11.3">
+			<Name xml:lang="en">Third cousin</Name>
+			<Term termID="11.3.1">
+				<Name xml:lang="en">Third cousin once removed</Name>
+			</Term>
+			<Term termID="11.3.2">
+				<Name xml:lang="en">Third cousin twice removed</Name>
+			</Term>
+			<Term termID="11.3.3">
+				<Name xml:lang="en">Third cousin three times removed</Name>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="12">
+		<Name xml:lang="en">Wife</Name>
+		<Term termID="12.1">
+			<Name xml:lang="en">First wife</Name>
+		</Term>
+		<Term termID="12.2">
+			<Name xml:lang="en">Second wife</Name>
+		</Term>
+		<Term termID="12.3">
+			<Name xml:lang="en">Third wife</Name>
+		</Term>
+	</Term>
+	<Term termID="13">
+		<Name xml:lang="en">Husband</Name>
+		<Term termID="13.1">
+			<Name xml:lang="en">First husband</Name>
+		</Term>
+		<Term termID="13.2">
+			<Name xml:lang="en">Second husband</Name>
+		</Term>
+		<Term termID="13.3">
+			<Name xml:lang="en">Third husband</Name>
+		</Term>
+	</Term>
+	<Term termID="14">
+		<Name xml:lang="en">Spouse</Name>
+	</Term>
+	<Term termID="15">
+		<Name xml:lang="en">Ex-wife</Name>
+	</Term>
+	<Term termID="16">
+		<Name xml:lang="en">Ex-husband</Name>
+	</Term>
+	<Term termID="17">
+		<Name xml:lang="en">Uncle</Name>
+	</Term>
+	<Term termID="18">
+		<Name xml:lang="en">Aunt</Name>
+	</Term>
+	<Term termID="19">
+		<Name xml:lang="en">Great uncle</Name>
+	</Term>
+	<Term termID="20">
+		<Name xml:lang="en">Great aunt</Name>
+	</Term>
+	<Term termID="21">
+		<Name xml:lang="en">Great great uncle</Name>
+	</Term>
+	<Term termID="22">
+		<Name xml:lang="en">Great great aunt</Name>
+	</Term>
+	<Term termID="23">
+		<Name xml:lang="en">Daughter</Name>
+		<Term termID="23.1">
+			<Name xml:lang="en">Step daughter</Name>
+		</Term>
+		<Term termID="23.2">
+			<Name xml:lang="en">Daughter-in-law</Name>
+		</Term>
+		<Term termID="23.3">
+			<Name xml:lang="en">God-daughter</Name>
+		</Term>
+	</Term>
+	<Term termID="24">
+		<Name xml:lang="en">Son</Name>
+		<Term termID="24.1">
+			<Name xml:lang="en">Step son</Name>
+		</Term>
+		<Term termID="24.2">
+			<Name xml:lang="en">Son-in-law</Name>
+		</Term>
+		<Term termID="24.3">
+			<Name xml:lang="en">God son</Name>
+		</Term>
+	</Term>
+	<Term termID="25">
+		<Name xml:lang="en">Grand-daughter</Name>
+		<Term termID="25.1">
+			<Name xml:lang="en">Step grand-daughter</Name>
+		</Term>
+	</Term>
+	<Term termID="26">
+		<Name xml:lang="en">Grandson</Name>
+		<Term termID="26.1">
+			<Name xml:lang="en">Step grandson</Name>
+		</Term>
+	</Term>
+	<Term termID="27">
+		<Name xml:lang="en">Great grand-daughter</Name>
+	</Term>
+	<Term termID="28">
+		<Name xml:lang="en">Great grandson</Name>
+	</Term>
+	<Term termID="29">
+		<Name xml:lang="en">Great great grand-daughter</Name>
+	</Term>
+	<Term termID="30">
+		<Name xml:lang="en">Great great grandson</Name>
+	</Term>
+	<Term termID="31">
+		<Name xml:lang="en">Nephew</Name>
+	</Term>
+	<Term termID="32">
+		<Name xml:lang="en">Niece</Name>
+	</Term>
+</ClassificationScheme>

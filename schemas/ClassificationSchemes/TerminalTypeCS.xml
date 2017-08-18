@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:extended:cs:TerminalTypeCS:2011">
+	<Term termID="1">
+		<Name xml:lang="en">PC</Name>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">PDA</Name>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">Set-Top Box</Name>
+		<Term termID="3.1">
+			<Name xml:lang="en">PDR</Name>
+		</Term>
+		<Term termID="3.2">
+			<Name xml:lang="en">NDR</Name>
+		</Term>
+		<Term termID="3.3">
+			<Name xml:lang="en">Cable Set-Top Box</Name>
+		</Term>
+		<Term termID="3.4">
+			<Name xml:lang="en">Other Set-Top Box</Name>
+		</Term>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">Printer</Name>
+	</Term>
+	<Term termID="5">
+		<Name xml:lang="en">Mobile Phone</Name>
+	</Term>
+	<Term termID="6">
+		<Name xml:lang="en">Digital Still Camera</Name>
+	</Term>
+	<Term termID="7">
+		<Name xml:lang="en">Digital Video Camera</Name>
+	</Term>
+	<Term termID="8">
+		<Name xml:lang="en">Audio Player</Name>
+	</Term>
+	<Term termID="9">
+		<Name xml:lang="en">Television</Name>
+	</Term>
+	<Term termID="10">
+		<Name xml:lang="en">Gateway</Name>
+	</Term>
+	<Term termID="11">
+		<Name xml:lang="en">Router</Name>
+	</Term>
+	<Term termID="12">
+		<Name xml:lang="en">Car Terminal</Name>
+		<Term termID="12.1">
+			<Name xml:lang="en">Car Stereo</Name>
+		</Term>
+		<Term termID="12.2">
+			<Name xml:lang="en">Car Navigation</Name>
+		</Term>
+		<Term termID="12.3">
+			<Name xml:lang="en">Car AV</Name>
+		</Term>
+	</Term>
+	<Term termID="13">
+		<Name xml:lang="en">Game Platform</Name>
+		<Term termID="13.1">
+			<Name xml:lang="en">3DO</Name>
+		</Term>
+		<Term termID="13.2">
+			<Name xml:lang="en">Amiga</Name>
+		</Term>
+		<Term termID="13.3">
+			<Name xml:lang="en">Apple II</Name>
+		</Term>
+		<Term termID="13.4">
+			<Name xml:lang="en">Atari</Name>
+			<Term termID="13.4.1">
+				<Name xml:lang="en">2600</Name>
+			</Term>
+			<Term termID="13.4.2">
+				<Name xml:lang="en">5200</Name>
+			</Term>
+			<Term termID="13.4.3">
+				<Name xml:lang="en">7800</Name>
+			</Term>
+			<Term termID="13.4.4">
+				<Name xml:lang="en">ST</Name>
+			</Term>
+		</Term>
+		<Term termID="13.5">
+			<Name xml:lang="en">ColecoVision</Name>
+		</Term>
+		<Term termID="13.6">
+			<Name xml:lang="en">Commodore 64</Name>
+		</Term>
+		<Term termID="13.7">
+			<Name xml:lang="en">Dreamcast</Name>
+		</Term>
+		<Term termID="13.8">
+			<Name xml:lang="en">Game Boy</Name>
+			<Term termID="13.8.1">
+				<Name xml:lang="en">Usual</Name>
+			</Term>
+			<Term termID="13.8.2">
+				<Name xml:lang="en">Advance</Name>
+			</Term>
+			<Term termID="13.8.3">
+				<Name xml:lang="en">Color</Name>
+			</Term>
+		</Term>
+		<Term termID="13.9">
+			<Name xml:lang="en">Game Cube</Name>
+		</Term>
+		<Term termID="13.10">
+			<Name xml:lang="en">Game Gear</Name>
+		</Term>
+		<Term termID="13.11">
+			<Name xml:lang="en">Genesis</Name>
+		</Term>
+		<Term termID="13.12">
+			<Name xml:lang="en">Intellivision</Name>
+		</Term>
+		<Term termID="13.13">
+			<Name xml:lang="en">Jaguar</Name>
+		</Term>
+		<Term termID="13.14">
+			<Name xml:lang="en">Lynx</Name>
+		</Term>
+		<Term termID="13.15">
+			<Name xml:lang="en">NES</Name>
+		</Term>
+		<Term termID="13.16">
+			<Name xml:lang="en">N-Gage</Name>
+		</Term>
+		<Term termID="13.17">
+			<Name xml:lang="en">Nintendo</Name>
+			<Term termID="13.17.1">
+				<Name xml:lang="en">64</Name>
+			</Term>
+			<Term termID="13.17.2">
+				<Name xml:lang="en">DS</Name>
+			</Term>
+		</Term>
+		<Term termID="13.18">
+			<Name xml:lang="en">PC Booter</Name>
+		</Term>
+		<Term termID="13.19">
+			<Name xml:lang="en">PlayStation</Name>
+			<Term termID="13.19.1">
+				<Name xml:lang="en">Usual</Name>
+			</Term>
+			<Term termID="13.19.2">
+				<Name xml:lang="en">2</Name>
+			</Term>
+		</Term>
+		<Term termID="13.20">
+			<Name xml:lang="en">PSP</Name>
+		</Term>
+		<Term termID="13.21">
+			<Name xml:lang="en">Saturn</Name>
+		</Term>
+		<Term termID="13.22">
+			<Name xml:lang="en">Sega</Name>
+			<Term termID="13.22.1">
+				<Name xml:lang="en">32X</Name>
+			</Term>
+			<Term termID="13.22.2">
+				<Name xml:lang="en">CD</Name>
+			</Term>
+			<Term termID="13.22.3">
+				<Name xml:lang="en">Master System</Name>
+			</Term>
+		</Term>
+		<Term termID="13.23">
+			<Name xml:lang="en">SNES</Name>
+		</Term>
+		<Term termID="13.24">
+			<Name xml:lang="en">TI-99/4A</Name>
+		</Term>
+		<Term termID="13.25">
+			<Name xml:lang="en">TurboGrafx</Name>
+			<Term termID="13.25.1">
+				<Name xml:lang="en">16</Name>
+			</Term>
+			<Term termID="13.25.2">
+				<Name xml:lang="en">CD</Name>
+			</Term>
+		</Term>
+		<Term termID="13.26">
+			<Name xml:lang="en">Vectrex</Name>
+		</Term>
+		<Term termID="13.27">
+			<Name xml:lang="en">VIC-20</Name>
+		</Term>
+		<Term termID="13.28">
+			<Name xml:lang="en">Virtual Boy</Name>
+		</Term>
+		<Term termID="13.29">
+			<Name xml:lang="en">V.Smile</Name>
+		</Term>
+		<Term termID="13.30">
+			<Name xml:lang="en">Xbox</Name>
+		</Term>
+		<Term termID="13.31">
+			<Name xml:lang="en">ZX Spectrum</Name>
+		</Term>
+	</Term>
+	<Term termID="14">
+		<Name xml:lang="en">Home Server</Name>
+		<Term termID="14.1">
+			<Name xml:lang="en">Media Server</Name>
+		</Term>
+		<Term termID="14.2">
+			<Name xml:lang="en">Refrigerator HS</Name>
+		</Term>
+		<Term termID="14.3">
+			<Name xml:lang="en">Game machine HS</Name>
+		</Term>
+	</Term>
+</ClassificationScheme>

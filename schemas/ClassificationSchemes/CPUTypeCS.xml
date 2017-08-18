@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:extended:cs:CPUTypeCS:2005">
+	<!-- ########################################################################-->
+	<!--CPUType 							                                                         	-->
+	<!--Definition: This is a set of terms used within Content Packaging to indicate     -->
+	<!-- what kind of CPU is used in the Terminal written by HeeKyung Lee		-->
+	<!-- ########################################################################-->
+	<Term termID="1">
+		<Name xml:lang="en">CPU for PC</Name>
+		<Term termID="1.1">
+			<Name xml:lang="en">Intel</Name>
+			<Term termID="1.1.1">
+				<Name xml:lang="en">4004</Name>
+			</Term>
+			<Term termID="1.1.2">
+				<Name xml:lang="en">8008</Name>
+			</Term>
+			<Term termID="1.1.3">
+				<Name xml:lang="en">8080</Name>
+			</Term>
+			<Term termID="1.1.4">
+				<Name xml:lang="en">8086</Name>
+			</Term>
+			<Term termID="1.1.5">
+				<Name xml:lang="en">8088</Name>
+			</Term>
+			<Term termID="1.1.6">
+				<Name xml:lang="en">(80)286</Name>
+			</Term>
+			<Term termID="1.1.7">
+				<Name xml:lang="en">(80)386</Name>
+			</Term>
+			<Term termID="1.1.8">
+				<Name xml:lang="en">(80)486</Name>
+			</Term>
+			<Term termID="1.1.9">
+				<Name xml:lang="en">Pentium</Name>
+			</Term>
+			<Term termID="1.1.10">
+				<Name xml:lang="en">Pentium Pro</Name>
+			</Term>
+			<Term termID="1.1.11">
+ 			<Name xml:lang="en">Pentium MMX</Name>
+			</Term>
+			<Term termID="1.1.12">
+				<Name xml:lang="en">Pentium II</Name>
+			</Term>
+			<Term termID="1.1.13">
+				<Name xml:lang="en">Celeron</Name>
+				<Term termID="1.1.13.1">
+					<Name xml:lang="en">Celeron Northwood</Name>
+				</Term>
+				<Term termID="1.1.13.2">
+					<Name xml:lang="en">CeleronD Prescott</Name>
+				</Term>
+			</Term>
+			<Term termID="1.1.14">
+				<Name xml:lang="en">Xeon</Name>
+			</Term>
+			<Term termID="1.1.15">
+				<Name xml:lang="en">Itanium</Name>
+			</Term>
+			<Term termID="1.1.16">
+				<Name xml:lang="en">Pentium IV</Name>
+				<Term termID="1.1.16.1">
+					<Name xml:lang="en">Pentium IV Northwood</Name>
+				</Term>
+				<Term termID="1.1.16.2">
+					<Name xml:lang="en">Pentium IV Willamette</Name>
+				</Term>
+				<Term termID="1.1.16.2">
+					<Name xml:lang="en">Pentium IV Prescott</Name>
+				</Term>
+			</Term>
+			<Term termID="1.1.17">
+				<Name xml:lang="en">McKinley</Name>
+			</Term>
+			<Term termID="1.1.18">
+				<Name xml:lang="en">Deerfield</Name>
+			</Term>
+		</Term>
+		<Term termID="1.2">
+			<Name xml:lang="en">AMD</Name>
+			<Term termID="1.2.1">
+				<Name xml:lang="en">K5</Name>
+			</Term>
+			<Term termID="1.2.2">
+				<Name xml:lang="en">K6</Name>
+			</Term>
+			<Term termID="1.2.3">
+				<Name xml:lang="en">K6-2</Name>
+			</Term>
+			<Term termID="1.2.4">
+				<Name xml:lang="en">K6-3</Name>
+			</Term>
+			<Term termID="1.2.5">
+				<Name xml:lang="en">Duron</Name>
+			</Term>
+			<Term termID="1.2.6">
+				<Name xml:lang="en">Sempron</Name>
+				<Term termID="1.2.6.1">
+					<Name xml:lang="en">Sempron ThoroughbredB</Name>
+				</Term>
+				<Term termID="1.2.6.2">
+					<Name xml:lang="en">Sempron Paris</Name>
+				</Term>
+				<Term termID="1.2.6.3">
+					<Name xml:lang="en">Sempron Palermo</Name>
+				</Term>
+			</Term>
+			<Term termID="1.2.7">
+				<Name xml:lang="en">Athlon Professional Ultra</Name>
+				<Term termID="1.2.7.1">
+					<Name xml:lang="en">Athlon 64</Name>
+					<Term termID="1.2.7.1.1">
+						<Name xml:lang="en">Athlon 64 NewCastle</Name>
+					</Term>
+					<Term termID="1.2.7.1.2">
+						<Name xml:lang="en">Athlon 64 Winchester</Name>
+					</Term>
+					<Term termID="1.2.7.1.3">
+						<Name xml:lang="en">Athlon 64 Claw-Hammer</Name>
+					</Term>
+					<Term termID="1.2.7.1.4">
+						<Name xml:lang="en">Athlon 64 FX 55 Claw-Hammer</Name>
+					</Term>
+				</Term>
+				<Term termID="1.2.7.2">
+					<Name xml:lang="en">AthlonXP</Name>
+					<Term termID="1.2.7.2.1">
+						<Name xml:lang="en">AthlonXP Barton</Name>
+					</Term>
+					<Term termID="1.2.7.2.2">
+						<Name xml:lang="en">AthlonXP M Barton</Name>
+					</Term>
+				</Term>
+			</Term>
+			<Term termID="1.2.8">
+				<Name xml:lang="en">Opteron Sledge-Hammer</Name>
+			</Term>
+			<Term termID="1.2.9">
+				<Name xml:lang="en">K8 </Name>
+			</Term>
+		</Term>
+		<Term termID="1.3">
+			<Name xml:lang="en">VIA</Name>
+			<Term termID="3.1">
+				<Name xml:lang="en">VIA C3 Nehemiah</Name>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">CPU for PDA</Name>
+		<Term termID="2.1">
+			<Name xml:lang="en">Motorola</Name>
+			<Term termID="2.1.1">
+				<Name xml:lang="en">Dragonball</Name>
+			</Term>
+		</Term>
+		<Term termID="2.2">
+			<Name xml:lang="en">Hitachi</Name>
+			<Term termID="2.2.1">
+				<Name xml:lang="en">SH</Name>
+			</Term>
+		</Term>
+		<Term termID="2.3">
+			<Name xml:lang="en">NEC</Name>
+			<Term termID="2.3.1">
+				<Name xml:lang="en">VR</Name>
+			</Term>
+		</Term>
+		<Term termID="2.4">
+			<Name xml:lang="en">Intel</Name>
+			<Term termID="2.4.1">
+				<Name xml:lang="en">StrongARM</Name>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">CPU for Settop</Name>
+		<Term termID="3.1">
+			<Name xml:lang="en">ATI</Name>
+			<Term termID="3.1.1">
+				<Name xml:lang="en">XILLEON</Name>
+			</Term>
+		</Term>
+		<Term termID="3.2">
+			<Name xml:lang="en">Zoran</Name>
+			<Term termID="3.2.1">
+				<Name xml:lang="en">Elite(G9)</Name>
+			</Term>
+		</Term>
+		<Term termID="3.3">
+			<Name xml:lang="en">Philips</Name>
+			<Term termID="3.3.1">
+				<Name xml:lang="en">SA7219</Name>
+			</Term>
+			<Term termID="3.3.2">
+				<Name xml:lang="en">SA7240</Name>
+			</Term>
+		</Term>
+	</Term>
+</ClassificationScheme>

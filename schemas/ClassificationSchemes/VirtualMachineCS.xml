@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassificationScheme uri="urn:tva:metadata:extended:cs:VirtualMachineCS:2005">
+	<!-- ########################################################################-->
+	<!--VirtualMachineCS						                                              -->
+	<!--Definition: This is a set of terms used within Content Packaging to indicate     -->
+	<!-- what kind of virtual machine is used in the Terminal written by HeeKyung Lee	-->
+	<!-- ########################################################################-->
+	<Term termID="1">
+		<Name xml:lang="en">Core War</Name>
+	</Term>
+	<Term termID="2">
+		<Name xml:lang="en">Java VM</Name>
+		<Term termID="2.1">
+			<Name xml:lang="en">Platform</Name>
+			<Term termID="2.1.1">
+				<Name xml:lang="en">J2SE</Name>
+			</Term>
+			<Term termID="2.1.2">
+				<Name xml:lang="en">J2EE</Name>
+			</Term>
+			<Term termID="2.1.3">
+				<Name xml:lang="en">J2ME</Name>
+			</Term>
+		</Term>
+		<Term termID="2.2">
+			<Name xml:lang="en">Speed</Name>
+			<Term termID="2.2.1">
+				<Name xml:lang="en">Classic</Name>
+			</Term>
+			<Term termID="2.2.2">
+				<Name xml:lang="en">Hotspot</Name>
+			</Term>
+		</Term>
+		<Term termID="2.3">
+			<Name xml:lang="en">For J2ME</Name>
+			<Term termID="2.3.1">
+				<Name xml:lang="en">KVM(Kilobyte VM)</Name>
+			</Term>
+			<Term termID="2.3.2">
+				<Name xml:lang="en">GVM(Game VM)</Name>
+			</Term>
+			<Term termID="2.3.3">
+				<Name xml:lang="en">MAP(Mobile Application S/W plug-in)</Name>
+			</Term>
+			<Term termID="2.3.4">
+				<Name xml:lang="en">BREW</Name>
+			</Term>
+			<Term termID="2.3.5">
+				<Name xml:lang="en">Redbook compliant VM </Name>
+			</Term>
+		</Term>
+	</Term>
+	<Term termID="3">
+		<Name xml:lang="en">OCODE</Name>
+	</Term>
+	<Term termID="4">
+		<Name xml:lang="en">OS/2</Name>
+	</Term>
+	<Term termID="5">
+		<Name xml:lang="en">POPLOG</Name>
+	</Term>
+	<Term termID="6">
+		<Name xml:lang="en">Portable Scheme Interpreter</Name>
+	</Term>
+	<Term termID="7">
+		<Name xml:lang="en">Portable Standard Lisp</Name>
+	</Term>
+	<Term termID="8">
+		<Name xml:lang="en">Parallel Virtual Machine</Name>
+	</Term>
+	<Term termID="9">
+		<Name xml:lang="en">Sequential Parlog Machine</Name>
+	</Term>
+	<Term termID="10">
+		<Name xml:lang="en">SNOBOL Implementation Language</Name>
+	</Term>
+	<Term termID="11">
+		<Name xml:lang="en">SODA</Name>
+	</Term>
+	<Term termID="12">
+		<Name xml:lang="en">Smalltalk</Name>
+	</Term>
+</ClassificationScheme>
