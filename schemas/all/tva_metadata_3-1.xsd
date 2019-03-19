@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Updated 2017-06-26 -->
-<!-- Updated schema URNs to 2017 -->
-<!-- Added RightsInformationTable in ProgramDescription -->
-<!-- Extended OnDemandProgram in ProgramLocationTable of ProgramDescription -->
-<schema targetNamespace="urn:tva:metadata:2017" xmlns:tva="urn:tva:metadata:2017"
+<schema targetNamespace="urn:tva:metadata:2019" xmlns:tva="urn:tva:metadata:2019"
 	xmlns:mpeg7="urn:tva:mpeg7:2008" xmlns="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<annotation>
 		<documentation xml:lang="en">This schema consists of datatypes that are normatively defined
-			in ETSI TS 102 822-3-1 v1.10.1</documentation>
+			in ETSI TS 102 822-3-1 v1.11.1</documentation>
 	</annotation>
 	<annotation>
 		<documentation xml:lang="en"> Proposed change for this new version of the TVA specification </documentation>
-		<documentation xml:lang="en"> 1. Add a rightsInformationTable under ProgramDescription
-			indicating rights and restrictions incl. a list of usage restrictions and a list of
-			targeted or restricted devices. Background: this is done to avoid the implementation of
-			the too complex TVA RMPI. </documentation>
-		<documentation> 2. Add two attributes to a segmentInformation: isSkippable (can be skipped)
-			and isPrintable (information can be published e.g. in program guides) </documentation>
+		<documentation xml:lang="en"> 1. Enriched the format of RelatedMaterialType - AVAttributes and StillPictureFormat</documentation>
+		<documentation xml:lang="en"> 2. ServiceURL in ServiceInformationType</documentation>
+		<documentation xml:lang="en"> 3. ServiceType in ServiceInformationType</documentation>
+		<documentation xml:lang="en"> 4. New InstanceMetadataIdRef element in SegmentInformationType</documentation>
+		<documentation xml:lang="en"> 5. New isSkippable and isPrintable attributes in SegmentInformationType</documentation>
+		<documentation xml:lang="en"> 6. New type attribute in TVAMainType to define a type of xml document</documentation>
 	</annotation>
 	<import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
 	<import namespace="urn:tva:mpeg7:2008" schemaLocation="tva_mpeg7.xsd"/>
@@ -28,6 +24,38 @@
 		<documentation xml:lang="en">Basic Types - these types are used in two or more sections of
 			the schema</documentation>
 	</annotation>
+	<element name="TVAMain" type="tva:TVAMainType"/>
+	<complexType name="TVAMainType">
+		<sequence>
+			<element name="CopyrightNotice" type="mpeg7:TextualType" minOccurs="0"
+				maxOccurs="unbounded"/>
+			<!--element name="CopyrightNotice" type="tva:CopyrightNoticeType" minOccurs="0"
+				maxOccurs="unbounded"/-->
+			<element name="MetadataOriginationInformationTable"
+				type="tva:MetadataOriginationInformationTableType" minOccurs="0"/>
+			<element name="ClassificationSchemeTable" type="tva:ClassificationSchemeTableType"
+				minOccurs="0"/>
+			<element name="ProgramDescription" type="tva:ProgramDescriptionType" minOccurs="0"/>
+			<element name="UserDescription" type="tva:UserDescriptionType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</sequence>
+		<attribute ref="xml:lang" use="required"/>
+		<attribute name="publisher" type="string" use="optional"/>
+		<attribute name="publicationTime" type="dateTime" use="optional"/>
+		<attribute name="rightsOwner" type="string" use="optional"/>
+		<attribute name="originID" type="tva:TVAIDRefType" use="optional"/>
+		<attribute name="version" type="unsignedInt" use="optional"/>
+		<attribute name="type" use="optional">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="epg"/>
+					<enumeration value="lastMinuteUpdate"/>
+					<enumeration value="presentFollowing"/>
+					<enumeration value="other"/>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
 	<complexType name="ExtendedURIType">
 		<simpleContent>
 			<extension base="anyURI">
@@ -227,7 +255,25 @@
 	<complexType name="RelatedMaterialType">
 		<sequence>
 			<element name="HowRelated" type="tva:ControlledTermType" minOccurs="0"/>
-			<element name="Format" type="tva:ControlledTermType" minOccurs="0"/>
+			<!-- ###############################################################################################3 -->
+			<!--element name="Format" type="tva:ControlledTermType" minOccurs="0"/-->
+			<element name="Format">
+				<complexType>
+					<choice>
+						<element name="AVAttributes" type="tva:AVAttributesType" minOccurs="0"/>
+						<element name="StillPictureFormat">
+							<complexType>
+								<complexContent>
+									<extension base="tva:ControlledTermType">
+										<attribute name="horizontalSize" type="unsignedShort"/>
+										<attribute name="verticalSize" type="unsignedShort"/>
+									</extension>
+								</complexContent>
+							</complexType>
+						</element>
+					</choice>
+				</complexType>
+			</element>
 			<choice>
 				<element name="MediaLocator" type="tva:TVAMediaLocatorType" maxOccurs="unbounded"/>
 				<element name="SegmentReference" type="tva:SegmentReferenceType"/>
@@ -399,6 +445,13 @@
 			</choice>
 		</sequence>
 	</complexType>
+	<!--complexType name="CopyrightNoticeType">
+		<simpleContent>
+			<extension  base="mpeg7:TextualType">
+				<attribute name="lang" type="language"/>
+			</extension>
+		</simpleContent>
+	</complexType-->
 	<simpleType name="ExplanationLengthType">
 		<restriction base="string">
 			<enumeration value="short"/>
@@ -927,7 +980,27 @@
 			<element name="Name" type="tva:ServiceInformationNameType" minOccurs="0"
 				maxOccurs="unbounded"/>
 			<element name="Owner" type="string" minOccurs="0" maxOccurs="unbounded"/>
-			<element name="ServiceURL" type="anyURI" minOccurs="0"/>
+			<element name="ServiceURL" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<simpleContent>
+						<extension  base="anyURI">
+							<attribute name="name">
+								<simpleType>
+									<restriction base="string">
+										<enumeration value="DTT"/>
+										<enumeration value="CATV"/>
+										<enumeration value="DTH"/>
+										<enumeration value="WWW"/>
+										<enumeration value="IPTV"/>
+										<enumeration value="other"/>
+									</restriction>
+								</simpleType>
+							</attribute>
+						</extension>
+					</simpleContent>
+				</complexType>
+			</element>
+			<element name="ServiceType" type="mpeg7:ControlledTermUseType"  minOccurs="0" maxOccurs=" unbounded" />
 			<element name="Logo" type="tva:TVAMediaLocatorType" minOccurs="0" maxOccurs="unbounded"/>
 			<element name="ServiceDescription" type="tva:SynopsisType" minOccurs="0"
 				maxOccurs="unbounded"/>
@@ -1006,6 +1079,7 @@
 	<complexType name="SegmentInformationType">
 		<sequence>
 			<element name="ProgramRef" type="tva:CRIDRefType" minOccurs="0"/>
+			<element name="InstanceMetadataIdRef" type="tva:InstanceMetadataIdType" minOccurs="0" maxOccurs="unbounded"/>
 			<element name="TimeBaseReference" type="tva:TimeBaseReferenceType" minOccurs="0"/>
 			<element name="Description" type="tva:BasicSegmentDescriptionType" minOccurs="0"/>
 			<element name="SegmentLocator" type="tva:TVAMediaTimeType" minOccurs="0"/>
@@ -1020,12 +1094,12 @@
 		<attribute ref="xml:lang" use="optional"/>
 		<attribute name="isSkippable" type="boolean">
 			<annotation>
-				<documentation> A flag to signal is the segment can be skipped. </documentation>
+				<documentation> A flag to signal if the segment can be skipped. </documentation>
 			</annotation>
 		</attribute>
-		<attribute name="isPrintable" type="boolean">
+		<attribute name="isPrintable" type="boolean" use="optional">
 			<annotation>
-				<documentation> A flag to signal is the information about that segment can be
+				<documentation> A flag to signal if the information about that segment can be
 					published / printed e.g. in program guides. </documentation>
 			</annotation>
 		</attribute>
@@ -1157,11 +1231,11 @@
 		<attribute name="metadataOriginIDRef" type="tva:TVAIDRefType" use="optional"/>
 		<attribute ref="xml:lang" use="optional"/>
 	</complexType>
-	
+
 	<annotation>
 		<documentation xml:lang="en">Section 6.3.9 Rights and Usage restriction Information</documentation>
 	</annotation>
-	
+
 	<complexType name="RightsInformationTableType">
 		<sequence>
 			<element name="RightsStatement" type="tva:RightsStatementType" minOccurs="0"
@@ -1173,19 +1247,19 @@
 	<complexType name="RightsStatementType">
 		<sequence>
 			<element name="RightsExpression" type="mpeg7:TextualType" minOccurs="0"
-				maxOccurs="unbounded">
-			</element>
+				maxOccurs="unbounded"> </element>
 			<element name="RightsLink" minOccurs="0" maxOccurs="unbounded">
 				<complexType>
 					<simpleContent>
 						<extension base="anyURI">
-							<attribute ref="xml:lang" use="optional"></attribute>
+							<attribute ref="xml:lang" use="optional"/>
 						</extension>
 					</simpleContent>
 				</complexType>
 			</element>
 			<element name="RightsType" type="tva:ControlledTermType" minOccurs="0"/>
-			<element name="RightsContact" type="tva:TVAAgentType" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="RightsContact" type="tva:TVAAgentType" minOccurs="0"
+				maxOccurs="unbounded"/>
 			<element name="TemporalScope" minOccurs="0">
 				<complexType>
 					<choice>
@@ -1286,7 +1360,7 @@
 		<documentation xml:lang="en">Section 6.5 CONSUMER METADATA (mostly imported from MPEG-7; see
 			tva_mpeg7.xsd)</documentation>
 	</annotation>
-	
+
 	<complexType name="TVAPersonNameType">
 		<complexContent>
 			<extension base="mpeg7:PersonNameType">
@@ -1367,32 +1441,14 @@
 	<annotation>
 		<documentation xml:lang="en">Section 6.7.2 TV-ANYTIME METADATA DOCUMENT</documentation>
 	</annotation>
-	<element name="TVAMain" type="tva:TVAMainType"/>
-	<complexType name="TVAMainType">
-		<sequence>
-			<element name="CopyrightNotice" type="mpeg7:TextualType" minOccurs="0"
-				maxOccurs="unbounded"/>
-			<element name="MetadataOriginationInformationTable"
-				type="tva:MetadataOriginationInformationTableType" minOccurs="0"/>
-			<element name="ClassificationSchemeTable" type="tva:ClassificationSchemeTableType"
-				minOccurs="0"/>
-			<element name="ProgramDescription" type="tva:ProgramDescriptionType" minOccurs="0"/>
-			<element name="UserDescription" type="tva:UserDescriptionType" minOccurs="0"
-				maxOccurs="unbounded"/>
-		</sequence>
-		<attribute ref="xml:lang" use="required"/>
-		<attribute name="publisher" type="string" use="optional"/>
-		<attribute name="publicationTime" type="dateTime" use="optional"/>
-		<attribute name="rightsOwner" type="string" use="optional"/>
-		<attribute name="originID" type="tva:TVAIDRefType" use="optional"/>
-		<attribute name="version" type="unsignedInt" use="optional"/>
-	</complexType>
 	<complexType name="MetadataOriginationInformationType">
 		<sequence>
 			<element name="Publisher" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded"/>
 			<element name="RightsOwner" type="mpeg7:TextualType" minOccurs="0" maxOccurs="unbounded"/>
 			<element name="CopyrightNotice" type="mpeg7:TextualType" minOccurs="0"
 				maxOccurs="unbounded"/>
+			<!--element name="CopyrightNotice" type="tva:CopyrightNoticeType" minOccurs="0"
+				maxOccurs="unbounded"/-->
 		</sequence>
 		<attribute name="originID" type="tva:TVAIDType" use="required"/>
 		<attributeGroup ref="tva:fragmentIdentification"/>
