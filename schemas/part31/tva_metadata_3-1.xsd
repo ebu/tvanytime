@@ -1000,7 +1000,7 @@
 					</simpleContent>
 				</complexType>
 			</element>
-			<element name="ServiceType" type="mpeg7:ControlledTermUseType"  minOccurs="0" maxOccurs=" unbounded" />
+			<element name="ServiceType" type="mpeg7:ControlledTermUseType"  minOccurs="0" maxOccurs="unbounded" />
 			<element name="Logo" type="tva:TVAMediaLocatorType" minOccurs="0" maxOccurs="unbounded"/>
 			<element name="ServiceDescription" type="tva:SynopsisType" minOccurs="0"
 				maxOccurs="unbounded"/>
